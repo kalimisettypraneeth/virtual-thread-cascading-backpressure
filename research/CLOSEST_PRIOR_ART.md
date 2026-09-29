@@ -55,8 +55,9 @@ A defensible virtual-thread contribution now requires all of these:
 - [ ] Peer-reviewed evaluations of Netflix/Envoy-style adaptive concurrency.
 - [x] Initial microservice connection-pool sizing evidence and official CPU-based pool guidance.
 - [ ] Virtual-thread-specific connection-pool studies with comparable workloads and runtime controls.
-- [ ] Artifact availability and reproducibility status for every mandatory baseline.
+- [x] Public artifact availability and initial license/environment constraints inventoried in `research/BASELINE_ARTIFACTS.md`.
+- [ ] Build, smoke, and behavioral verification for every executable mandatory baseline.
 
 ## Gate decision
 
-**NOT COMPLETE.** Database/queueing overlap, finite-pool sizing, the JDK-version boundary, and one direct framework study are mapped. The exact virtual-thread-plus-finite-pool control intersection still lacks verified scholarly equivalence; virtual-thread-specific pool studies, citation chains, peer-reviewed adaptive-controller evaluations, and artifact verification remain open.
+**NOT COMPLETE.** Database/queueing overlap, finite-pool sizing, the JDK-version boundary, one direct framework study, and public baseline-artifact availability are mapped. The exact virtual-thread-plus-finite-pool control intersection still lacks verified scholarly equivalence; virtual-thread-specific pool studies, citation chains, peer-reviewed adaptive-controller evaluations, and baseline build/smoke/behavioral verification remain open.
