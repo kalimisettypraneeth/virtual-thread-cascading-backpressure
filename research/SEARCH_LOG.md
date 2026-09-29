@@ -19,10 +19,14 @@
 | 2026-09-28 | ACM SIGMOD / preprint | Bouncer response time objectives online data systems admission | peer-reviewed industrial-track record + preprint | SIGMOD 2024 | Per-query percentile-response estimates, early rejection, class SLOs, utilization, and starvation handling constrain database-admission claims. |
 | 2026-09-28 | Synthesis | finite downstream pool stability transition virtual threads versus queueing | exact differentiation review | evidence synthesis | A generic stability surface is unsafe; the candidate must demonstrate a virtual-thread/finite-pool interaction not explained by established queueing and admission work. |
 
+| 2026-09-29 | OpenJDK / Oracle | JEP 491 synchronized virtual threads without pinning JDK 24 | authoritative platform and release documentation | JEP + JDK 24 release notes | JDK 24 lets virtual threads blocked in `synchronized` code release carriers. Java 21 monitor-pinning results are version-specific; native/foreign-function pinning remains in Oracle's JDK 24 guidance. |
+| 2026-09-29 | ACM DEBS | Quarkus virtual threads resource constrained reactive worker pool | peer-reviewed industry paper + official proceedings | DEBS 2023 paper | Navarro et al. compare virtual threads, traditional worker pools, and reactive Quarkus under scarce resources and report that the virtual-thread integration did not outperform Quarkus reactive execution. Generic resource-constrained VT comparisons are established. |
+| 2026-09-29 | Mechanism synthesis | virtual thread finite pool stability JDK 21 JDK 24 pinning framework mismatch | operational discriminator | evidence synthesis | Any proposed transition must persist beyond removed monitor pinning, or be explicitly scoped to JDK 21. Experiments must separate finite-pool coupling from framework integration, carrier scheduling, and remaining native/foreign pinning. |
 ## Evidence discipline
 
-- Official Java/OpenJDK guidance defines platform and resource-boundary semantics.
+- Official Java/OpenJDK guidance defines platform and resource-boundary semantics, including the JDK 24 removal of monitor-related carrier pinning.
 - Peer-reviewed systems, database, and queueing papers define scholarly overlap.
 - First-party Netflix and Envoy artifacts define deployed engineering overlap.
-- Broad adaptive-admission, percentile-control, multi-tier stability, and measured stability-region novelty is rejected.
-- The virtual-thread-specific transition remains **UNVERIFIED** pending direct virtual-thread scholarly searches, citation chains, connection-pool studies, and artifact verification.
+- Broad adaptive-admission, percentile-control, multi-tier stability, measured stability-region novelty, and generic resource-constrained virtual-thread comparisons are rejected.
+- JDK-version effects must be explicit: synchronized blocking pins carriers on Java 21 but not as a general rule on JDK 24/25; native/foreign calls remain a pinning control.
+- The virtual-thread-specific transition remains **UNVERIFIED** pending the exact virtual-thread-plus-finite-pool admission intersection, citation chains, connection-pool studies, and artifact verification.
