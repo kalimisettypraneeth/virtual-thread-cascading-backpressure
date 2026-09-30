@@ -1,7 +1,7 @@
 # Differentiation — Virtual-Thread Cascading Backpressure
 
-Review date: 2026-09-28  
-Source audit head: `143bf4b26e160d6c7f2d1b6ac7055e339d936767`  
+Review date: 2026-09-29  
+Reconciled evidence head: `0fc6f078e506dd1a50a326ee96a2d80486f7a630`  
 Status: **PROVISIONAL — NOVELTY UNVERIFIED**
 
 ## Research question
@@ -16,6 +16,10 @@ Under workload shifts, can a measurable stability-transition surface across offe
 | Oracle Java 21 guidance | SUBSTANTIAL | Semaphores for scarce resources; connection pools as concurrency boundaries | Online estimation and adaptation of the safe operating region |
 | Fixed concurrency limits and pool sizing | SUBSTANTIAL | Limiting callers to downstream capacity | Controller response to workload/capacity shifts rather than a manually selected fixed limit |
 | General backpressure and overload control | SUBSTANTIAL | Queues, rejection, load shedding, or downstream saturation | A virtual-thread-specific empirical map only if results show behavior not explained by generic queueing alone |
+| USITS 2003, WWW 2004, and Leskelä 2006 | DIRECT | Percentile-response admission, stable multi-tier overload behavior, measured queueing stability regions, and feedback sensitivity | A runtime-specific mechanism only if established queueing predictions fail under controlled platform/reactive comparisons |
+| Breakwater, Gradient2/Envoy, Protego, Bouncer, and TopFull | DIRECT | Credit-, gradient-, marginal-throughput-, SLO-, and global-observation overload control | Non-equivalence requires direct comparator behavior, not a renamed adaptive limiter |
+| JEP 491 and DEBS 2023 Quarkus study | DIRECT | JDK 24 removes Java 21 monitor pinning; resource-constrained virtual-thread/framework comparisons already exist | A finite-pool interaction that persists beyond removed pinning and framework mismatch |
+| Database CPU/pool guidance and microservice pool-size studies | FOUNDATIONAL / PARTIAL | Finite downstream capacity and workload-specific pool tuning | Hold arrival process, database capacity, pool size, and demand constant across execution modes |
 
 ## Candidate contributions
 
@@ -25,7 +29,12 @@ Under workload shifts, can a measurable stability-transition surface across offe
    - no explicit admission limit;
    - connection-pool-only limiting;
    - fixed semaphore limits;
-   - a standard adaptive-concurrency baseline.
+   - USITS-style percentile control;
+   - Breakwater-inspired credit control;
+   - Netflix Gradient2 or Envoy adaptive concurrency;
+   - Protego-style marginal-throughput signaling;
+   - Bouncer-style SLO admission;
+   - TopFull where topology permits.
 4. Evidence separating virtual-thread effects from ordinary finite-capacity queueing.
 
 ## Claims this paper must not make
@@ -47,13 +56,16 @@ The candidate contribution is weakened or rejected if:
 
 ## Evidence required to pass this gate
 
-- [ ] Closest adaptive-concurrency, overload-control, database-admission, and queueing papers are tabulated with workload, metrics, and artifacts.
-- [ ] Each candidate contribution is classified against those papers using the repository overlap taxonomy.
-- [ ] The standard adaptive-concurrency baseline is named and justified.
-- [ ] Generic queueing predictions are separated from virtual-thread-specific hypotheses.
-- [ ] Search log includes exact-term, synonym, mechanism, and backward/forward citation chaining.
-- [ ] Candidate claims remain labeled unverified until the evidence table is complete.
+- [x] Closest adaptive-concurrency, overload-control, database-admission, queueing, runtime-version, framework, and finite-pool evidence is tabulated with workload, metrics, and artifacts.
+- [x] Candidate contributions are classified using the repository overlap taxonomy.
+- [x] Mandatory adaptive-concurrency and admission baselines are named and justified.
+- [x] Generic queueing, pool-sizing, framework, and pinning explanations are explicit falsifiers.
+- [x] Public artifact availability and initial environment/license constraints are inventoried.
+- [ ] Backward/forward citation chains for Breakwater, Protego, Bouncer, and TopFull are complete.
+- [ ] Direct virtual-thread-plus-finite-pool scholarship and comparable virtual-thread pool studies are exhausted.
+- [ ] Selected baselines pass pinned build, smoke, behavioral, and workload-compatibility checks.
+- [x] Candidate claims remain labeled unverified.
 
 ## Gate decision
 
-**NOT COMPLETE.** This file fixes the differentiation target and falsifiers, but the gate remains open until the closest-work table and citation-chain evidence satisfy every checklist item.
+**NOT COMPLETE.** The earlier “closest-work table missing” blocker is obsolete and has been cleared. The gate remains open for citation chains, direct virtual-thread-plus-finite-pool evidence, comparable runtime-controlled pool studies, and executable-baseline verification. No experiment-design or implementation gate may start from this reconciliation alone.
