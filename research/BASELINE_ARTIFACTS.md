@@ -42,7 +42,7 @@ If an artifact cannot be verified, any implementation derived from prose must be
 
 | Baseline | Observed revision | License/build readback | Current executable status | Exact next evidence |
 |---|---|---|---|---|
-| Harness-native fixed semaphore, pool-only limit, JDK and platform/reactive controls | Candidate repository implementation not yet present | No external license dependency | **NOT IMPLEMENTED** | Implement after experiment design; unit-test each control and capture JFR/runtime manifest. |
+| Harness-native fixed semaphore, pool-only limit, JDK and platform/reactive controls | Isolated native controls now present; version/framework integration absent | No external license dependency | **JAVA 17 NATIVE CONTRACT PASS; VT/JDBC/FRAMEWORK BLOCKED** | See isolated validation below; candidate design remains blocked. |
 | Netflix Concurrency Limits / Gradient2 | `Netflix/concurrency-limits@78a74b9878d38c4c048b0304ce12a162ab7b7222` | Apache-2.0 `LICENSE` and Gradle build file read back | **PINNED; BUILD/SMOKE NOT RUN** | Build the pinned Java modules, run tests, integrate a minimal adapter, and verify decisions on a fixed latency trace. |
 | Envoy adaptive concurrency | `envoyproxy/envoy@0ac73c8f38e5c1c875103980b0979ef536cd7573` | Apache-2.0 `LICENSE`; Bazel/Bazelisk build instructions read back | **PINNED; BUILD/SMOKE NOT RUN; HEAVYWEIGHT** | Prefer a pinned binary/container only after provenance verification; validate controller decisions against the experiment trace. |
 | TopFull | `kaist-ina/TopFull@0c7af21fb48765ec13da9b2b478dd850c0ef6cf8` | Official README read back; no top-level `LICENSE` at the pinned revision | **LICENSE BLOCKED; NOT EXECUTED** | Obtain a usable license or use a clearly labeled paper-derived comparator with conformance tests. |
@@ -68,3 +68,22 @@ The artifact-discovery checklist item is complete. The executable-baseline gate 
 - a preregistered, explicitly labeled reimplementation with conformance tests and documented deviations.
 
 A missing or incompatible artifact is a design constraint, not permission to silently substitute a weaker baseline.
+
+## Isolated native validation
+
+The Java 17 source-launcher run in `artifact/results/baseline-validation/java17-native/validation.json` exited zero with ten deterministic contract checks. Source and validator SHA-256 values, actual commands, standard output/error, OS/kernel, CPU/memory, runtime build, and available executables are captured by `artifact/scripts/validate_baselines.py`. This is not benchmark data or candidate implementation.
+
+| Comparator | Executed status | Evidence / blocker |
+|---|---|---|
+| Fixed semaphore | **PASS: isolated Java 17 contract only** | Capacity rejection, exactly-once permit release, invalid capacity: `artifact/baselines/NativeControls.java`; raw validation JSON above. No JDBC or VT interface tested. |
+| Pool-only | **PASS: isolated Java 17 contract only** | Platform-thread handoff and interruption accounting in the same test. No JDBC pool, fairness, timeout, or cancellation policy compatibility claim. |
+| Netflix Gradient2, pinned `78a74b9…` | **BLOCKED: build/smoke/conformance not executed** | No local Gradle/Maven executable or resolved dependency closure. Pinned root `build.gradle` uses dynamic JUnit 5.+/4.+, Mockito 4.+, SLF4J 1.7.+, Spectator 1.+ and Spring 5.+ ranges. Core requests SLF4J and JUnit; pin resolved dependencies/checksums before claiming reproducibility. |
+| Envoy, pinned `0ac73c8…` | **BLOCKED: not executed; no substitute validated** | No verified pinned binary/image or local container runtime. A simplified comparator cannot establish trace equivalence by comparing against its own implementation; an independent pinned reference trace/oracle is required. |
+| Breakwater-inspired credit | **BLOCKED: no paper-derived implementation validated** | Author artifact license/environment limitations remain. No unlicensed source was copied. Specify the paper-derived state machine and independent expected fixtures before claiming conformance. |
+| JDK 21 and 24/25, VT/platform/reactive controls | **PARTIAL / BLOCKED** | Available build is OpenJDK 17.0.20+8-1-24.04-Ubuntu only. Platform-thread and CompletionStage plumbing passed; CompletionStage is not a tested reactive framework. VT/version-comparison smoke was not run. |
+| TopFull | **LICENSE BLOCKED; NOT EXECUTED** | No code copied; earlier artifact classification preserved. |
+
+Absence of a `javac` executable did not imply absence of compilation: the installed runtime exposes `jdk.compiler`, and the Java source launcher compiled and ran the native checks. Conversely, Java 17 success cannot certify JDK 21/24/25 behavior. No external baseline build was attempted in this validation and no dependency download or image launch occurred. Local executable absence is not evidence that an upstream artifact is defective.
+
+**Gate remains NOT COMPLETE.** Next evidence must include the Netflix resolved build/dependency closure and deterministic decisions; an independent Envoy reference plus smoke/conformance; a specified Breakwater-inspired credit comparator; JDK 21 and 24/25 smoke paths; and workload-interface validation. Retain JFR pinning events, carrier parallelism/settings, native/foreign-call isolation, platform-thread and matched reactive/framework controls as requirements, not observations.
+

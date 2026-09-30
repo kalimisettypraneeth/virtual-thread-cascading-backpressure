@@ -77,3 +77,8 @@ The candidate contribution is weakened or rejected if:
 ## Gate decision
 
 **NOT COMPLETE.** Citation chains, the bounded direct-intersection search, the operational discriminator, and falsifiers are reconciled. The remaining blocker is executable-baseline evidence: pinned build, smoke, behavioral conformance, and workload compatibility for the selected artifacts or explicit reimplementations. No experiment-design or implementation gate may start until that evidence is committed and read back.
+
+## Executability evidence boundary
+
+Isolated fixed-semaphore and pool-only contracts passed ten Java 17 checks; see `artifact/results/baseline-validation/java17-native/validation.json`. These are not VT, JDBC, reactive-framework, Gradient2, Envoy, or Breakwater validation. The executable-baseline checklist remains unchecked. External controller conformance, a pinned dependency closure, JDK 21/24/25 availability, and workload-interface evidence are still missing. Candidate design/implementation remains blocked.
+
