@@ -1,6 +1,6 @@
 # Mandatory baseline artifact inventory
 
-Review date: 2026-09-29
+Review date: 2026-09-30
 
 ## Status
 
@@ -37,6 +37,19 @@ If an artifact cannot be verified, any implementation derived from prose must be
 | Envoy adaptive concurrency | Public official repository `envoyproxy/envoy`; README and Apache-2.0 license verified | Licensed official implementation; execution unverified and heavyweight | Prefer an external-proxy deployment. A simplified controller is acceptable only if trace-level decisions are shown equivalent over a preregistered validation workload. |
 | TopFull | Public official repository `kaist-ina/TopFull`; README identifies the SIGCOMM 2024 implementation | Official artifact; execution and license unverified | Inspect its topology and dependencies before use. No top-level license was verified, so reuse requires a license decision. |
 | Quarkus virtual-thread versus worker-pool/reactive comparison | Peer-reviewed study identified; no accompanying public experiment artifact verified in this search | Paper-only comparison | Recreate only the required framework modes with pinned versions and report deviations from the paper's setup. |
+
+## Pinned compatibility decision
+
+| Baseline | Observed revision | License/build readback | Current executable status | Exact next evidence |
+|---|---|---|---|---|
+| Harness-native fixed semaphore, pool-only limit, JDK and platform/reactive controls | Candidate repository implementation not yet present | No external license dependency | **NOT IMPLEMENTED** | Implement after experiment design; unit-test each control and capture JFR/runtime manifest. |
+| Netflix Concurrency Limits / Gradient2 | `Netflix/concurrency-limits@78a74b9878d38c4c048b0304ce12a162ab7b7222` | Apache-2.0 `LICENSE` and Gradle build file read back | **PINNED; BUILD/SMOKE NOT RUN** | Build the pinned Java modules, run tests, integrate a minimal adapter, and verify decisions on a fixed latency trace. |
+| Envoy adaptive concurrency | `envoyproxy/envoy@0ac73c8f38e5c1c875103980b0979ef536cd7573` | Apache-2.0 `LICENSE`; Bazel/Bazelisk build instructions read back | **PINNED; BUILD/SMOKE NOT RUN; HEAVYWEIGHT** | Prefer a pinned binary/container only after provenance verification; validate controller decisions against the experiment trace. |
+| TopFull | `kaist-ina/TopFull@0c7af21fb48765ec13da9b2b478dd850c0ef6cf8` | Official README read back; no top-level `LICENSE` at the pinned revision | **LICENSE BLOCKED; NOT EXECUTED** | Obtain a usable license or use a clearly labeled paper-derived comparator with conformance tests. |
+| Breakwater | `inhocho89/breakwater-artifact@e8a284b9f20a62c8d4146ab076595a19970943ce` | Official artifact README read back; no top-level `LICENSE`; quick start requires eleven CloudLab xl170 nodes | **LICENSE/ENVIRONMENT BLOCKED; NOT EXECUTED** | Resolve license and topology feasibility, or preregister a reduced paper-inspired credit controller and validate its control law. |
+| Protego, Bouncer, USITS/WWW controllers, Leskelä model | Primary papers/specifications | No verified author artifact selected | **REIMPLEMENTATION REQUIRED** | Specify equations/state transitions, unit-test them, and record deviations; never label as author artifacts. |
+
+This table is a compatibility decision, not execution evidence. Zero mandatory external baselines are currently reproduced.
 
 ## Readiness classes
 

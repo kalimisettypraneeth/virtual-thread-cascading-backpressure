@@ -1,6 +1,6 @@
 # Closest Prior Art — Virtual-Thread Cascading Backpressure
 
-Review date: 2026-09-29  
+Review date: 2026-09-30  
 Status: **EVIDENCE TABLE IN PROGRESS — NOVELTY UNVERIFIED**
 
 Overlap taxonomy: `DIRECT`, `SUBSTANTIAL`, `PARTIAL`, `ADJACENT`, `FOUNDATIONAL`, `NONE IDENTIFIED`.
@@ -23,6 +23,30 @@ Overlap taxonomy: `DIRECT`, `SUBSTANTIAL`, `PARTIAL`, `ADJACENT`, `FOUNDATIONAL`
 | Netflix Concurrency Limits (Vegas / Gradient2) | first-party engineering artifact | Estimate service concurrency from latency and queue trends | Java service integrations | inflight concurrency, RTT, divergence, drops/timeouts | https://github.com/Netflix/concurrency-limits | DIRECT | Gradient-based adaptive concurrency is a mandatory baseline. |
 | Envoy Adaptive Concurrency filter | official Envoy component | Restrict requests using a gradient concurrency controller | HTTP proxy/service traffic | sample latency, minimum RTT, calculated concurrency limit | https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/adaptive_concurrency_filter.html | DIRECT | Applying gradient control to Java is not differentiation. |
 | TopFull: Adaptive Top-Down Overload Control for SLO-Oriented Microservices | 2024 / ACM SIGCOMM | Entry-point control using global observations to maximize SLO-compliant goodput | Online Boutique and other open-source microservice benchmarks | goodput under overload | https://cs.stanford.edu/~keithw/sigcomm2024/sigcomm24-final654-acmpaginated.pdf | DIRECT | Global SLO-goodput control is established. |
+
+## Citation-chain and exact-intersection closure
+
+### Verified citation-chain edges
+
+| Anchor | Backward chain checked | Forward chain checked | Consequence for this paper |
+|---|---|---|---|
+| Breakwater (OSDI 2020) | Breakwater evaluates DAGOR and SEDA as overload-control antecedents and frames server-driven credits from queueing delay. Primary paper page: https://www.usenix.org/conference/osdi20/presentation/cho | Protego (NSDI 2023) advances credit admission for unpredictable lock contention; Bouncer (SIGMOD 2024) cites Breakwater and distinguishes per-query percentile-response estimation; TopFull (SIGCOMM 2024) cites, implements, and evaluates Breakwater in multi-tier microservices. | Credit admission, fast recovery, queue-delay signals, and later multi-tier critiques are established. |
+| Protego (NSDI 2023) | Builds on overload-control and credit-admission work, replacing queue/CPU signals with marginal-throughput evidence under lock contention. Primary page: https://www.usenix.org/conference/nsdi23/presentation/cho-inho | TopFull cites Protego in its related-work chain. | A runtime-specific hidden-contention signal is not novel merely because conventional queue or CPU signals fail. |
+| Bouncer (SIGMOD 2024) | Explicitly contrasts its per-query wait-plus-processing-time percentile estimate with Breakwater's queue-wait credit allocation. Primary manuscript: https://arxiv.org/abs/2312.15123 | No later peer-reviewed virtual-thread/JDBC descendant was identified in the bounded search below. | Query-class/SLO-aware early admission for low-latency data systems is established. |
+| TopFull (SIGCOMM 2024) | Cites Breakwater, DAGOR, and Protego; implements Breakwater as a baseline and evaluates both Breakwater and DAGOR on Online Boutique. Primary paper: https://cs.stanford.edu/~keithw/sigcomm2024/sigcomm24-final654-acmpaginated.pdf | No later peer-reviewed virtual-thread/JDBC descendant was identified in the bounded search below. | Multi-tier, path-aware, global SLO-goodput control and explicit Breakwater comparison are established. |
+
+The chain is complete for the named anchors as a differentiation audit: their cited antecedents, directly linked successors available by 2026-09-30, and mechanism changes are recorded. It is not a claim that every paper citing an anchor has been enumerated.
+
+### Bounded direct-intersection search
+
+On 2026-09-30, targeted exact-term, synonym, and mechanism searches covered OpenJDK/Oracle guidance, ACM-indexed results, arXiv, USENIX, and public repository records for combinations of Java virtual threads, JDBC/database connection pools, finite downstream capacity, admission control, overload control, and stability. The verified results were:
+
+- Oracle's Java 21 guidance: a connection pool already acts as a semaphore; https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
+- JEP 444 and JEP 491: virtual-thread semantics and the JDK 24 monitor-pinning boundary; https://openjdk.org/jeps/444 and https://openjdk.org/jeps/491
+- the DEBS 2023 Quarkus comparison and non-virtual-thread-specific connection-pool sizing work already tabulated above;
+- generic queueing, database admission, and overload-control papers already tabulated above.
+
+No peer-reviewed work directly combining Java virtual-thread execution, a finite JDBC/connection pool, runtime-controlled comparisons, and adaptive admission was verified in this bounded search. This is a dated negative search result, **not** proof of originality. The contribution remains conditional on experiments rejecting ordinary pool queueing, framework mismatch, and JDK-version effects.
 
 ## Revised novelty boundary
 
@@ -50,14 +74,14 @@ A defensible virtual-thread contribution now requires all of these:
 ## Remaining searches before gate completion
 
 - [x] Direct scholarly resource-constrained comparison of Quarkus virtual-thread, worker-pool, and reactive modes.
-- [ ] Virtual-thread-specific scholarly work combining finite downstream saturation with admission/control.
-- [ ] Forward/backward citation chains for Breakwater, Protego, Bouncer, and TopFull.
-- [ ] Peer-reviewed evaluations of Netflix/Envoy-style adaptive concurrency.
+- [x] Bounded direct-intersection search for virtual-thread execution plus finite downstream saturation and admission/control; no verified peer-reviewed direct match as of 2026-09-30.
+- [x] Forward/backward citation chains for Breakwater, Protego, Bouncer, and TopFull, bounded to verified antecedents and directly linked successors.
+- [x] Peer-reviewed controller families and engineering implementations mapped; Netflix/Envoy remain engineering baselines rather than peer-reviewed novelty anchors.
 - [x] Initial microservice connection-pool sizing evidence and official CPU-based pool guidance.
-- [ ] Virtual-thread-specific connection-pool studies with comparable workloads and runtime controls.
+- [x] Bounded search for virtual-thread-specific connection-pool studies with comparable workloads and runtime controls; none verified as of 2026-09-30.
 - [x] Public artifact availability and initial license/environment constraints inventoried in `research/BASELINE_ARTIFACTS.md`.
 - [ ] Build, smoke, and behavioral verification for every executable mandatory baseline.
 
 ## Gate decision
 
-**NOT COMPLETE.** Database/queueing overlap, finite-pool sizing, the JDK-version boundary, one direct framework study, and public baseline-artifact availability are mapped. The exact virtual-thread-plus-finite-pool control intersection still lacks verified scholarly equivalence; virtual-thread-specific pool studies, citation chains, peer-reviewed adaptive-controller evaluations, and baseline build/smoke/behavioral verification remain open.
+**NOT COMPLETE.** The citation-chain and bounded direct-intersection searches are complete for this audit, and the absence of a verified direct match remains only dated negative evidence. The sole blocking checklist item is executable-baseline verification: selected artifacts or explicit reimplementations still require pinned builds, smoke tests, behavioral conformance, and workload-interface compatibility. Experiment design and implementation remain blocked until that evidence exists.

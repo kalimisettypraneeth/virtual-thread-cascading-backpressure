@@ -1,7 +1,7 @@
 # Differentiation — Virtual-Thread Cascading Backpressure
 
-Review date: 2026-09-29  
-Reconciled evidence head: `0fc6f078e506dd1a50a326ee96a2d80486f7a630`  
+Review date: 2026-09-30  
+Evidence base before this reconciliation: `968ba03d21c49091354b60343a9a501f1fc6f31e`  
 Status: **PROVISIONAL — NOVELTY UNVERIFIED**
 
 ## Research question
@@ -37,6 +37,14 @@ Under workload shifts, can a measurable stability-transition surface across offe
    - TopFull where topology permits.
 4. Evidence separating virtual-thread effects from ordinary finite-capacity queueing.
 
+## Operational discriminator matrix
+
+| Candidate contribution | Established mechanism explicitly excluded | Operational discriminator | Result that falsifies or substantially weakens it |
+|---|---|---|---|
+| Residual runtime/pool interaction after a queueing null model | Ordinary finite-capacity pool queueing, pool sizing, and generic stability regions | With arrival process, service demand, database capacity, and pool size held constant, an execution-mode × pool-occupancy interaction remains after comparing predicted and observed queue/wait/service-time trajectories. | Platform-thread and reactive controls follow the same boundary and recovery within uncertainty, or a standard queueing model explains the residuals without a virtual-thread variable. |
+| JDK-version-persistent virtual-thread mechanism | Java 21 monitor pinning and framework integration mismatch | The effect persists on JDK 24/25, while JFR pinning events, carrier parallelism, native/foreign calls, and framework mode are recorded and controlled. | The effect disappears after JEP 491, tracks JFR pinning/native calls, or vanishes under matched framework modes. |
+| Added control value beyond established admission algorithms | Generic adaptive limiting, queue-delay credits, Gradient2/Envoy, marginal-throughput control, query-class SLO admission, and global TopFull-style control | On preregistered workload/capacity shifts, the candidate improves recovery and SLO-goodput against every feasible mandatory comparator without merely changing its target or tuning budget. | A fixed limit chosen without hindsight or an established controller is equivalent within uncertainty, or gains occur only with post hoc tuning or one topology. |
+
 ## Claims this paper must not make
 
 - Virtual threads, Little's Law, semaphores, connection pools, backpressure, or downstream bottlenecks are new.
@@ -61,11 +69,11 @@ The candidate contribution is weakened or rejected if:
 - [x] Mandatory adaptive-concurrency and admission baselines are named and justified.
 - [x] Generic queueing, pool-sizing, framework, and pinning explanations are explicit falsifiers.
 - [x] Public artifact availability and initial environment/license constraints are inventoried.
-- [ ] Backward/forward citation chains for Breakwater, Protego, Bouncer, and TopFull are complete.
-- [ ] Direct virtual-thread-plus-finite-pool scholarship and comparable virtual-thread pool studies are exhausted.
+- [x] Backward/forward citation chains for Breakwater, Protego, Bouncer, and TopFull are complete for the bounded audit.
+- [x] Bounded direct-intersection and comparable-pool searches are documented; no verified peer-reviewed direct match was identified as of 2026-09-30, without treating absence as proof of novelty.
 - [ ] Selected baselines pass pinned build, smoke, behavioral, and workload-compatibility checks.
 - [x] Candidate claims remain labeled unverified.
 
 ## Gate decision
 
-**NOT COMPLETE.** The earlier “closest-work table missing” blocker is obsolete and has been cleared. The gate remains open for citation chains, direct virtual-thread-plus-finite-pool evidence, comparable runtime-controlled pool studies, and executable-baseline verification. No experiment-design or implementation gate may start from this reconciliation alone.
+**NOT COMPLETE.** Citation chains, the bounded direct-intersection search, the operational discriminator, and falsifiers are reconciled. The remaining blocker is executable-baseline evidence: pinned build, smoke, behavioral conformance, and workload compatibility for the selected artifacts or explicit reimplementations. No experiment-design or implementation gate may start until that evidence is committed and read back.
