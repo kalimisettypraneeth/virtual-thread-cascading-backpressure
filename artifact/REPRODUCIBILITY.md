@@ -14,3 +14,10 @@ The ten checks are correctness-only evidence for two native limiting contracts o
 
 Source revision pins do not freeze dynamic build dependencies. External baselines require resolved artifact versions and checksums, build/smoke output, independent expected decision traces, and a recorded workload interface. Never certify a reimplementation by using its own output as its expected oracle.
 
+
+
+## Breakwater-inspired comparator validation
+
+Run `python3 artifact/scripts/validate_breakwater_inspired.py /tmp/breakwater-inspired-validation` from the repository root. The script uses only Python's standard library and the Java 17 source launcher; it performs no download, service call, hosted runner, or paid operation.
+
+Committed raw evidence is `artifact/results/baseline-validation/breakwater-inspired/validation.json`. It records every command, exit code, stdout/stderr, source and validator SHA-256 values, runtime facts, fixture provenance, and declared deviations. Eleven of eleven deterministic checks passed on the captured environment, and a second run produced byte-identical JSON. This result validates only the reduced equations and input guards. It does not validate the author artifact, distributed messaging, AQM, fairness, timing, JDK 21/24/25 behavior, JDBC or reactive integration, or benchmark performance.

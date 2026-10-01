@@ -82,3 +82,10 @@ The candidate contribution is weakened or rejected if:
 
 Isolated fixed-semaphore and pool-only contracts passed ten Java 17 checks; see `artifact/results/baseline-validation/java17-native/validation.json`. These are not VT, JDBC, reactive-framework, Gradient2, Envoy, or Breakwater validation. The executable-baseline checklist remains unchecked. External controller conformance, a pinned dependency closure, JDK 21/24/25 availability, and workload-interface evidence are still missing. Candidate design/implementation remains blocked.
 
+
+
+## Breakwater comparator evidence boundary
+
+A reduced Breakwater-inspired, paper-derived comparator now passes 11/11 independent deterministic equation fixtures. The mapping covers OSDI 2020 §3.2.1 Eqs. (1)–(2) and §3.2.2 Eqs. (3)–(6), with all omissions and safety deviations recorded in `artifact/baselines/README.md`. This is not the author artifact, an exact reproduction, a workload adapter, or performance evidence.
+
+The executable-baseline checklist remains unchecked. Netflix/Gradient2 and Envoy still lack completed build/smoke/conformance evidence; JDK 21 versus 24/25, reactive-framework, JDBC, and workload-interface validation remain blocked. The differentiation gate therefore remains **NOT COMPLETE**, and no downstream experiment or candidate implementation is unblocked by this scoped result.

@@ -79,7 +79,7 @@ The Java 17 source-launcher run in `artifact/results/baseline-validation/java17-
 | Pool-only | **PASS: isolated Java 17 contract only** | Platform-thread handoff and interruption accounting in the same test. No JDBC pool, fairness, timeout, or cancellation policy compatibility claim. |
 | Netflix Gradient2, pinned `78a74b9…` | **BLOCKED: build/smoke/conformance not executed** | No local Gradle/Maven executable or resolved dependency closure. Pinned root `build.gradle` uses dynamic JUnit 5.+/4.+, Mockito 4.+, SLF4J 1.7.+, Spectator 1.+ and Spring 5.+ ranges. Core requests SLF4J and JUnit; pin resolved dependencies/checksums before claiming reproducibility. |
 | Envoy, pinned `0ac73c8…` | **BLOCKED: not executed; no substitute validated** | No verified pinned binary/image or local container runtime. A simplified comparator cannot establish trace equivalence by comparing against its own implementation; an independent pinned reference trace/oracle is required. |
-| Breakwater-inspired credit | **BLOCKED: no paper-derived implementation validated** | Author artifact license/environment limitations remain. No unlicensed source was copied. Specify the paper-derived state machine and independent expected fixtures before claiming conformance. |
+| Breakwater-inspired credit | **PASS: reduced paper-derived equation conformance only** | Original Java 17 comparator maps §3.2 Eqs. (1)–(6); 11/11 independent deterministic fixtures passed. No author code was copied. Distributed messaging, AQM, fairness, workload integration, and performance remain unvalidated. |
 | JDK 21 and 24/25, VT/platform/reactive controls | **PARTIAL / BLOCKED** | Available build is OpenJDK 17.0.20+8-1-24.04-Ubuntu only. Platform-thread and CompletionStage plumbing passed; CompletionStage is not a tested reactive framework. VT/version-comparison smoke was not run. |
 | TopFull | **LICENSE BLOCKED; NOT EXECUTED** | No code copied; earlier artifact classification preserved. |
 
@@ -87,3 +87,12 @@ Absence of a `javac` executable did not imply absence of compilation: the instal
 
 **Gate remains NOT COMPLETE.** Next evidence must include the Netflix resolved build/dependency closure and deterministic decisions; an independent Envoy reference plus smoke/conformance; a specified Breakwater-inspired credit comparator; JDK 21 and 24/25 smoke paths; and workload-interface validation. Retain JFR pinning events, carrier parallelism/settings, native/foreign-call isolation, platform-thread and matched reactive/framework controls as requirements, not observations.
 
+
+
+## Breakwater-inspired comparator evidence
+
+The original comparator in `artifact/baselines/BreakwaterInspired.java` maps OSDI 2020 §3.2.1 Eqs. (1)–(2) and §3.2.2 Eqs. (3)–(6). Its independent validator passed 11/11 fixtures and captured raw evidence at `artifact/results/baseline-validation/breakwater-inspired/validation.json`. Source SHA-256 is `f6bc04f7e7cd307e2ad8b1aeb7f2758f0cdeee222907509e8b9cc1c8bfba6f48`; validator SHA-256 is `55763a79381529c9163d74de059231250324bc7a1bbb714a7ee54c758fcc7d0b`.
+
+This closes only the reduced credit-equation conformance item. The implementation is explicitly **Breakwater-inspired and paper-derived**, not the authors' artifact or an exact reproduction. It excludes Shenango queue sensing, RTT-driven distributed operation, demand/credit piggybacking, random explicit-credit selection, lazy max-min distribution across live clients, AQM, client expiration, and the eleven-node artifact topology. Its Eq. (4) uses integer credit division and its Eq. (6) adds a documented non-negative clamp.
+
+The author artifact remains license/environment blocked and was neither copied nor executed. Netflix/Gradient2 and Envoy build/conformance, JDK 21 and 24/25 VT paths, reactive/JDBC controls, and workload-interface compatibility remain unresolved. Therefore the selected-baseline completion gate remains **NOT COMPLETE**.
