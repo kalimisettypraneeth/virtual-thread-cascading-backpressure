@@ -89,3 +89,12 @@ Isolated fixed-semaphore and pool-only contracts passed ten Java 17 checks; see 
 A reduced Breakwater-inspired, paper-derived comparator now passes 11/11 independent deterministic equation fixtures. The mapping covers OSDI 2020 §3.2.1 Eqs. (1)–(2) and §3.2.2 Eqs. (3)–(6), with all omissions and safety deviations recorded in `artifact/baselines/README.md`. This is not the author artifact, an exact reproduction, a workload adapter, or performance evidence.
 
 The executable-baseline checklist remains unchecked. Netflix/Gradient2 and Envoy still lack completed build/smoke/conformance evidence; JDK 21 versus 24/25, reactive-framework, JDBC, and workload-interface validation remain blocked. The differentiation gate therefore remains **NOT COMPLETE**, and no downstream experiment or candidate implementation is unblocked by this scoped result.
+
+
+## Adaptive-controller equation evidence boundary
+
+Reduced source-derived comparators now pass 17/17 independent deterministic fixtures: 12 stateful Netflix Gradient2-derived decisions and five Envoy gradient-derived decisions. Exact upstream revisions/source blobs, raw commands, exit codes, runtime facts, hashes, inputs, expected outputs, actual outputs, and declared deviations are captured in `artifact/results/baseline-validation/adaptive-controllers/validation.json`.
+
+This evidence closes only the reduced equation/state-conformance sub-item. It is not an official Gradle/Bazel build, an exact reproduction, a proxy or library integration, a workload adapter, or performance evidence. Official builds were unattempted because the captured free environment lacks Gradle/Maven/Bazel/Bazelisk/Docker; JDK 21/24/25 were also unavailable. Reactive-framework, JDBC, virtual-thread/version, and shared-workload compatibility remain unresolved.
+
+The executable-baseline checklist remains unchecked and the differentiation gate remains **NOT COMPLETE**. Downstream experiment design and candidate implementation remain blocked until the missing runtime and workload-interface evidence is committed and independently read back.

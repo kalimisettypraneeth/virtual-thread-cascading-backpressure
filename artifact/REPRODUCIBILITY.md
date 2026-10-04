@@ -21,3 +21,12 @@ Source revision pins do not freeze dynamic build dependencies. External baseline
 Run `python3 artifact/scripts/validate_breakwater_inspired.py /tmp/breakwater-inspired-validation` from the repository root. The script uses only Python's standard library and the Java 17 source launcher; it performs no download, service call, hosted runner, or paid operation.
 
 Committed raw evidence is `artifact/results/baseline-validation/breakwater-inspired/validation.json`. It records every command, exit code, stdout/stderr, source and validator SHA-256 values, runtime facts, fixture provenance, and declared deviations. Eleven of eleven deterministic checks passed on the captured environment, and a second run produced byte-identical JSON. This result validates only the reduced equations and input guards. It does not validate the author artifact, distributed messaging, AQM, fairness, timing, JDK 21/24/25 behavior, JDBC or reactive integration, or benchmark performance.
+
+
+## Adaptive-controller equation validation
+
+Run `python3 artifact/scripts/validate_adaptive_controllers.py /tmp/vt-adaptive-validation.json` from the repository root. The script uses only the Python standard library and the installed Java source launcher; it performs no download, hosted-runner, service, container, or paid operation.
+
+Committed evidence is `artifact/results/baseline-validation/adaptive-controllers/validation.json`. It records the pinned upstream commits and source blob SHAs, complete input trace, command and exit code, stdout/stderr, runtime and executable inventory, source/validator SHA-256 values, 17 independently calculated expected/actual decisions, and deviations. A second run was byte-identical.
+
+This validates reduced Netflix Gradient2 and Envoy gradient-controller equations/state only. It does not establish official artifact buildability, integration equivalence, proxy behavior, timing, performance, JDK 21/24/25 availability, virtual-thread behavior, reactive/JDBC compatibility, or a shared workload interface.

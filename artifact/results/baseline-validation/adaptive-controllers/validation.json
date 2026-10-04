@@ -1,0 +1,377 @@
+{
+  "checks": [
+    {
+      "actual": [
+        20,
+        20.8,
+        10.0
+      ],
+      "case": 0,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        20,
+        20.8,
+        10.0
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        21,
+        21.6,
+        10.0
+      ],
+      "case": 1,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        21,
+        21.6,
+        10.0
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        22,
+        22.4,
+        10.0
+      ],
+      "case": 2,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        22,
+        22.400000000000002,
+        10.0
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        22,
+        22.08,
+        15.0
+      ],
+      "case": 3,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        22,
+        22.080000000000002,
+        15.0
+      ],
+      "input": [
+        30.0,
+        22
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        21,
+        21.776,
+        20.0
+      ],
+      "case": 4,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        21,
+        21.776000000000003,
+        20.0
+      ],
+      "input": [
+        40.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        21,
+        21.776,
+        17.1
+      ],
+      "case": 5,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        21,
+        21.776000000000003,
+        17.099999999999998
+      ],
+      "input": [
+        8.0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        22,
+        22.576,
+        15.742857142857
+      ],
+      "case": 6,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        22,
+        22.576000000000004,
+        15.742857142857144
+      ],
+      "input": [
+        8.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        21,
+        21.1184,
+        27.0
+      ],
+      "case": 7,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        21,
+        21.118400000000005,
+        27.0
+      ],
+      "input": [
+        100.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        21,
+        21.9184,
+        23.855555555556
+      ],
+      "case": 8,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        21,
+        21.918400000000005,
+        23.855555555555554
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        22,
+        22.7184,
+        22.42
+      ],
+      "case": 9,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        22,
+        22.718400000000006,
+        22.42
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        23,
+        23.5184,
+        21.259735440932
+      ],
+      "case": 10,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        23,
+        23.518400000000007,
+        21.25973544093178
+      ],
+      "input": [
+        10.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": [
+        22,
+        22.12985469413,
+        21.388654790546
+      ],
+      "case": 11,
+      "controller": "netflix-gradient2-derived",
+      "expected": [
+        22,
+        22.12985469412989,
+        21.388654790545985
+      ],
+      "input": [
+        60.0,
+        20
+      ],
+      "pass": true
+    },
+    {
+      "actual": 30,
+      "case": 0,
+      "controller": "envoy-gradient-derived",
+      "expected": 30,
+      "input": [
+        20,
+        3,
+        1000,
+        10.0,
+        0.25,
+        10.0
+      ],
+      "pass": true
+    },
+    {
+      "actual": 13,
+      "case": 1,
+      "controller": "envoy-gradient-derived",
+      "expected": 13,
+      "input": [
+        20,
+        3,
+        1000,
+        10.0,
+        0.25,
+        25.0
+      ],
+      "pass": true
+    },
+    {
+      "actual": 13,
+      "case": 2,
+      "controller": "envoy-gradient-derived",
+      "expected": 13,
+      "input": [
+        20,
+        3,
+        1000,
+        10.0,
+        0.25,
+        100.0
+      ],
+      "pass": true
+    },
+    {
+      "actual": 1000,
+      "case": 3,
+      "controller": "envoy-gradient-derived",
+      "expected": 1000,
+      "input": [
+        900,
+        3,
+        1000,
+        10.0,
+        0.25,
+        5.0
+      ],
+      "pass": true
+    },
+    {
+      "actual": 3,
+      "case": 4,
+      "controller": "envoy-gradient-derived",
+      "expected": 3,
+      "input": [
+        3,
+        3,
+        1000,
+        10.0,
+        0.0,
+        100.0
+      ],
+      "pass": true
+    }
+  ],
+  "deviations": [
+    "Netflix: no official dependency graph, metrics, listener plumbing, or Gradle build; only Gradient2 update and ExpAvg state order are represented.",
+    "Envoy: no proxy, histogram, timer, forwarding CAS, minRTT sampling window, Bazel build, or runtime config; only calculateNewLimit arithmetic is represented.",
+    "No timing, throughput, latency, workload integration, JDK 21/24/25, JDBC, or reactive-framework claim is made."
+  ],
+  "environment": {
+    "cwd": "/workspace/scratch/2cf7993362ef",
+    "executables": {
+      "bazel": null,
+      "bazelisk": null,
+      "docker": null,
+      "gradle": null,
+      "java": "/usr/bin/java",
+      "javac": null,
+      "mvn": null
+    },
+    "java": {
+      "command": [
+        "java",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stderr": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)\n",
+      "stdout": ""
+    },
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "execution": {
+    "command": [
+      "java",
+      "--source",
+      "17",
+      "/workspace/scratch/2cf7993362ef/artifact/baselines/AdaptiveControllerComparators.java"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "NC,OK\nNS,20,20.800000000000,10.000000000000\nNS,21,21.600000000000,10.000000000000\nNS,22,22.400000000000,10.000000000000\nNS,22,22.080000000000,15.000000000000\nNS,21,21.776000000000,20.000000000000\nNS,21,21.776000000000,17.100000000000\nNS,22,22.576000000000,15.742857142857\nNS,21,21.118400000000,27.000000000000\nNS,21,21.918400000000,23.855555555556\nNS,22,22.718400000000,22.420000000000\nNS,23,23.518400000000,21.259735440932\nNS,22,22.129854694130,21.388654790546\nE,30\nE,13\nE,13\nE,1000\nE,3\n"
+  },
+  "fixture_provenance": "Independent Python oracle implementing the pinned source equations and state order.",
+  "input_trace": "NC,20,1,200,0.2,4,1.5,600,10\nNS,10.0,20\nNS,10.0,20\nNS,10.0,20\nNS,30.0,22\nNS,40.0,20\nNS,8.0,0\nNS,8.0,20\nNS,100.0,20\nNS,10.0,20\nNS,10.0,20\nNS,10.0,20\nNS,60.0,20\nE,20,3,1000,10.0,0.25,10.0\nE,20,3,1000,10.0,0.25,25.0\nE,20,3,1000,10.0,0.25,100.0\nE,900,3,1000,10.0,0.25,5.0\nE,3,3,1000,10.0,0.0,100.0\n",
+  "schema": 1,
+  "scope": "Reduced equation/state conformance only; not official artifact builds or performance evidence.",
+  "source_sha256": "aafc76fffc13654e1387df1e0c1e07513c366262cc8e149f5d1ba1bfd8ca4a7b",
+  "summary": {
+    "all_passed": true,
+    "passed": 17,
+    "total": 17
+  },
+  "upstream_pins": {
+    "envoy": {
+      "commit": "0ac73c8f38e5c1c875103980b0979ef536cd7573",
+      "controller_blob": "610b2dec7757364553859c26d8eafff322d73127",
+      "controller_path": "source/extensions/filters/http/adaptive_concurrency/controller/gradient_controller.cc",
+      "documentation_blob": "3a3cd16866a3fbde8fc304f85678aa3bcfaadb01",
+      "documentation_path": "docs/root/configuration/http/http_filters/adaptive_concurrency_filter.rst",
+      "license": "Apache-2.0",
+      "repository": "envoyproxy/envoy"
+    },
+    "netflix": {
+      "commit": "78a74b9878d38c4c048b0304ce12a162ab7b7222",
+      "expavg_blob": "ee70320a4110aba33f751754212ff9bf71ea5515",
+      "expavg_path": "concurrency-limits-core/src/main/java/com/netflix/concurrency/limits/limit/measurement/ExpAvgMeasurement.java",
+      "gradient2_blob": "08ea57f7e2413ca175e65b823643171d899c03a8",
+      "gradient2_path": "concurrency-limits-core/src/main/java/com/netflix/concurrency/limits/limit/Gradient2Limit.java",
+      "license": "Apache-2.0",
+      "repository": "Netflix/concurrency-limits"
+    }
+  },
+  "validator_sha256": "5d78e5aae6c4be59f94c59b24621dc0c53d1566aee6d8da5a31f30bec9893ddd"
+}

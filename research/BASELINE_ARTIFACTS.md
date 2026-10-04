@@ -96,3 +96,17 @@ The original comparator in `artifact/baselines/BreakwaterInspired.java` maps OSD
 This closes only the reduced credit-equation conformance item. The implementation is explicitly **Breakwater-inspired and paper-derived**, not the authors' artifact or an exact reproduction. It excludes Shenango queue sensing, RTT-driven distributed operation, demand/credit piggybacking, random explicit-credit selection, lazy max-min distribution across live clients, AQM, client expiration, and the eleven-node artifact topology. Its Eq. (4) uses integer credit division and its Eq. (6) adds a documented non-negative clamp.
 
 The author artifact remains license/environment blocked and was neither copied nor executed. Netflix/Gradient2 and Envoy build/conformance, JDK 21 and 24/25 VT paths, reactive/JDBC controls, and workload-interface compatibility remain unresolved. Therefore the selected-baseline completion gate remains **NOT COMPLETE**.
+
+
+## Reduced adaptive-controller equation evidence (2026-10-04)
+
+Pinned source inspection and a zero-download local validation now provide bounded evidence for the two remaining adaptive-controller families. The upstream pins and source blobs are recorded in `artifact/results/baseline-validation/adaptive-controllers/validation.json`; the original dependency-free comparator and independent Python oracle passed 17/17 deterministic checks with exit code 0.
+
+| Comparator | Scoped result | What remains unverified |
+|---|---|---|
+| Netflix Gradient2-derived | **PASS: reduced state/equation trace only** — 12 stateful decisions match an independent oracle, including warm-up/EMA state, app-limited suppression, clamping, smoothing, and bounds. | Official Gradle build, resolved dependency checksums, library listener/metrics behavior, adapter integration, and performance. |
+| Envoy gradient-derived | **PASS: reduced equation trace only** — five decisions match an independent oracle, including gradient clamp, headroom, truncation, and bounds. | Official Bazel build, proxy/filter/timer/histogram/CAS behavior, pinned binary/image provenance, deployment, and performance. |
+
+The captured environment had Java 17 only and no `javac`, Gradle, Maven, Bazel/Bazelisk, Docker, or JDK 21/24/25 executables. Therefore official builds, JDK-version smoke, virtual-thread execution, reactive/JDBC compatibility, and shared-workload validation were **unattempted due to environment capability**, not failed upstream tests. These missing items remain blocking acceptance criteria.
+
+**Aggregate gate remains NOT COMPLETE.** Reduced equation conformance cannot substitute for official build/smoke evidence or the required JDK 21 versus 24/25 and reactive/JDBC workload-interface checks.
