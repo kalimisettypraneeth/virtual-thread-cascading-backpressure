@@ -1,0 +1,2 @@
+{"argv": ["git", "rev-parse", "HEAD"], "cwd": "/workspace/scratch/2cf7993362ef/repo", "started": "2026-10-05T05:12:51.573167+00:00", "ended": "2026-10-05T05:12:51.574892+00:00", "exit_code": 0, "stdout": "logs/000-source-head.stdout", "stderr": "logs/000-source-head.stderr"}
+{"argv": ["git", "status", "--porcelain"], "cwd": "/workspace/scratch/2cf7993362ef/repo", "started": "2026-10-05T05:12:51.574898+00:00", "ended": "2026-10-05T05:12:51.577153+00:00", "exit_code": 0, "stdout": "logs/001-source-status.stdout", "stderr": "logs/001-source-status.stderr"}

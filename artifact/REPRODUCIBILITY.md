@@ -30,3 +30,12 @@ Run `python3 artifact/scripts/validate_adaptive_controllers.py /tmp/vt-adaptive-
 Committed evidence is `artifact/results/baseline-validation/adaptive-controllers/validation.json`. It records the pinned upstream commits and source blob SHAs, complete input trace, command and exit code, stdout/stderr, runtime and executable inventory, source/validator SHA-256 values, 17 independently calculated expected/actual decisions, and deviations. A second run was byte-identical.
 
 This validates reduced Netflix Gradient2 and Envoy gradient-controller equations/state only. It does not establish official artifact buildability, integration equivalence, proxy behavior, timing, performance, JDK 21/24/25 availability, virtual-thread behavior, reactive/JDBC compatibility, or a shared workload interface.
+
+
+## Local Docker runtime bundle preparation (2026-10-05 UTC)
+
+A prepared bundle is now available at `artifact/runtime-validation/README.md`. From repository root run `bash artifact/scripts/validate-runtime.sh` on Linux/WSL with Python 3 and a local Docker daemon. It uses immutable linux/amd64 image manifests (registry-declared Temurin 21.0.12.1+1 and 25.0.4.1+1, PostgreSQL 16.15), a 29-JAR SHA-256 dependency lock, matched finite-pool JDBC/platform/virtual and genuine R2DBC cases, deterministic held-batch request assertions, preserved reduced-control adapters, and separate monitor/JNI JFR fixtures. JNI runs only if the pinned image has a native compiler; foreign-call coverage remains unattempted.
+
+**PREPARED / RUNTIME UNATTEMPTED.** Java17 compilation and five constant-signal adapter checks passed; the actual missing-Docker command emitted an UNATTEMPTED manifest, logs and hashes under `artifact/results/runtime-validation/preparation`. Docker, JDK21/25, database/interface equivalence and JFR cases have not run here. Registry version metadata is not an observed runtime. The constant-capacity adapters do not validate dynamic controller behavior. Existing 17/17 reduced Gradient2/Envoy conformance is not an official upstream build or performance result. No existing baseline evidence was replaced.
+
+The exact command, artifact layout, immutable pins, workload semantics and limitations are documented in the bundle README. Raw user-local results must be inspected before closing runtime/interface gates. **Aggregate scientific/selected-baseline gate remains NOT COMPLETE.**

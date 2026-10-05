@@ -1,0 +1,101 @@
+{
+  "status": "PREPARATION_CHECKS_PASS_RUNTIME_UNATTEMPTED",
+  "scope": "Java17 compilation, five constant-signal reduced-source adapters, shell/Python syntax, dependency checksums, missing-Docker provenance only",
+  "commands": [
+    {
+      "argv": [
+        "java",
+        "-version"
+      ],
+      "cwd": "/workspace/scratch/2cf7993362ef/repo",
+      "started": "2026-10-05T05:13:32.762154+00:00",
+      "ended": "2026-10-05T05:13:32.791129+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)\n"
+    },
+    {
+      "argv": [
+        "java",
+        "com.sun.tools.javac.Main",
+        "--release",
+        "17",
+        "-cp",
+        "/tmp/vt-runtime-deps/netty-transport-native-unix-common-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-codec-dns-4.1.112.Final.jar:/tmp/vt-runtime-deps/reactive-streams-1.0.4.jar:/tmp/vt-runtime-deps/common-2.1.jar:/tmp/vt-runtime-deps/client-2.1.jar:/tmp/vt-runtime-deps/netty-codec-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar:/tmp/vt-runtime-deps/postgresql-42.7.5.jar:/tmp/vt-runtime-deps/netty-codec-http-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-dns-classes-macos-4.1.112.Final.jar:/tmp/vt-runtime-deps/saslprep-1.1.jar:/tmp/vt-runtime-deps/reactor-pool-1.0.8.jar:/tmp/vt-runtime-deps/stringprep-1.1.jar:/tmp/vt-runtime-deps/netty-resolver-dns-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-4.1.112.Final.jar:/tmp/vt-runtime-deps/checker-qual-3.48.3.jar:/tmp/vt-runtime-deps/netty-common-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-postgresql-1.0.7.RELEASE.jar:/tmp/vt-runtime-deps/netty-handler-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-handler-proxy-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-spi-1.0.0.RELEASE.jar:/tmp/vt-runtime-deps/reactor-netty-core-1.1.22.jar:/tmp/vt-runtime-deps/netty-codec-socks-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-transport-native-epoll-4.1.112.Final-linux-x86_64.jar:/tmp/vt-runtime-deps/netty-transport-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-pool-1.0.2.RELEASE.jar:/tmp/vt-runtime-deps/netty-transport-classes-epoll-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-buffer-4.1.112.Final.jar:/tmp/vt-runtime-deps/reactor-core-3.6.11.jar",
+        "-d",
+        "/tmp/vt-runtime-classes",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/runtime-validation/RuntimeSmoke.java",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/runtime-validation/AdapterCheck.java",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/baselines/AdaptiveControllerComparators.java",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/baselines/BreakwaterInspired.java",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/baselines/NativeControls.java"
+      ],
+      "cwd": "/workspace/scratch/2cf7993362ef/repo",
+      "started": "2026-10-05T05:13:32.791146+00:00",
+      "ended": "2026-10-05T05:13:33.663442+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "java",
+        "-cp",
+        "/tmp/vt-runtime-classes:/tmp/vt-runtime-deps/netty-transport-native-unix-common-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-codec-dns-4.1.112.Final.jar:/tmp/vt-runtime-deps/reactive-streams-1.0.4.jar:/tmp/vt-runtime-deps/common-2.1.jar:/tmp/vt-runtime-deps/client-2.1.jar:/tmp/vt-runtime-deps/netty-codec-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar:/tmp/vt-runtime-deps/postgresql-42.7.5.jar:/tmp/vt-runtime-deps/netty-codec-http-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-dns-classes-macos-4.1.112.Final.jar:/tmp/vt-runtime-deps/saslprep-1.1.jar:/tmp/vt-runtime-deps/reactor-pool-1.0.8.jar:/tmp/vt-runtime-deps/stringprep-1.1.jar:/tmp/vt-runtime-deps/netty-resolver-dns-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-resolver-4.1.112.Final.jar:/tmp/vt-runtime-deps/checker-qual-3.48.3.jar:/tmp/vt-runtime-deps/netty-common-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-postgresql-1.0.7.RELEASE.jar:/tmp/vt-runtime-deps/netty-handler-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-handler-proxy-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-spi-1.0.0.RELEASE.jar:/tmp/vt-runtime-deps/reactor-netty-core-1.1.22.jar:/tmp/vt-runtime-deps/netty-codec-socks-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-transport-native-epoll-4.1.112.Final-linux-x86_64.jar:/tmp/vt-runtime-deps/netty-transport-4.1.112.Final.jar:/tmp/vt-runtime-deps/r2dbc-pool-1.0.2.RELEASE.jar:/tmp/vt-runtime-deps/netty-transport-classes-epoll-4.1.112.Final.jar:/tmp/vt-runtime-deps/netty-buffer-4.1.112.Final.jar:/tmp/vt-runtime-deps/reactor-core-3.6.11.jar",
+        "AdapterCheck"
+      ],
+      "cwd": "/workspace/scratch/2cf7993362ef/repo",
+      "started": "2026-10-05T05:13:33.663460+00:00",
+      "ended": "2026-10-05T05:13:33.716663+00:00",
+      "exit_code": 0,
+      "stdout": "PASS scripted adapter fixed capacity=2\nPASS scripted adapter pool-only capacity=2\nPASS scripted adapter breakwater-inspired capacity=2\nPASS scripted adapter gradient2-reduced capacity=2\nPASS scripted adapter envoy-reduced capacity=2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "-n",
+        "/workspace/scratch/2cf7993362ef/repo/artifact/scripts/validate-runtime.sh"
+      ],
+      "cwd": "/workspace/scratch/2cf7993362ef/repo",
+      "started": "2026-10-05T05:13:33.716679+00:00",
+      "ended": "2026-10-05T05:13:33.718246+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "assertions": {
+    "python_ast": "PASS",
+    "shell_syntax": "PASS",
+    "dependency_hashes": 29,
+    "scripted_adapter_checks": 5,
+    "missing_docker_exit": 2,
+    "missing_docker_status": "UNATTEMPTED",
+    "preflight_hashes": "PASS"
+  },
+  "source_sha256": {
+    "artifact/runtime-validation/native_pinning.c": "ea506987e3473e28c81ec31e96460a4a34ab16e5ad05a15edc03f5b91a898b90",
+    "artifact/runtime-validation/run.py": "196f77511f4b99c759ac9b72018a31aa2570cfe459c822636d96f4a67b4a1084",
+    "artifact/runtime-validation/dependencies.lock.json": "d2000452c04e8aabc6fcaf570f0966cade5385612606c666e3184145832091b6",
+    "artifact/runtime-validation/README.md": "f2ca19fb10cf1cdd4bff959d3668353b55c95f161369b0441d4163a0ed738582",
+    "artifact/runtime-validation/matrix.json": "1f5ebbd99544b288e00bcb9829c81982eacf7c7aa756de1e171b62631571afa8",
+    "artifact/runtime-validation/images.lock.json": "873055a0eab5bd8f9a6b56b882e89f00410d7949dca95c9e49522ae5fc143360",
+    "artifact/runtime-validation/fixture.sql": "59b4dfe38c7341701470a4dccb8d383e4e6c53e80566384cc297749978ee3c61",
+    "artifact/runtime-validation/RuntimeSmoke.java": "b9cab6735b5851e3de76b1eddc7ae1cf851c55833b53b5bf423c0b482a24679f",
+    "artifact/runtime-validation/AdapterCheck.java": "86f716bce479a609b2116afadd6d3a8e51f63f021af002ef695b36380acf08b5",
+    "artifact/runtime-validation/pom.xml": "afb5eb5c166d3d67b6f020a6997f8435a61b56591734cef997a017ad8b15ace2",
+    "artifact/scripts/validate-runtime.sh": "6bd4881b40f281e9e348dcd438197b324b85acd406e702c7950aa31c8dc02340"
+  },
+  "runtime_not_executed": [
+    "Docker",
+    "JDK21",
+    "JDK25",
+    "PostgreSQL",
+    "JDBC/R2DBC workload",
+    "monitor JFR",
+    "JNI JFR",
+    "foreign-call fixture"
+  ],
+  "starting_head": "d9a15b04d4d0ed25358c27549f26b589b0d5cdee"
+}

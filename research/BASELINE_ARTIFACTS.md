@@ -110,3 +110,12 @@ Pinned source inspection and a zero-download local validation now provide bounde
 The captured environment had Java 17 only and no `javac`, Gradle, Maven, Bazel/Bazelisk, Docker, or JDK 21/24/25 executables. Therefore official builds, JDK-version smoke, virtual-thread execution, reactive/JDBC compatibility, and shared-workload validation were **unattempted due to environment capability**, not failed upstream tests. These missing items remain blocking acceptance criteria.
 
 **Aggregate gate remains NOT COMPLETE.** Reduced equation conformance cannot substitute for official build/smoke evidence or the required JDK 21 versus 24/25 and reactive/JDBC workload-interface checks.
+
+
+## Local Docker runtime bundle preparation (2026-10-05 UTC)
+
+A prepared bundle is now available at `artifact/runtime-validation/README.md`. From repository root run `bash artifact/scripts/validate-runtime.sh` on Linux/WSL with Python 3 and a local Docker daemon. It uses immutable linux/amd64 image manifests (registry-declared Temurin 21.0.12.1+1 and 25.0.4.1+1, PostgreSQL 16.15), a 29-JAR SHA-256 dependency lock, matched finite-pool JDBC/platform/virtual and genuine R2DBC cases, deterministic held-batch request assertions, preserved reduced-control adapters, and separate monitor/JNI JFR fixtures. JNI runs only if the pinned image has a native compiler; foreign-call coverage remains unattempted.
+
+**PREPARED / RUNTIME UNATTEMPTED.** Java17 compilation and five constant-signal adapter checks passed; the actual missing-Docker command emitted an UNATTEMPTED manifest, logs and hashes under `artifact/results/runtime-validation/preparation`. Docker, JDK21/25, database/interface equivalence and JFR cases have not run here. Registry version metadata is not an observed runtime. The constant-capacity adapters do not validate dynamic controller behavior. Existing 17/17 reduced Gradient2/Envoy conformance is not an official upstream build or performance result. No existing baseline evidence was replaced.
+
+The exact command, artifact layout, immutable pins, workload semantics and limitations are documented in the bundle README. Raw user-local results must be inspected before closing runtime/interface gates. **Aggregate scientific/selected-baseline gate remains NOT COMPLETE.**

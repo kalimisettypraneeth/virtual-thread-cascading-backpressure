@@ -1,0 +1,180 @@
+{
+  "resolved_at": "2026-10-05T05:07:55.854277+00:00",
+  "resolver": "Apache Maven 3.9.9 / maven-dependency-plugin 3.8.1 / runtime scope",
+  "artifacts": [
+    {
+      "filename": "checker-qual-3.48.3.jar",
+      "maven_path": "org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar",
+      "sha256": "443685b1b232803baaf803c15d6f5a425473c6f7b81c5f276dfcf93288e389a5"
+    },
+    {
+      "filename": "client-2.1.jar",
+      "maven_path": "com/ongres/scram/client/2.1/client-2.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/ongres/scram/client/2.1/client-2.1.jar",
+      "sha256": "535c6cac6bcfd9f9c06cf49c9c701abf98f60ec3473a56c0ab1484f53ba842df"
+    },
+    {
+      "filename": "common-2.1.jar",
+      "maven_path": "com/ongres/scram/common/2.1/common-2.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/ongres/scram/common/2.1/common-2.1.jar",
+      "sha256": "f6c4a3dc9043a5ab22487f10077fe8d6c5763b848e77df3c79253be0b58414bc"
+    },
+    {
+      "filename": "netty-buffer-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-buffer/4.1.112.Final/netty-buffer-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.112.Final/netty-buffer-4.1.112.Final.jar",
+      "sha256": "bc182c48f5369d48cd8370d2ab0c5b8d99dd8ffa4a0f8ac701652d57bd380eff"
+    },
+    {
+      "filename": "netty-codec-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-codec/4.1.112.Final/netty-codec-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.112.Final/netty-codec-4.1.112.Final.jar",
+      "sha256": "72db4f93629f7ea520d2998c08e2b1d69f9c6a4792b53da5e9a001d24c78b151"
+    },
+    {
+      "filename": "netty-codec-dns-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-codec-dns/4.1.112.Final/netty-codec-dns-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-codec-dns/4.1.112.Final/netty-codec-dns-4.1.112.Final.jar",
+      "sha256": "8939e59890dba2b72f720811c15034178449f2ce0ff3daf7942f0fb488d7ee6b"
+    },
+    {
+      "filename": "netty-codec-http-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-codec-http/4.1.112.Final/netty-codec-http-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.112.Final/netty-codec-http-4.1.112.Final.jar",
+      "sha256": "21b502d1374d6992728d004e0c1c95544d46d971f55ea78dcb854ce1ac0c83bc"
+    },
+    {
+      "filename": "netty-codec-socks-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-codec-socks/4.1.112.Final/netty-codec-socks-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.112.Final/netty-codec-socks-4.1.112.Final.jar",
+      "sha256": "069f14507676282a8c4b871b27332aa4491c16339ec0e86f4d86d45a953b51f5"
+    },
+    {
+      "filename": "netty-common-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-common/4.1.112.Final/netty-common-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.112.Final/netty-common-4.1.112.Final.jar",
+      "sha256": "b03967f32c65de5ed339b97729170e0289b22ffa5729e7f45f68bf6b431fb567"
+    },
+    {
+      "filename": "netty-handler-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-handler/4.1.112.Final/netty-handler-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.112.Final/netty-handler-4.1.112.Final.jar",
+      "sha256": "ea4d6062a5fb10a6e2364d8bbdebc1cfa814f1fc9f910ef57e5caf02fb15c588"
+    },
+    {
+      "filename": "netty-handler-proxy-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-handler-proxy/4.1.112.Final/netty-handler-proxy-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.112.Final/netty-handler-proxy-4.1.112.Final.jar",
+      "sha256": "91f7c93dfe4b7a13198d40af39edac0adb0c33f08d9759242997b89176130c8c"
+    },
+    {
+      "filename": "netty-resolver-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-resolver/4.1.112.Final/netty-resolver-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.112.Final/netty-resolver-4.1.112.Final.jar",
+      "sha256": "6b4ac9f3b67f562f0770d57c389279ff9c708eb401e1a3635f52297f0f897edc"
+    },
+    {
+      "filename": "netty-resolver-dns-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-resolver-dns/4.1.112.Final/netty-resolver-dns-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-resolver-dns/4.1.112.Final/netty-resolver-dns-4.1.112.Final.jar",
+      "sha256": "ad918df020ba6e10aeecc0b47133754d0c2616aa44d414bcb876d61bd704e56d"
+    },
+    {
+      "filename": "netty-resolver-dns-classes-macos-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-resolver-dns-classes-macos/4.1.112.Final/netty-resolver-dns-classes-macos-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-resolver-dns-classes-macos/4.1.112.Final/netty-resolver-dns-classes-macos-4.1.112.Final.jar",
+      "sha256": "12d431286ab142e5bb395f1559cb45f703d65ef8d7ce1d95fd401ef7b9d54605"
+    },
+    {
+      "filename": "netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar",
+      "maven_path": "io/netty/netty-resolver-dns-native-macos/4.1.112.Final/netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-resolver-dns-native-macos/4.1.112.Final/netty-resolver-dns-native-macos-4.1.112.Final-osx-x86_64.jar",
+      "sha256": "f800ddd2ed121b61010a2b2c7f3fc697ee0207a9ac5f1f719a78012c4b7449a6"
+    },
+    {
+      "filename": "netty-transport-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-transport/4.1.112.Final/netty-transport-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.112.Final/netty-transport-4.1.112.Final.jar",
+      "sha256": "d38e31624d25ca790ee413d529c152170217ebedbcdcf61164fa6291f3a56c92"
+    },
+    {
+      "filename": "netty-transport-classes-epoll-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-transport-classes-epoll/4.1.112.Final/netty-transport-classes-epoll-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-transport-classes-epoll/4.1.112.Final/netty-transport-classes-epoll-4.1.112.Final.jar",
+      "sha256": "96cf2e6622ea70e2bc67aed373607df32863f863d0d7b8c9c94d468efd1d0638"
+    },
+    {
+      "filename": "netty-transport-native-epoll-4.1.112.Final-linux-x86_64.jar",
+      "maven_path": "io/netty/netty-transport-native-epoll/4.1.112.Final/netty-transport-native-epoll-4.1.112.Final-linux-x86_64.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.112.Final/netty-transport-native-epoll-4.1.112.Final-linux-x86_64.jar",
+      "sha256": "4e6bc9fec706aa98acd6965e7707e385c7acfdf5236f9561c0551f21d1a40f8b"
+    },
+    {
+      "filename": "netty-transport-native-unix-common-4.1.112.Final.jar",
+      "maven_path": "io/netty/netty-transport-native-unix-common/4.1.112.Final/netty-transport-native-unix-common-4.1.112.Final.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.112.Final/netty-transport-native-unix-common-4.1.112.Final.jar",
+      "sha256": "e79ccea1b87a6348d4ebd3dfb37a2cccd9b7cb65c3375f6ccdac086c7b5ce487"
+    },
+    {
+      "filename": "postgresql-42.7.5.jar",
+      "maven_path": "org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar",
+      "sha256": "69020b3bd20984543e817393f2e6c01a890ef2e37a77dd11d6d8508181d079ab"
+    },
+    {
+      "filename": "r2dbc-pool-1.0.2.RELEASE.jar",
+      "maven_path": "io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar",
+      "sha256": "a47438b2bbbdcc6fcb6d4ac831cb27a5ea002de092551174692c5a53ec7c85f7"
+    },
+    {
+      "filename": "r2dbc-postgresql-1.0.7.RELEASE.jar",
+      "maven_path": "org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar",
+      "sha256": "dd13026634087891a800ad7445d39d2f39ac46d2116bcd17213a257c0b207751"
+    },
+    {
+      "filename": "r2dbc-spi-1.0.0.RELEASE.jar",
+      "maven_path": "io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar",
+      "sha256": "a5846c59fea336431a4ae72ca14edbf5299b78486fa308eafb383f4ae0ea74e5"
+    },
+    {
+      "filename": "reactive-streams-1.0.4.jar",
+      "maven_path": "org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
+      "sha256": "f75ca597789b3dac58f61857b9ac2e1034a68fa672db35055a8fb4509e325f28"
+    },
+    {
+      "filename": "reactor-core-3.6.11.jar",
+      "maven_path": "io/projectreactor/reactor-core/3.6.11/reactor-core-3.6.11.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.6.11/reactor-core-3.6.11.jar",
+      "sha256": "14d81b2a3c0343ad532dec6268d56bd991c57fc426506d69810105e3d1c8abe2"
+    },
+    {
+      "filename": "reactor-netty-core-1.1.22.jar",
+      "maven_path": "io/projectreactor/netty/reactor-netty-core/1.1.22/reactor-netty-core-1.1.22.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/projectreactor/netty/reactor-netty-core/1.1.22/reactor-netty-core-1.1.22.jar",
+      "sha256": "9dd0c5ac8216586a3cc41a7c4ff6b1482e3f5ede61798c2d9b6a13c34c199994"
+    },
+    {
+      "filename": "reactor-pool-1.0.8.jar",
+      "maven_path": "io/projectreactor/addons/reactor-pool/1.0.8/reactor-pool-1.0.8.jar",
+      "url": "https://repo.maven.apache.org/maven2/io/projectreactor/addons/reactor-pool/1.0.8/reactor-pool-1.0.8.jar",
+      "sha256": "1ef7e46c3ab451684488879ffca6c2bb0039e29f02af60d780fe7d481bdffea1"
+    },
+    {
+      "filename": "saslprep-1.1.jar",
+      "maven_path": "com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar",
+      "sha256": "851d83e9d2e1722ad2e1e24c757c0d2d56484e6a9abd8b171c3bda9e78595b8b"
+    },
+    {
+      "filename": "stringprep-1.1.jar",
+      "maven_path": "com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar",
+      "sha256": "e442d41d0651b59cb366e8dc28c2dbd4d7465842066c8eceda14de6218d95f58"
+    }
+  ]
+}

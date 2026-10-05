@@ -1,0 +1,11 @@
+{
+  "jdk": ["jdk21", "jdk25"],
+  "modes": ["platform", "virtual", "reactive"],
+  "controls": ["fixed", "pool-only", "breakwater-inspired", "gradient2-reduced", "envoy-reduced"],
+  "requests": 12,
+  "pool_capacity": 2,
+  "batch_width": 3,
+  "scheduler_parallelism": 2,
+  "scheduler_max_pool_size": 2,
+  "scope": "deterministic held-batch correctness smoke; no performance measurements"
+}

@@ -98,3 +98,12 @@ Reduced source-derived comparators now pass 17/17 independent deterministic fixt
 This evidence closes only the reduced equation/state-conformance sub-item. It is not an official Gradle/Bazel build, an exact reproduction, a proxy or library integration, a workload adapter, or performance evidence. Official builds were unattempted because the captured free environment lacks Gradle/Maven/Bazel/Bazelisk/Docker; JDK 21/24/25 were also unavailable. Reactive-framework, JDBC, virtual-thread/version, and shared-workload compatibility remain unresolved.
 
 The executable-baseline checklist remains unchecked and the differentiation gate remains **NOT COMPLETE**. Downstream experiment design and candidate implementation remain blocked until the missing runtime and workload-interface evidence is committed and independently read back.
+
+
+## Local Docker runtime bundle preparation (2026-10-05 UTC)
+
+A prepared bundle is now available at `artifact/runtime-validation/README.md`. From repository root run `bash artifact/scripts/validate-runtime.sh` on Linux/WSL with Python 3 and a local Docker daemon. It uses immutable linux/amd64 image manifests (registry-declared Temurin 21.0.12.1+1 and 25.0.4.1+1, PostgreSQL 16.15), a 29-JAR SHA-256 dependency lock, matched finite-pool JDBC/platform/virtual and genuine R2DBC cases, deterministic held-batch request assertions, preserved reduced-control adapters, and separate monitor/JNI JFR fixtures. JNI runs only if the pinned image has a native compiler; foreign-call coverage remains unattempted.
+
+**PREPARED / RUNTIME UNATTEMPTED.** Java17 compilation and five constant-signal adapter checks passed; the actual missing-Docker command emitted an UNATTEMPTED manifest, logs and hashes under `artifact/results/runtime-validation/preparation`. Docker, JDK21/25, database/interface equivalence and JFR cases have not run here. Registry version metadata is not an observed runtime. The constant-capacity adapters do not validate dynamic controller behavior. Existing 17/17 reduced Gradient2/Envoy conformance is not an official upstream build or performance result. No existing baseline evidence was replaced.
+
+The exact command, artifact layout, immutable pins, workload semantics and limitations are documented in the bundle README. Raw user-local results must be inspected before closing runtime/interface gates. **Aggregate scientific/selected-baseline gate remains NOT COMPLETE.**

@@ -1,0 +1,7 @@
+{
+  "status": "UNATTEMPTED",
+  "reason": "Docker executable unavailable; no container, JDK21/25 or database execution attempted",
+  "scope": "correctness smoke; not official baseline builds or performance",
+  "native_foreign": "UNATTEMPTED: preflight did not reach native compiler check",
+  "foreign_calls": "UNATTEMPTED: JNI callback does not cover foreign calls"
+}

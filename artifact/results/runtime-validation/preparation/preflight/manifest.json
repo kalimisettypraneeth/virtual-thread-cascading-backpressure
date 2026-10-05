@@ -1,0 +1,115 @@
+{
+  "started": "2026-10-05T05:12:51.577290+00:00",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "host_cpu_count": 9,
+  "host_cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "host_memory_info": "MemTotal:       10206508 kB\nMemFree:         9667268 kB\nMemAvailable:    9610916 kB\nBuffers:            8504 kB\nCached:           175864 kB\nSwapCached:            0 kB\nActive:            38872 kB\nInactive:         212628 kB\nActive(anon):         52 kB\nInactive(anon):    96988 kB\nActive(file):      38820 kB\nInactive(file):   115640 kB\nUnevictable:       29920 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nDirty:               328 kB\nWriteback:             0 kB\nAnonPages:         97292 kB\nMapped:            70980 kB\nShmem:                12 kB\nKReclaimable:      21832 kB\nSlab:              61836 kB\nSReclaimable:      21832 kB\nSUnreclaim:        40004 kB\nKernelStack:        3240 kB\nPageTables:         3920 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     5103252 kB\nCommitted_AS:     451228 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:        4536 kB\nVmallocChunk:          0 kB\nPercpu:             2592 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:     20480 kB\nFilePmdMapped:         0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       61440 kB\nDirectMap2M:     3311616 kB\nDirectMap1G:    17825792 kB\n",
+  "scope": "correctness smoke only",
+  "runtime_status": "UNATTEMPTED",
+  "uid": 0,
+  "resources": {
+    "cpus": 2,
+    "memory": "1g",
+    "pids_limit": 512,
+    "postgres_memory": "512m"
+  },
+  "source_head": "d9a15b04d4d0ed25358c27549f26b589b0d5cdee",
+  "source_status": " M artifact/REPRODUCIBILITY.md\n M research/BASELINE_ARTIFACTS.md\n M research/DIFFERENTIATION.md\n?? artifact/runtime-validation/\n?? artifact/scripts/validate-runtime.sh\n",
+  "source_snapshot": "before output directory creation",
+  "source_sha256": {
+    "artifact/runtime-validation/native_pinning.c": "ea506987e3473e28c81ec31e96460a4a34ab16e5ad05a15edc03f5b91a898b90",
+    "artifact/runtime-validation/run.py": "196f77511f4b99c759ac9b72018a31aa2570cfe459c822636d96f4a67b4a1084",
+    "artifact/runtime-validation/dependencies.lock.json": "d2000452c04e8aabc6fcaf570f0966cade5385612606c666e3184145832091b6",
+    "artifact/runtime-validation/README.md": "f2ca19fb10cf1cdd4bff959d3668353b55c95f161369b0441d4163a0ed738582",
+    "artifact/runtime-validation/matrix.json": "1f5ebbd99544b288e00bcb9829c81982eacf7c7aa756de1e171b62631571afa8",
+    "artifact/runtime-validation/images.lock.json": "873055a0eab5bd8f9a6b56b882e89f00410d7949dca95c9e49522ae5fc143360",
+    "artifact/runtime-validation/fixture.sql": "59b4dfe38c7341701470a4dccb8d383e4e6c53e80566384cc297749978ee3c61",
+    "artifact/runtime-validation/RuntimeSmoke.java": "b9cab6735b5851e3de76b1eddc7ae1cf851c55833b53b5bf423c0b482a24679f",
+    "artifact/runtime-validation/pom.xml": "afb5eb5c166d3d67b6f020a6997f8435a61b56591734cef997a017ad8b15ace2",
+    "artifact/baselines/AdaptiveControllerComparators.java": "aafc76fffc13654e1387df1e0c1e07513c366262cc8e149f5d1ba1bfd8ca4a7b",
+    "artifact/baselines/BreakwaterInspired.java": "f6bc04f7e7cd307e2ad8b1aeb7f2758f0cdeee222907509e8b9cc1c8bfba6f48",
+    "artifact/baselines/NativeControls.java": "81a338d2550c124eb67007c56f67a5c46223e666d6b8c1b371827b70d4c899e9",
+    "artifact/scripts/validate-runtime.sh": "6bd4881b40f281e9e348dcd438197b324b85acd406e702c7950aa31c8dc02340"
+  },
+  "images": {
+    "resolved_at": "2026-10-05T05:02:43.885711+00:00",
+    "platform": "linux/amd64",
+    "images": {
+      "jdk21": {
+        "source_tag": "eclipse-temurin:21-jdk-jammy",
+        "index_digest": "sha256:e0c60c487345d1dc9d0fc7b6f0496f3cc941e5132e09296cc17a6decc71b902b",
+        "reference": "eclipse-temurin@sha256:bc46d736fd7dfe699fa4cd96b14faa2a12a6ced042938dab8b2d7a249e3d2cb6",
+        "config_digest": "sha256:058087133c713a27c0304192dc317338becb37b409758cbe1097c97b3fe82a59",
+        "environment": [
+          "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "JAVA_HOME=/opt/java/openjdk",
+          "LANG=en_US.UTF-8",
+          "LANGUAGE=en_US:en",
+          "LC_ALL=en_US.UTF-8",
+          "JAVA_VERSION=jdk-21.0.12.1+1"
+        ],
+        "created": "2026-10-02T01:19:11.676334816Z"
+      },
+      "jdk25": {
+        "source_tag": "eclipse-temurin:25-jdk-jammy",
+        "index_digest": "sha256:318f90a80337fb6f26b025dbec0a95fa6f48abf60ce129babf555618356bdbf8",
+        "reference": "eclipse-temurin@sha256:eb9c86c332fe5313d25fd22c7c83088ffde956ab2f71bf252a361fa41a5cb582",
+        "config_digest": "sha256:a5fa2e3781c08f75b61ec89bcce9feaca995b56b5ec91715a597478f436096e4",
+        "environment": [
+          "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "JAVA_HOME=/opt/java/openjdk",
+          "LANG=en_US.UTF-8",
+          "LANGUAGE=en_US:en",
+          "LC_ALL=en_US.UTF-8",
+          "JAVA_VERSION=jdk-25.0.4.1+1"
+        ],
+        "created": "2026-10-02T01:19:57.455984996Z"
+      },
+      "postgres": {
+        "source_tag": "postgres:16-alpine",
+        "index_digest": "sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea",
+        "reference": "postgres@sha256:1a66d744c1b459e13b05a8fca341da84cb63383e99ce262210efee5a319d4551",
+        "config_digest": "sha256:81bd698b4594e751a3269e4dcd3e03a4a0ec0daf7b72e7aa1abd43cce9887542",
+        "environment": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOSU_VERSION=1.19",
+          "LANG=en_US.utf8",
+          "PG_MAJOR=16",
+          "PG_VERSION=16.15",
+          "PG_SHA256=c1575341fa7bd40f5274ea465b34390f4dc64cdd0770af327005caaeb9f6b7ed",
+          "DOCKER_PG_LLVM_DEPS=llvm21-dev \t\tclang21",
+          "PGDATA=/var/lib/postgresql/data"
+        ],
+        "created": "2026-09-17T21:31:24.32976807Z"
+      }
+    }
+  },
+  "matrix": {
+    "jdk": [
+      "jdk21",
+      "jdk25"
+    ],
+    "modes": [
+      "platform",
+      "virtual",
+      "reactive"
+    ],
+    "controls": [
+      "fixed",
+      "pool-only",
+      "breakwater-inspired",
+      "gradient2-reduced",
+      "envoy-reduced"
+    ],
+    "requests": 12,
+    "pool_capacity": 2,
+    "batch_width": 3,
+    "scheduler_parallelism": 2,
+    "scheduler_max_pool_size": 2,
+    "scope": "deterministic held-batch correctness smoke; no performance measurements"
+  },
+  "matrix_sha256": "1f5ebbd99544b288e00bcb9829c81982eacf7c7aa756de1e171b62631571afa8",
+  "ended": "2026-10-05T05:12:51.579966+00:00"
+}

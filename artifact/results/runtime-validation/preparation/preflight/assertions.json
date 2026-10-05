@@ -1,0 +1,22 @@
+[
+  {
+    "name": "supported fixed smoke contract",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "name": "immutable image pin eclipse-temurin:21-jdk-jammy",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "name": "immutable image pin eclipse-temurin:25-jdk-jammy",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "name": "immutable image pin postgres:16-alpine",
+    "status": "PASS",
+    "detail": ""
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "resolved_at": "2026-10-05T05:02:43.885711+00:00",
+  "platform": "linux/amd64",
+  "images": {
+    "jdk21": {
+      "source_tag": "eclipse-temurin:21-jdk-jammy",
+      "index_digest": "sha256:e0c60c487345d1dc9d0fc7b6f0496f3cc941e5132e09296cc17a6decc71b902b",
+      "reference": "eclipse-temurin@sha256:bc46d736fd7dfe699fa4cd96b14faa2a12a6ced042938dab8b2d7a249e3d2cb6",
+      "config_digest": "sha256:058087133c713a27c0304192dc317338becb37b409758cbe1097c97b3fe82a59",
+      "environment": [
+        "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "JAVA_HOME=/opt/java/openjdk",
+        "LANG=en_US.UTF-8",
+        "LANGUAGE=en_US:en",
+        "LC_ALL=en_US.UTF-8",
+        "JAVA_VERSION=jdk-21.0.12.1+1"
+      ],
+      "created": "2026-10-02T01:19:11.676334816Z"
+    },
+    "jdk25": {
+      "source_tag": "eclipse-temurin:25-jdk-jammy",
+      "index_digest": "sha256:318f90a80337fb6f26b025dbec0a95fa6f48abf60ce129babf555618356bdbf8",
+      "reference": "eclipse-temurin@sha256:eb9c86c332fe5313d25fd22c7c83088ffde956ab2f71bf252a361fa41a5cb582",
+      "config_digest": "sha256:a5fa2e3781c08f75b61ec89bcce9feaca995b56b5ec91715a597478f436096e4",
+      "environment": [
+        "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "JAVA_HOME=/opt/java/openjdk",
+        "LANG=en_US.UTF-8",
+        "LANGUAGE=en_US:en",
+        "LC_ALL=en_US.UTF-8",
+        "JAVA_VERSION=jdk-25.0.4.1+1"
+      ],
+      "created": "2026-10-02T01:19:57.455984996Z"
+    },
+    "postgres": {
+      "source_tag": "postgres:16-alpine",
+      "index_digest": "sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea",
+      "reference": "postgres@sha256:1a66d744c1b459e13b05a8fca341da84cb63383e99ce262210efee5a319d4551",
+      "config_digest": "sha256:81bd698b4594e751a3269e4dcd3e03a4a0ec0daf7b72e7aa1abd43cce9887542",
+      "environment": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "GOSU_VERSION=1.19",
+        "LANG=en_US.utf8",
+        "PG_MAJOR=16",
+        "PG_VERSION=16.15",
+        "PG_SHA256=c1575341fa7bd40f5274ea465b34390f4dc64cdd0770af327005caaeb9f6b7ed",
+        "DOCKER_PG_LLVM_DEPS=llvm21-dev \t\tclang21",
+        "PGDATA=/var/lib/postgresql/data"
+      ],
+      "created": "2026-09-17T21:31:24.32976807Z"
+    }
+  }
+}
