@@ -1,0 +1,2205 @@
+{
+  "scope": "Full downloaded Gradle module cache: build plugins/transitives and resolved project compile/runtime/test configurations; includes POM/module metadata. Gradle per-configuration locks and strict verification XML are authoritative. Superset of core dependencies.",
+  "artifacts": [
+    {
+      "group": "ch.qos.reload4j",
+      "module": "reload4j",
+      "version": "1.2.19",
+      "artifact": "reload4j-1.2.19.jar",
+      "sha256": "fa07aa7adedf2a65eb09007443bb60b51c725b1b5b88e481e00c529ff2d3b5b5",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/ch.qos.reload4j/reload4j/1.2.19/4eae9978468c5e885a6fb44df7e2bbc07a20e6ce/reload4j-1.2.19.jar"
+    },
+    {
+      "group": "ch.qos.reload4j",
+      "module": "reload4j",
+      "version": "1.2.19",
+      "artifact": "reload4j-1.2.19.pom",
+      "sha256": "2d96d7c4c9847580a0eb947a03f0a6c8f5ddd04f170167cbc01a93c301c337bd",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/ch.qos.reload4j/reload4j/1.2.19/f1108fa35f58d3d8c0fc673688bbe2e35d77f1ad/reload4j-1.2.19.pom"
+    },
+    {
+      "group": "com.fasterxml",
+      "module": "oss-parent",
+      "version": "48",
+      "artifact": "oss-parent-48.pom",
+      "sha256": "11bba22d8631816e09b623a200747453d6491a66eac8f5c089c73da2b749014f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.fasterxml/oss-parent/48/35829270f540f9e687c5b0372da06a456afb699b/oss-parent-48.pom"
+    },
+    {
+      "group": "com.fasterxml.jackson",
+      "module": "jackson-bom",
+      "version": "2.14.2",
+      "artifact": "jackson-bom-2.14.2.pom",
+      "sha256": "9aa209bb32391cbf5f1bd3e7fa11901676169acd190d9896b5c1e877c999febc",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.fasterxml.jackson/jackson-bom/2.14.2/e737bd3ebe6f1f0b0fda994530473bf8a1a95f1e/jackson-bom-2.14.2.pom"
+    },
+    {
+      "group": "com.fasterxml.jackson",
+      "module": "jackson-parent",
+      "version": "2.14",
+      "artifact": "jackson-parent-2.14.pom",
+      "sha256": "0906add855ae39f92357d63f485889b08fca4c43a5fe433522d75344e0757b19",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.fasterxml.jackson/jackson-parent/2.14/dc7342332cd6011d0694abec10a676a9cfe29d6b/jackson-parent-2.14.pom"
+    },
+    {
+      "group": "com.github.zafarkhaja",
+      "module": "java-semver",
+      "version": "0.9.0",
+      "artifact": "java-semver-0.9.0.jar",
+      "sha256": "2218c73b40f9af98b570d084420c1b4a81332297bd7fc27ddd552e903be8e93c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.github.zafarkhaja/java-semver/0.9.0/59a83ca73c72a5e25b3f0b1bb305230a11000329/java-semver-0.9.0.jar"
+    },
+    {
+      "group": "com.github.zafarkhaja",
+      "module": "java-semver",
+      "version": "0.9.0",
+      "artifact": "java-semver-0.9.0.pom",
+      "sha256": "74da05b3ca50a8158101b7e12fbfbf902e011340f14bf31c1776cb51f96147f3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.github.zafarkhaja/java-semver/0.9.0/9713a0c7f2c8eca691eccbb780d793aa6990bf0/java-semver-0.9.0.pom"
+    },
+    {
+      "group": "com.google.code.findbugs",
+      "module": "jsr305",
+      "version": "3.0.0",
+      "artifact": "jsr305-3.0.0.pom",
+      "sha256": "7c8a0859a3833eee5c53b0bceb2898ef56a88c7dd9a7e4f6bc5f0ff9770c95ec",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/278c908b87e003ccbd36588d769655d2b870a7c7/jsr305-3.0.0.pom"
+    },
+    {
+      "group": "com.google.code.findbugs",
+      "module": "jsr305",
+      "version": "3.0.0",
+      "artifact": "jsr305-3.0.0.jar",
+      "sha256": "bec0b24dcb23f9670172724826584802b80ae6cbdaba03bdebdef9327b962f6a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+    },
+    {
+      "group": "com.google.errorprone",
+      "module": "error_prone_annotations",
+      "version": "2.1.2",
+      "artifact": "error_prone_annotations-2.1.2.pom",
+      "sha256": "180a588bb8b4ed7cc554578b0dbfdb1aecfb3380922173df6541da18ee230911",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.2/44f5d3b9781c31822991ff9f948d6cbfb8cdf055/error_prone_annotations-2.1.2.pom"
+    },
+    {
+      "group": "com.google.errorprone",
+      "module": "error_prone_annotations",
+      "version": "2.1.2",
+      "artifact": "error_prone_annotations-2.1.2.jar",
+      "sha256": "de3c873b5dc06060f7a2a4d9b872a3f4dc1955c18095ef9702d13477e437782a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.2/6dcc08f90f678ac33e5ef78c3c752b6f59e63e0c/error_prone_annotations-2.1.2.jar"
+    },
+    {
+      "group": "com.google.errorprone",
+      "module": "error_prone_parent",
+      "version": "2.1.2",
+      "artifact": "error_prone_parent-2.1.2.pom",
+      "sha256": "c6b6d61ddb8f6b3bf29e8dafe35ff5d5a1ea90304b457e05657c1e7b8063a143",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.errorprone/error_prone_parent/2.1.2/ae2dd256d508d2ffc9d77fbec0414ee695973a8a/error_prone_parent-2.1.2.pom"
+    },
+    {
+      "group": "com.google.guava",
+      "module": "guava",
+      "version": "19.0",
+      "artifact": "guava-19.0.pom",
+      "sha256": "addc064da7f1077fdf4dc90e5aaa887cd790850d1b74fe2e6e25d5f78551ac63",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.guava/guava/19.0/65a43a21dbddcc19aa3ca50a63a4b33166bfbc77/guava-19.0.pom"
+    },
+    {
+      "group": "com.google.guava",
+      "module": "guava",
+      "version": "19.0",
+      "artifact": "guava-19.0.jar",
+      "sha256": "58d4cc2e05ebb012bbac568b032f75623be1cb6fb096f3c60c72a86f7f057de4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar"
+    },
+    {
+      "group": "com.google.guava",
+      "module": "guava-parent",
+      "version": "19.0",
+      "artifact": "guava-parent-19.0.pom",
+      "sha256": "3b76ff43ecdf10f74da36e4aae2b470c9d063e053c5ca026f5512ae94f1c3e10",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.guava/guava-parent/19.0/21fa0d898121cc408c19b74e4305403c6cc45b23/guava-parent-19.0.pom"
+    },
+    {
+      "group": "com.google.instrumentation",
+      "module": "instrumentation-api",
+      "version": "0.4.3",
+      "artifact": "instrumentation-api-0.4.3.jar",
+      "sha256": "9502d5622fea56e5b3fbe4a5263ad3bfd93487869813304c36831e1cb1d88bd5",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.instrumentation/instrumentation-api/0.4.3/41614af3429573dc02645d541638929d877945a2/instrumentation-api-0.4.3.jar"
+    },
+    {
+      "group": "com.google.instrumentation",
+      "module": "instrumentation-api",
+      "version": "0.4.3",
+      "artifact": "instrumentation-api-0.4.3.pom",
+      "sha256": "43542f607dc38e9d8dca8d73a40f6d8a611844dbbac27d1720af69b899d6238d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.google.instrumentation/instrumentation-api/0.4.3/dd1571f737ce701f7e715642409337926f5873d2/instrumentation-api-0.4.3.pom"
+    },
+    {
+      "group": "com.jcraft",
+      "module": "jzlib",
+      "version": "1.1.2",
+      "artifact": "jzlib-1.1.2.pom",
+      "sha256": "0844d4185b37a56a777f768405487d415d1d8f9ef801a0e2c1bcfc6b316a78a8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.jcraft/jzlib/1.1.2/a567561c8f92fffeca9169f6075146bc5f8be104/jzlib-1.1.2.pom"
+    },
+    {
+      "group": "com.jcraft",
+      "module": "jzlib",
+      "version": "1.1.2",
+      "artifact": "jzlib-1.1.2.jar",
+      "sha256": "f8f5c726c8c615a94d9d6cd1073787f9c554841ae24c8bab5cd73481ea2021a8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.jcraft/jzlib/1.1.2/a7d1993e6362271999be944b143352825cb5d966/jzlib-1.1.2.jar"
+    },
+    {
+      "group": "com.mycila",
+      "module": "license-maven-plugin",
+      "version": "3.0",
+      "artifact": "license-maven-plugin-3.0.jar",
+      "sha256": "525fe8f3ae8523d05eeda736645c41e9c330f025782b5b3de6ef0baacf2d78cc",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/license-maven-plugin/3.0/6e6175f847574fd15c644a69b540e279ea5d173f/license-maven-plugin-3.0.jar"
+    },
+    {
+      "group": "com.mycila",
+      "module": "license-maven-plugin",
+      "version": "3.0",
+      "artifact": "license-maven-plugin-3.0.pom",
+      "sha256": "9262708dc90872d72bbe67cb15521353a7de264809ce1eb32df95fbea476fc83",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/license-maven-plugin/3.0/fa8b0699471d3e011b0fc870748d042d62ac2ee9/license-maven-plugin-3.0.pom"
+    },
+    {
+      "group": "com.mycila",
+      "module": "license-maven-plugin-parent",
+      "version": "3.0",
+      "artifact": "license-maven-plugin-parent-3.0.pom",
+      "sha256": "0d1f173ceb9df2129267667c10c891e5e5d7266d82e3a85070668db56db0cbfa",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/license-maven-plugin-parent/3.0/b8f0e467cd54fd89be29b8b632dad579fa6aa2f8/license-maven-plugin-parent-3.0.pom"
+    },
+    {
+      "group": "com.mycila",
+      "module": "mycila-pom",
+      "version": "3",
+      "artifact": "mycila-pom-3.pom",
+      "sha256": "40277a3b25653ee6433c46852da70e9736c198d94bcaf6d2c34708a873a31b26",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/mycila-pom/3/4c059dcb27f238e8962fb6116e60904355a15bef/mycila-pom-3.pom"
+    },
+    {
+      "group": "com.mycila",
+      "module": "mycila-xmltool",
+      "version": "4.4.ga",
+      "artifact": "mycila-xmltool-4.4.ga.jar",
+      "sha256": "75d7b2be9381a65f6fac32f310822112f805566e9f8a97a45d8f13cf55049ce0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/mycila-xmltool/4.4.ga/25ee115633aa7e34773ed89156c59965126fa1a1/mycila-xmltool-4.4.ga.jar"
+    },
+    {
+      "group": "com.mycila",
+      "module": "mycila-xmltool",
+      "version": "4.4.ga",
+      "artifact": "mycila-xmltool-4.4.ga.pom",
+      "sha256": "c0c69e7bbae8aaebd440e1678ce9f5028b43d3b4e81cd436e98f813a4bc322b2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila/mycila-xmltool/4.4.ga/a9417a5584e1ade0113cd9f94a1d097e384a2aa7/mycila-xmltool-4.4.ga.pom"
+    },
+    {
+      "group": "com.mycila.xmltool",
+      "module": "xmltool",
+      "version": "3.3",
+      "artifact": "xmltool-3.3.pom",
+      "sha256": "eb83f616945c8c7dfb4d80e6f909e7286f523bb11077802bcd216bd70e9c717a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila.xmltool/xmltool/3.3/abb935b76e162c9c355d62d34b4d4a55813fe659/xmltool-3.3.pom"
+    },
+    {
+      "group": "com.mycila.xmltool",
+      "module": "xmltool",
+      "version": "3.3",
+      "artifact": "xmltool-3.3.jar",
+      "sha256": "870f9396789e2f48a7b8fb28dfc070c2f8e74b2007274ce23e69b658110fd294",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.mycila.xmltool/xmltool/3.3/b45958476a332904c1152eb590bd4764dea5dc6d/xmltool-3.3.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-contacts-plugin",
+      "version": "7.0.1",
+      "artifact": "gradle-contacts-plugin-7.0.1.pom",
+      "sha256": "05a4b919b7045f943f7c7b9a1b910de0f400d01f59eb92fb5f21d57d29ac7313",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-contacts-plugin/7.0.1/25bf4003286eecceeb09c9ed18aa60bf11140070/gradle-contacts-plugin-7.0.1.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-contacts-plugin",
+      "version": "7.0.1",
+      "artifact": "gradle-contacts-plugin-7.0.1.module",
+      "sha256": "5c25e9b030938132c45820cdd0296d3f8f08f648e7000dd72eecfb3ebaab9e3c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-contacts-plugin/7.0.1/3f494136bd99ecc688f1830b5b86ac4dccda1ef3/gradle-contacts-plugin-7.0.1.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-contacts-plugin",
+      "version": "7.0.1",
+      "artifact": "gradle-contacts-plugin-7.0.1.jar",
+      "sha256": "f848894dff178638fea2099cb0b9696eddc4688b6d776c89d883a13803119499",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-contacts-plugin/7.0.1/d0edc8e827d178bd322ebab99a398ded6f127365/gradle-contacts-plugin-7.0.1.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-dependency-lock-plugin",
+      "version": "15.1.1",
+      "artifact": "gradle-dependency-lock-plugin-15.1.1.pom",
+      "sha256": "af46c16f3f25b0a7f2671630a2242ad3a61af27d55c81d02b95e020b78fb89b6",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-dependency-lock-plugin/15.1.1/1dea928b2197c49fcf4edf620152139f2bd0cfdb/gradle-dependency-lock-plugin-15.1.1.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-dependency-lock-plugin",
+      "version": "15.1.1",
+      "artifact": "gradle-dependency-lock-plugin-15.1.1.jar",
+      "sha256": "23ea77671c8c72d08710dea1215cf1c2be039e76bba4447bad9a22940977651c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-dependency-lock-plugin/15.1.1/88da826903aacb2faacf5baac1bcc39020d038e9/gradle-dependency-lock-plugin-15.1.1.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-dependency-lock-plugin",
+      "version": "15.1.1",
+      "artifact": "gradle-dependency-lock-plugin-15.1.1.module",
+      "sha256": "c8f78ee1a158b655c5ed600bf1c20c376daf5978d74616496b82138f71a76f16",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-dependency-lock-plugin/15.1.1/c2c9188b2ea792904daa787757fc8b002ceb0233/gradle-dependency-lock-plugin-15.1.1.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-info-plugin",
+      "version": "13.3.0",
+      "artifact": "gradle-info-plugin-13.3.0.pom",
+      "sha256": "4116ba215b3bea2bbda70590fb5a1afa348a1963d5a51d3988985ac5ac348fe4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-info-plugin/13.3.0/bbe242b48f8b4d30ca323a036eed3fa20c25fe96/gradle-info-plugin-13.3.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-info-plugin",
+      "version": "13.3.0",
+      "artifact": "gradle-info-plugin-13.3.0.module",
+      "sha256": "d55c0e5a1f511fd4121e3d97dee543e578718943b8af496d5db8641785acc9b0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-info-plugin/13.3.0/d3bc810501dd1895d9a4f43271eba0a35bb72fe3/gradle-info-plugin-13.3.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-info-plugin",
+      "version": "13.3.0",
+      "artifact": "gradle-info-plugin-13.3.0.jar",
+      "sha256": "17c05c78620fe4e89992741d052d9b1d7643e10b36aa2f309b368a8977bc36c2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-info-plugin/13.3.0/fca892f5cadc7269638a4ed27d434f3189a1c763/gradle-info-plugin-13.3.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-java-cross-compile-plugin",
+      "version": "8.0.0",
+      "artifact": "gradle-java-cross-compile-plugin-8.0.0.pom",
+      "sha256": "0e2a6047e9314aaa811a3a563632f85503e1b253a5fde1c0aba293646bd0628f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-java-cross-compile-plugin/8.0.0/295847e598dd558641438cff44c7c36bcfd8bb1/gradle-java-cross-compile-plugin-8.0.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-java-cross-compile-plugin",
+      "version": "8.0.0",
+      "artifact": "gradle-java-cross-compile-plugin-8.0.0.module",
+      "sha256": "c861843a533bdaab791c1d8fb4b214964dcc8aae981b7d1b3132dbefe56de6c5",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-java-cross-compile-plugin/8.0.0/abaca0c969805c43af6e35989d48e3c170b238f7/gradle-java-cross-compile-plugin-8.0.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-java-cross-compile-plugin",
+      "version": "8.0.0",
+      "artifact": "gradle-java-cross-compile-plugin-8.0.0.jar",
+      "sha256": "383035eccd1a3d53a5840787e08364f38a4ad48c589b41f80d772d632aee0d92",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-java-cross-compile-plugin/8.0.0/ceb49a8329bffd4b46e83bccdbd954850cb678d9/gradle-java-cross-compile-plugin-8.0.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-netflixoss-project-plugin",
+      "version": "11.6.0",
+      "artifact": "gradle-netflixoss-project-plugin-11.6.0.jar",
+      "sha256": "931be3a747ec61be3d8348ebb7a22ec1a7ea9d7ed045a6ce8b2819e7a9f16059",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-netflixoss-project-plugin/11.6.0/3bda43d201c1e2ff3e6ede7e4e43d1ab56f072e0/gradle-netflixoss-project-plugin-11.6.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-netflixoss-project-plugin",
+      "version": "11.6.0",
+      "artifact": "gradle-netflixoss-project-plugin-11.6.0.pom",
+      "sha256": "60d636e524b97c8d6afe0a7233f18c6b30c84e1fd03fbd098d38a9a55c45c730",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-netflixoss-project-plugin/11.6.0/a4dfcbb8742bc5a961a674adcf2c0286050dabba/gradle-netflixoss-project-plugin-11.6.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "gradle-netflixoss-project-plugin",
+      "version": "11.6.0",
+      "artifact": "gradle-netflixoss-project-plugin-11.6.0.module",
+      "sha256": "7f2d80e1a1e559e210592098444bfda318d2a5d7dad77d251783025cdbb05540",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/gradle-netflixoss-project-plugin/11.6.0/c6debfcba6a204fadaf44675c7dd5654111ce962/gradle-netflixoss-project-plugin-11.6.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-dependencies-comparison",
+      "version": "0.2.1",
+      "artifact": "nebula-dependencies-comparison-0.2.1.jar",
+      "sha256": "4522a4472f1edcadebdd86fd64d69b4f5596160a38cf34277d336eb1348c4869",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-dependencies-comparison/0.2.1/236ee1c17c8431536e1a89e8dcd9d6c05adc031a/nebula-dependencies-comparison-0.2.1.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-dependencies-comparison",
+      "version": "0.2.1",
+      "artifact": "nebula-dependencies-comparison-0.2.1.pom",
+      "sha256": "ed45b7c6c3181236223b60e9fe430526257a10d4c60e706cbdcf792c0b0a9442",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-dependencies-comparison/0.2.1/c869c889088ea66b863d4ba616d04f1cdcad07dd/nebula-dependencies-comparison-0.2.1.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-dependencies-comparison",
+      "version": "0.2.1",
+      "artifact": "nebula-dependencies-comparison-0.2.1.module",
+      "sha256": "fec420129620da024b0d7d4453d19721afaac5ebb988640ec011cf824cd70a77",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-dependencies-comparison/0.2.1/fc5256f51c6463fb89c04ec065b694eeb38d57ec/nebula-dependencies-comparison-0.2.1.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-gradle-interop",
+      "version": "2.3.0",
+      "artifact": "nebula-gradle-interop-2.3.0.module",
+      "sha256": "ab7d9819b7d8a58308558bce1459b1cf9c162d2f259e0d24ebb0e192deaae64e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/2.3.0/3436b572d391ea2821f883a15d1c3e1e52ef3be1/nebula-gradle-interop-2.3.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-gradle-interop",
+      "version": "2.3.0",
+      "artifact": "nebula-gradle-interop-2.3.0.pom",
+      "sha256": "f91dedce0e9544afea797074fe5b0fd98670345093ecd3aedc2e893b7abf81a7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/2.3.0/6e9a3cb0de9e6e85335c58144f710cf2cc2d410b/nebula-gradle-interop-2.3.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-gradle-interop",
+      "version": "2.3.0",
+      "artifact": "nebula-gradle-interop-2.3.0.jar",
+      "sha256": "9d1524926384ecd915f3fb92c1c33d3eb089b8f34297cde31eb4f270f78fdeaa",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/2.3.0/f2d66b2ae39fbb65266b198332c7d853a129862b/nebula-gradle-interop-2.3.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-oss-publishing-plugin",
+      "version": "3.6.0",
+      "artifact": "nebula-oss-publishing-plugin-3.6.0.module",
+      "sha256": "d719fdca400b0448c7d02e6373b1c0d17c4ac260ccbb9287a5c446eded18381a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-oss-publishing-plugin/3.6.0/5b896260d0a9833655da347869126f7fa995ff20/nebula-oss-publishing-plugin-3.6.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-oss-publishing-plugin",
+      "version": "3.6.0",
+      "artifact": "nebula-oss-publishing-plugin-3.6.0.jar",
+      "sha256": "7a0e13ec0791b11e92cc706f70d372cee7ab9c1bd00af3749d508564ecce07a8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-oss-publishing-plugin/3.6.0/ee53008742bf503d1d94e53d6c0ead55cd97e70e/nebula-oss-publishing-plugin-3.6.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-oss-publishing-plugin",
+      "version": "3.6.0",
+      "artifact": "nebula-oss-publishing-plugin-3.6.0.pom",
+      "sha256": "3f82148f8ea9963c049d54e5ac447f7499b505ff664b8085a73d77cefc99e6dc",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-oss-publishing-plugin/3.6.0/fb790d91f9bc3d850615491d365d3e0895386b42/nebula-oss-publishing-plugin-3.6.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-project-plugin",
+      "version": "11.0.0",
+      "artifact": "nebula-project-plugin-11.0.0.module",
+      "sha256": "37b96576e5fcc58d8a57380b5128ed13b7ce2186c0ec8ba5b17d96e493290fb6",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-project-plugin/11.0.0/87faf92c3183c7dac9190eefd6306e2a13d90517/nebula-project-plugin-11.0.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-project-plugin",
+      "version": "11.0.0",
+      "artifact": "nebula-project-plugin-11.0.0.pom",
+      "sha256": "6773a638eb77abeacc4babaceddf5c18dc693c646d53bc2aef37b6dc1cf48690",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-project-plugin/11.0.0/a9d524a2725e098f664b346ed1822dcc9235f2e8/nebula-project-plugin-11.0.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-project-plugin",
+      "version": "11.0.0",
+      "artifact": "nebula-project-plugin-11.0.0.jar",
+      "sha256": "f6c737fa106ce869f17def21df8e8426e23ba7a5fbd09a57709c72142e9e1c12",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-project-plugin/11.0.0/cb76c7fd55943f25f427a07673faf62281ee38de/nebula-project-plugin-11.0.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-publishing-plugin",
+      "version": "21.1.0",
+      "artifact": "nebula-publishing-plugin-21.1.0.jar",
+      "sha256": "17f2aa16bdac5f9a81964cd44ea5c42f93eb217fa14913318ea99ad99004172b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-publishing-plugin/21.1.0/3d2df80896e9086ba9655644eb201ec3ba21cbb5/nebula-publishing-plugin-21.1.0.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-publishing-plugin",
+      "version": "21.1.0",
+      "artifact": "nebula-publishing-plugin-21.1.0.pom",
+      "sha256": "272aca00403b804a8a930462f77d92725cf465d0e6ed1060aca001df3c4049ae",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-publishing-plugin/21.1.0/91462af3654b254277886bfeb4a98798f42ccaac/nebula-publishing-plugin-21.1.0.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-publishing-plugin",
+      "version": "21.1.0",
+      "artifact": "nebula-publishing-plugin-21.1.0.module",
+      "sha256": "c46ed376971da95bd032b338d9f3c821e26cf32cd314b54a83823a85cbdaeaf7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-publishing-plugin/21.1.0/aeb9ceaf79c027f037a54cabfac90dbe5792112f/nebula-publishing-plugin-21.1.0.module"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-release-plugin",
+      "version": "19.0.10",
+      "artifact": "nebula-release-plugin-19.0.10.jar",
+      "sha256": "2d948eaac84bfdb1edd6623316b380e48467d8c11706c19a4109d54b9f21c345",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-release-plugin/19.0.10/2fe6b59a7aefdfab777a119f95a8a215b2ea4331/nebula-release-plugin-19.0.10.jar"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-release-plugin",
+      "version": "19.0.10",
+      "artifact": "nebula-release-plugin-19.0.10.pom",
+      "sha256": "ba127c2c90a178ed7975162b82ec336f0796556de48cf0460d8a68aa379007b2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-release-plugin/19.0.10/478001676a1d6232f645580e65cd917b300a2cb8/nebula-release-plugin-19.0.10.pom"
+    },
+    {
+      "group": "com.netflix.nebula",
+      "module": "nebula-release-plugin",
+      "version": "19.0.10",
+      "artifact": "nebula-release-plugin-19.0.10.module",
+      "sha256": "43ffc1a591db3af39dafe1583c76d1620223e73161b4d1e8467c648fe937557b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.nebula/nebula-release-plugin/19.0.10/ef17deb4daacbdd1080bd99e12a129b7da4cd03/nebula-release-plugin-19.0.10.module"
+    },
+    {
+      "group": "com.netflix.spectator",
+      "module": "spectator-api",
+      "version": "1.7.9",
+      "artifact": "spectator-api-1.7.9.pom",
+      "sha256": "c506efd49a9636b837930e17a9c135236e43cf36d287946afdab29aedd99a61c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.spectator/spectator-api/1.7.9/aa0b36ff542522668efdf8013d4e5dcabab3d1dd/spectator-api-1.7.9.pom"
+    },
+    {
+      "group": "com.netflix.spectator",
+      "module": "spectator-api",
+      "version": "1.7.9",
+      "artifact": "spectator-api-1.7.9.module",
+      "sha256": "cadc706de8ad0bb4860e7a5ce58b9c57cb9cad296b326f1fd907682100719b60",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.spectator/spectator-api/1.7.9/b5cb263b413107a98091f898b9adc93320c838eb/spectator-api-1.7.9.module"
+    },
+    {
+      "group": "com.netflix.spectator",
+      "module": "spectator-api",
+      "version": "1.7.9",
+      "artifact": "spectator-api-1.7.9.jar",
+      "sha256": "4a7b86c5de26e2f8321692341606ed233e2e4c22f5fcb29357104392b723572c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.netflix.spectator/spectator-api/1.7.9/ca87e4214d42a1ea5268d4748d82502b301d7a55/spectator-api-1.7.9.jar"
+    },
+    {
+      "group": "com.perforce",
+      "module": "p4java",
+      "version": "2015.2.1365273",
+      "artifact": "p4java-2015.2.1365273.pom",
+      "sha256": "5527d698236a646a3ed731cf780355621153a80e0e65d36f9db1fdc25fcf081c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.perforce/p4java/2015.2.1365273/31df899fdb2f81816b9640e011e4a1201cf6e457/p4java-2015.2.1365273.pom"
+    },
+    {
+      "group": "com.perforce",
+      "module": "p4java",
+      "version": "2015.2.1365273",
+      "artifact": "p4java-2015.2.1365273.jar",
+      "sha256": "fbcf286c5863a658b400ec2595ee13c5d49c656f735923088509e3f976ea421e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.perforce/p4java/2015.2.1365273/5e6261eba517a79915fe33d2e933d18b9756220c/p4java-2015.2.1365273.jar"
+    },
+    {
+      "group": "com.squareup.moshi",
+      "module": "moshi",
+      "version": "1.12.0",
+      "artifact": "moshi-1.12.0.module",
+      "sha256": "b86a93154471213195a442f85ca046e79a001c6d446c41d4d168936da856ebe2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.moshi/moshi/1.12.0/17767721733ec395dabf9366d6f5a14b1ed13f0b/moshi-1.12.0.module"
+    },
+    {
+      "group": "com.squareup.moshi",
+      "module": "moshi",
+      "version": "1.12.0",
+      "artifact": "moshi-1.12.0.pom",
+      "sha256": "61bc94243a9373d9948a78b6e71000975eb510fb6f7f46a81eafcddd381e4779",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.moshi/moshi/1.12.0/26276f0d5121a83f58ac4929fd450d4cb7df03d4/moshi-1.12.0.pom"
+    },
+    {
+      "group": "com.squareup.moshi",
+      "module": "moshi",
+      "version": "1.12.0",
+      "artifact": "moshi-1.12.0.jar",
+      "sha256": "ee9091e1d1a5926fa9b4df2642c1fb7bb96aec08639b6219c19e0b8724d42475",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.moshi/moshi/1.12.0/acd95d4d815f2752e6507e29e92b258c1323c38d/moshi-1.12.0.jar"
+    },
+    {
+      "group": "com.squareup.okio",
+      "module": "okio",
+      "version": "2.10.0",
+      "artifact": "okio-2.10.0.module",
+      "sha256": "11cbeabc3a765c9a803242fa2024a11853eb0865da536c4b05afdcdbb2346370",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.okio/okio/2.10.0/51bf103e30b0496e7a2dda405a3efe90b57d06b8/okio-2.10.0.module"
+    },
+    {
+      "group": "com.squareup.okio",
+      "module": "okio",
+      "version": "2.10.0",
+      "artifact": "okio-jvm-2.10.0.jar",
+      "sha256": "a27f091d34aa452e37227e2cfa85809f29012a8ef2501a9b5a125a978e4fcbc1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.okio/okio/2.10.0/accaddddbb597fb70290fd40358b1ce66b8c2b3d/okio-jvm-2.10.0.jar"
+    },
+    {
+      "group": "com.squareup.okio",
+      "module": "okio",
+      "version": "2.10.0",
+      "artifact": "okio-2.10.0.pom",
+      "sha256": "4b96060b6d1a2b96e90e42ad7158adbe3469316b80fea0817c6c33993ee1cc72",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/com.squareup.okio/okio/2.10.0/ed9157ec969a4207ffb8720a0747d22163cb3dd4/okio-2.10.0.pom"
+    },
+    {
+      "group": "commons-logging",
+      "module": "commons-logging",
+      "version": "1.1.1",
+      "artifact": "commons-logging-1.1.1.jar",
+      "sha256": "ce6f913cad1f0db3aad70186d65c5bc7ffcc9a99e3fe8e0b137312819f7c362f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar"
+    },
+    {
+      "group": "commons-logging",
+      "module": "commons-logging",
+      "version": "1.1.1",
+      "artifact": "commons-logging-1.1.1.pom",
+      "sha256": "d0f2e16d054e8bb97add9ca26525eb2346f692809fcd2a28787da8ceb3c35ee8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/76672afb562b9e903674ad3a544cdf2092f1faa3/commons-logging-1.1.1.pom"
+    },
+    {
+      "group": "gradle.plugin.com.hierynomus.gradle.plugins",
+      "module": "license-gradle-plugin",
+      "version": "0.16.1",
+      "artifact": "license-gradle-plugin-0.16.1.jar",
+      "sha256": "bd3cfc404948066259faf1df09118cc54d78b3d5696854808b7d5b3b3baba62d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/gradle.plugin.com.hierynomus.gradle.plugins/license-gradle-plugin/0.16.1/7da82732cf95b889a9a9967faa9d695a9a62a21d/license-gradle-plugin-0.16.1.jar"
+    },
+    {
+      "group": "gradle.plugin.com.hierynomus.gradle.plugins",
+      "module": "license-gradle-plugin",
+      "version": "0.16.1",
+      "artifact": "license-gradle-plugin-0.16.1.pom",
+      "sha256": "5c7631b95f38bacd9a9cf3a0bb2c549400d81f5a92b76602480e8a485816a6d4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/gradle.plugin.com.hierynomus.gradle.plugins/license-gradle-plugin/0.16.1/e2bfe6d3096424f03f997784837bab45f26a3921/license-gradle-plugin-0.16.1.pom"
+    },
+    {
+      "group": "io.github.gradle-nexus",
+      "module": "publish-plugin",
+      "version": "2.0.0",
+      "artifact": "publish-plugin-2.0.0.module",
+      "sha256": "e13ff4d6e10f283b6287103c982f076bd619e2a461fb39c16d44d1d15d71e8f7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.github.gradle-nexus/publish-plugin/2.0.0/2927c754de9186929e810b0a1e30c79ac6c3d294/publish-plugin-2.0.0.module"
+    },
+    {
+      "group": "io.github.gradle-nexus",
+      "module": "publish-plugin",
+      "version": "2.0.0",
+      "artifact": "publish-plugin-2.0.0.pom",
+      "sha256": "5787b8fa5bc102a6116d35a7ced5bbbcf119fd7260431b379173ee350539ad09",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.github.gradle-nexus/publish-plugin/2.0.0/457336df513a4b69179f13dd30214fc0a7eb6729/publish-plugin-2.0.0.pom"
+    },
+    {
+      "group": "io.github.gradle-nexus",
+      "module": "publish-plugin",
+      "version": "2.0.0",
+      "artifact": "publish-plugin-2.0.0.jar",
+      "sha256": "942c1a16d161f64631901b4e2dad541d2fcbfe51cf0323955dabe02e2a9ef2aa",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.github.gradle-nexus/publish-plugin/2.0.0/f7afd5bc46da8059edb1d7f05163ce096d9e4c18/publish-plugin-2.0.0.jar"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-context",
+      "version": "1.9.0",
+      "artifact": "grpc-context-1.9.0.jar",
+      "sha256": "3e9a41772b9cafd38f3aa550b8c92341d745a189cf3675ca1fe459ec48f7ec98",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-context/1.9.0/28b0836f48c9705abf73829bbc536dba29a1329a/grpc-context-1.9.0.jar"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-context",
+      "version": "1.9.0",
+      "artifact": "grpc-context-1.9.0.pom",
+      "sha256": "c3c1f01f688cc1fbf574a7c88dcade1689aee98cfe415337c81a50651250ea51",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-context/1.9.0/971d8212a87c603121c080562a17d9bbe66ea347/grpc-context-1.9.0.pom"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-core",
+      "version": "1.9.0",
+      "artifact": "grpc-core-1.9.0.pom",
+      "sha256": "ad6727867dd9f61e00d59c1d676f91ac64f81d91815f2c56dd22f54066c533e1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-core/1.9.0/7a52b3532bd11c387f96a2c32d0ebb6ef26c1869/grpc-core-1.9.0.pom"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-core",
+      "version": "1.9.0",
+      "artifact": "grpc-core-1.9.0.jar",
+      "sha256": "def4b65ce5779d194268c6d97f9e785e0171aa50afda6c4ee9d1465793831d8b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-core/1.9.0/cf76ab13d35e8bd5d0ffad6d82bb1ef1770f050c/grpc-core-1.9.0.jar"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-netty",
+      "version": "1.9.0",
+      "artifact": "grpc-netty-1.9.0.jar",
+      "sha256": "b75af1a3f4a81d53b19a72a1e578def2922a04e5ed8f02a9a3e583bb432a7a08",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-netty/1.9.0/8157384d87497dc18604a5ba3760763fe643f16e/grpc-netty-1.9.0.jar"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-netty",
+      "version": "1.9.0",
+      "artifact": "grpc-netty-1.9.0.pom",
+      "sha256": "1865de691b2e662eb9072fc1fae2eba3cf327e1dcc27d049cc9bd92eb228640e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-netty/1.9.0/92ff5161b4b98bac5bc76f2f5eafe8f56fdde9ff/grpc-netty-1.9.0.pom"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-stub",
+      "version": "1.9.0",
+      "artifact": "grpc-stub-1.9.0.jar",
+      "sha256": "60f7ddbe7b808ae1015c93f3bd1d061fb73cbac725a58a5eb269ff167daa353c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-stub/1.9.0/20e310f888860a27dfa509a69eebb236417ee93f/grpc-stub-1.9.0.jar"
+    },
+    {
+      "group": "io.grpc",
+      "module": "grpc-stub",
+      "version": "1.9.0",
+      "artifact": "grpc-stub-1.9.0.pom",
+      "sha256": "be629aa5fff4e84b29dfc634545f8e437cb684a74e072c1250e06ef1a051564d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.grpc/grpc-stub/1.9.0/be18ef1c6a8073bc9ea794f42c06354b26f6c61b/grpc-stub-1.9.0.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-buffer",
+      "version": "4.1.17.Final",
+      "artifact": "netty-buffer-4.1.17.Final.pom",
+      "sha256": "87212676070fc6bfc49bf3292050ad7278cd813880c631686c01b3ed707706b8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.17.Final/c82408a1224f512ecabe27947caac8c80b6bf9aa/netty-buffer-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-buffer",
+      "version": "4.1.17.Final",
+      "artifact": "netty-buffer-4.1.17.Final.jar",
+      "sha256": "b24a28e2129fc11e1f6124ebf93725d1f9c0904ea679d261da7b2e21d4c8615e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.17.Final/fdd68fb3defd7059a7392b9395ee941ef9bacc25/netty-buffer-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-4.1.17.Final.jar",
+      "sha256": "790ce1b7694fc41663131579d776a370e332e3b3fe2fe6543662fd5a40a948e1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.17.Final/1d00f56dc9e55203a4bde5aae3d0828fdeb818e7/netty-codec-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-4.1.17.Final.pom",
+      "sha256": "226dd10688d0f72fa4d1149daac8885d48395cea3593e9aa57e60d75c0a2b81b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.17.Final/8d2947bda992ae0ba35827ced7d32d90ce8d23f4/netty-codec-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-http",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-http-4.1.17.Final.jar",
+      "sha256": "fc05d02755c5d204ccc848be8399ef5d48d5a80da9b93f075287c57eb9381e5b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.17.Final/251d7edcb897122b9b23f24ff793cd0739056b9e/netty-codec-http-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-http",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-http-4.1.17.Final.pom",
+      "sha256": "7b285a35969d83c76c7b43020582c58485d5d73f098cd27672d6fe9f537a8573",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.17.Final/d0471c9e26719bccb05702ee4146b842e3017b33/netty-codec-http-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-http2",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-http2-4.1.17.Final.pom",
+      "sha256": "983a861705778476abe8f345fc43f3639fa059fc24e188a9f077dd271678cffd",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.17.Final/e55c85e7638f3ba64e451f2808f5bae56b688c17/netty-codec-http2-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-http2",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-http2-4.1.17.Final.jar",
+      "sha256": "8b8fc41b9e606692f0f2e298363e41166adfd80bb828202542b4ef9d23c8a04b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.17.Final/f9844005869c6d9049f4b677228a89fee4c6eab3/netty-codec-http2-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-socks",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-socks-4.1.17.Final.pom",
+      "sha256": "4b8641272f42842c54384bf5da0ee87371f522c3e6007bf7b69a454b4c3e0983",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.17.Final/9e681e5e17d79ed3b6fba690545efd7a0af23be6/netty-codec-socks-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-codec-socks",
+      "version": "4.1.17.Final",
+      "artifact": "netty-codec-socks-4.1.17.Final.jar",
+      "sha256": "7634f113c9ce3a62046ca18a9fef37ab8b1f7156aa26aba9361a00a04422606f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.17.Final/a159bf1f3d5019e0d561c92fbbec8400967471fa/netty-codec-socks-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-common",
+      "version": "4.1.17.Final",
+      "artifact": "netty-common-4.1.17.Final.pom",
+      "sha256": "192abd30ea2c85b0363eed4f96fe33f8c10186f3c2c193ce44fcb35f718eb3dd",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-common/4.1.17.Final/2e3b41a4a2f637055ff873d45b283dc6e86b2221/netty-common-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-common",
+      "version": "4.1.17.Final",
+      "artifact": "netty-common-4.1.17.Final.jar",
+      "sha256": "dddabdec01959180da44129d130301b84c23b473411288f143d5e29e0b098d26",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-common/4.1.17.Final/581c8ee239e4dc0976c2405d155f475538325098/netty-common-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-handler",
+      "version": "4.1.17.Final",
+      "artifact": "netty-handler-4.1.17.Final.jar",
+      "sha256": "85bada604fe14bc358da7b140583264a88d7a45ca12daba1216c4225aadb0c7b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.17.Final/18c40ffb61a1d1979eca024087070762fdc4664a/netty-handler-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-handler",
+      "version": "4.1.17.Final",
+      "artifact": "netty-handler-4.1.17.Final.pom",
+      "sha256": "ff980944b39252408cbdf1465760ac7477ed6bca649db9bbc1d64571468511f0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.17.Final/40290f7b9c7f54eec0f6441e5d6e82b374d0c650/netty-handler-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-handler-proxy",
+      "version": "4.1.17.Final",
+      "artifact": "netty-handler-proxy-4.1.17.Final.jar",
+      "sha256": "3c086aac940f228e745998ed3f6a568491e9deea0520fa345fcf9335c1549858",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.17.Final/9330ee60c4e48ca60aac89b7bc5ec2567e84f28e/netty-handler-proxy-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-handler-proxy",
+      "version": "4.1.17.Final",
+      "artifact": "netty-handler-proxy-4.1.17.Final.pom",
+      "sha256": "bd45b51ac68f141156c984d9b60fcf00a223ceca651874e13525a09b98a1a38e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.17.Final/d1e98976299083cffb0d72bc67c2cc27357db971/netty-handler-proxy-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-parent",
+      "version": "4.1.17.Final",
+      "artifact": "netty-parent-4.1.17.Final.pom",
+      "sha256": "84067dfcbf15a468f10a2649437ef5fed6035dd2eb29893f3510a7fc9444ed9a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-parent/4.1.17.Final/ef64d4dca26e45efa7b42dea81688f8607b642ef/netty-parent-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-resolver",
+      "version": "4.1.17.Final",
+      "artifact": "netty-resolver-4.1.17.Final.pom",
+      "sha256": "efe4fb04e3d56371ae99e1a47e036b0b1287a597b2dff9ae6ef6216b2b878075",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.17.Final/2e0bc9391f7800a33f70eea96907bc64baa0b3d0/netty-resolver-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-resolver",
+      "version": "4.1.17.Final",
+      "artifact": "netty-resolver-4.1.17.Final.jar",
+      "sha256": "082ac49149cb72c675c7ed1615ba35923d3167e65bfb37c4a1422ec499137cb1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.17.Final/8f386c80821e200f542da282ae1d3cde5cad8368/netty-resolver-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-transport",
+      "version": "4.1.17.Final",
+      "artifact": "netty-transport-4.1.17.Final.jar",
+      "sha256": "60763426c79dd930c70d0da95e474f662bd17a58d3d57b332696d089cf208089",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.17.Final/9585776b0a8153182412b5d5366061ff486914c1/netty-transport-4.1.17.Final.jar"
+    },
+    {
+      "group": "io.netty",
+      "module": "netty-transport",
+      "version": "4.1.17.Final",
+      "artifact": "netty-transport-4.1.17.Final.pom",
+      "sha256": "9de9c51b0655376883f04e7778571f752f3bc7ac06954b8ef3bf322cf8af2c0a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.17.Final/dba27c519135ee04fdecfb5b37696f5d1b9b4b6a/netty-transport-4.1.17.Final.pom"
+    },
+    {
+      "group": "io.opencensus",
+      "module": "opencensus-api",
+      "version": "0.10.0",
+      "artifact": "opencensus-api-0.10.0.jar",
+      "sha256": "52906b21e0acb440f5635eacfc633ba6ff3d143548bdf9a1d1711a0b9bd520f5",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.10.0/46bcf07e0bd835022ccd531d99c3eb813382d4d8/opencensus-api-0.10.0.jar"
+    },
+    {
+      "group": "io.opencensus",
+      "module": "opencensus-api",
+      "version": "0.10.0",
+      "artifact": "opencensus-api-0.10.0.pom",
+      "sha256": "c090300b5b146e7327f63a85ccc98fbd7f7ec70e4138d9aa6ac723cb22f7cfd0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.10.0/493c8b220de61228ac9ebf4e0c174887492021d/opencensus-api-0.10.0.pom"
+    },
+    {
+      "group": "io.opencensus",
+      "module": "opencensus-contrib-grpc-metrics",
+      "version": "0.10.0",
+      "artifact": "opencensus-contrib-grpc-metrics-0.10.0.pom",
+      "sha256": "dcefcf0ed520a743dabff47f9997a42deba004cb24c19166ebbf5aabffd2a2cb",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-grpc-metrics/0.10.0/3c5f080156274b7559f96955f9e6dd61e76d43e7/opencensus-contrib-grpc-metrics-0.10.0.pom"
+    },
+    {
+      "group": "io.opencensus",
+      "module": "opencensus-contrib-grpc-metrics",
+      "version": "0.10.0",
+      "artifact": "opencensus-contrib-grpc-metrics-0.10.0.jar",
+      "sha256": "2272fcf7292c9c11082fad1cbac4a16bc25a5eee39a6ae27719a9c3d0a660bb8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-grpc-metrics/0.10.0/e47f918dc577b6316f57a884c500b13a98d3c11b/opencensus-contrib-grpc-metrics-0.10.0.jar"
+    },
+    {
+      "group": "javax.servlet",
+      "module": "javax.servlet-api",
+      "version": "3.1.0",
+      "artifact": "javax.servlet-api-3.1.0.pom",
+      "sha256": "b31109e22ea3f2df1ad7955432e718a35def50ae6c19698034afa8a0cf9e9069",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/330afdf2f976af1584c6a18333f4d53d264df1de/javax.servlet-api-3.1.0.pom"
+    },
+    {
+      "group": "javax.servlet",
+      "module": "javax.servlet-api",
+      "version": "3.1.0",
+      "artifact": "javax.servlet-api-3.1.0.jar",
+      "sha256": "af456b2dd41c4e82cf54f3e743bc678973d9fe35bd4d3071fa05c7e5333b8482",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar"
+    },
+    {
+      "group": "joda-time",
+      "module": "joda-time",
+      "version": "2.10",
+      "artifact": "joda-time-2.10.pom",
+      "sha256": "3ea2bef98b1d0a3a67647e7590db8a002bdd787832f9f8a44a6a46ea46de76b4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/joda-time/joda-time/2.10/6c4d4c3edda4c35d2d8c51bafeff5ac89055c69b/joda-time-2.10.pom"
+    },
+    {
+      "group": "joda-time",
+      "module": "joda-time",
+      "version": "2.10",
+      "artifact": "joda-time-2.10.jar",
+      "sha256": "c4d50dae4d58c3031475d64ae5eafade50f1861ca1553252aa7fd176d56e4eec",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/joda-time/joda-time/2.10/f66c8125d1057ffce6c4e29e624cac863e110e2b/joda-time-2.10.jar"
+    },
+    {
+      "group": "junit",
+      "module": "junit",
+      "version": "4.13.2",
+      "artifact": "junit-4.13.2.pom",
+      "sha256": "569b6977ee4603c965c1c46c3058fa6e969291b0160eb6964dd092cd89eadd94",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/junit/junit/4.13.2/73bc5be628edeb297a1caf421a5a2e494798b92f/junit-4.13.2.pom"
+    },
+    {
+      "group": "junit",
+      "module": "junit",
+      "version": "4.13.2",
+      "artifact": "junit-4.13.2.jar",
+      "sha256": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar"
+    },
+    {
+      "group": "nebula.netflixoss",
+      "module": "nebula.netflixoss.gradle.plugin",
+      "version": "11.6.0",
+      "artifact": "nebula.netflixoss.gradle.plugin-11.6.0.pom",
+      "sha256": "e56a45a6dc366c58eccd606322bf6682442d6684320871c73e183063f7e8b55d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/nebula.netflixoss/nebula.netflixoss.gradle.plugin/11.6.0/a0149aab52e5b0610040adec97b67338cc83c7d5/nebula.netflixoss.gradle.plugin-11.6.0.pom"
+    },
+    {
+      "group": "net.bytebuddy",
+      "module": "byte-buddy",
+      "version": "1.12.19",
+      "artifact": "byte-buddy-1.12.19.jar",
+      "sha256": "030704139e46f32c38d27060edee9e0676b0a0fff8a8be53461515154ba8a7be",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.19/178d26e6a95e50502ae16673e08269797f8b254a/byte-buddy-1.12.19.jar"
+    },
+    {
+      "group": "net.bytebuddy",
+      "module": "byte-buddy",
+      "version": "1.12.19",
+      "artifact": "byte-buddy-1.12.19.pom",
+      "sha256": "435fb8664aa9b7e120c8dd6c707d4eafa642fa262dff6d5e3f71dc25c69e89eb",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.19/b836d1be4d784104a3d3f1e34c439a62c4ce961f/byte-buddy-1.12.19.pom"
+    },
+    {
+      "group": "net.bytebuddy",
+      "module": "byte-buddy-agent",
+      "version": "1.12.19",
+      "artifact": "byte-buddy-agent-1.12.19.jar",
+      "sha256": "3a70240de7cdcde04e7c504c2327d7035b9c25ae0206881e3bf4e6798a273ed8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.12.19/450917cf3b358b691a824acf4c67aa89c826f67e/byte-buddy-agent-1.12.19.jar"
+    },
+    {
+      "group": "net.bytebuddy",
+      "module": "byte-buddy-agent",
+      "version": "1.12.19",
+      "artifact": "byte-buddy-agent-1.12.19.pom",
+      "sha256": "b5a2cff643681de1687fc40acd251feefdfca23e673e049fb3c3692b53526d4b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.12.19/73f515ebf8d49fb2286ef6b3d77a705ea51b49f8/byte-buddy-agent-1.12.19.pom"
+    },
+    {
+      "group": "net.bytebuddy",
+      "module": "byte-buddy-parent",
+      "version": "1.12.19",
+      "artifact": "byte-buddy-parent-1.12.19.pom",
+      "sha256": "72ab6fef409e812921f4728b3c4b6ef4fa53bc25fabb0488fc2cae367368b54d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-parent/1.12.19/a7ff6329f4ea6b59c92524f652768ac8a1f80683/byte-buddy-parent-1.12.19.pom"
+    },
+    {
+      "group": "net.java",
+      "module": "jvnet-parent",
+      "version": "3",
+      "artifact": "jvnet-parent-3.pom",
+      "sha256": "30f5789efa39ddbf96095aada3fc1260c4561faf2f714686717cb2dc5049475a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.java/jvnet-parent/3/f8f3be3e980551a39b5679411e171aeb6931aaec/jvnet-parent-3.pom"
+    },
+    {
+      "group": "net.java.dev.jna",
+      "module": "jna",
+      "version": "5.15.0",
+      "artifact": "jna-5.15.0.jar",
+      "sha256": "a564158d28ab5127fc6a958028ed54279fe0999662c46425b6a3b09a2a52094d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.15.0/1ee1d80ff44f08280188f7c0e740d57207841ac/jna-5.15.0.jar"
+    },
+    {
+      "group": "net.java.dev.jna",
+      "module": "jna",
+      "version": "5.15.0",
+      "artifact": "jna-5.15.0.pom",
+      "sha256": "276602ff367a4c39155daecc1e8cb54f4789e5d80df90a3a8b6603f1deb59e05",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.15.0/774a2dbc4251854d21be6b33d0669e8c6967e997/jna-5.15.0.pom"
+    },
+    {
+      "group": "net.java.dev.jna",
+      "module": "jna-platform",
+      "version": "5.15.0",
+      "artifact": "jna-platform-5.15.0.pom",
+      "sha256": "a0d9c7b81fed1fa8be88b02fd7a7560de1b1ac59583a1e2c5a21a8a5dc6cdf67",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.15.0/2143f568e3a321187a56ff1b03aecba54dc563f7/jna-platform-5.15.0.pom"
+    },
+    {
+      "group": "net.java.dev.jna",
+      "module": "jna-platform",
+      "version": "5.15.0",
+      "artifact": "jna-platform-5.15.0.jar",
+      "sha256": "18b7f6e7d34ce89309a6d9052ae1a987e8e64057e2f683e01e50f2f2b59cd153",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.15.0/86b502cad57d45da172b5e3231c537b042e296ef/jna-platform-5.15.0.jar"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "10",
+      "artifact": "apache-10.pom",
+      "sha256": "802feece72852dafcbd0a425a60367c72c5cb9b6ea5aae59481128569189daf9",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/10/48296e511366fa13aad48c58d8e09721774abec6/apache-10.pom"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "13",
+      "artifact": "apache-13.pom",
+      "sha256": "ff513db0361fd41237bef4784968bc15aae478d4ec0a9496f811072ccaf3841d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/13/15aff1faaec4963617f07dbe8e603f0adabc3a12/apache-13.pom"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "16",
+      "artifact": "apache-16.pom",
+      "sha256": "9f85ff2fd7d6cb3097aa47fb419ee7f0ebe869109f98aba9f4eca3f49e74a40e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/16/8a90e31780e5cd0685ccaf25836c66e3b4e163b7/apache-16.pom"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "21",
+      "artifact": "apache-21.pom",
+      "sha256": "af10c108da014f17cafac7b52b2b4b5a3a1c18265fa2af97a325d9143537b380",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/21/649b700a1b2b4a1d87e7ae8e3f47bfe101b2a4a5/apache-21.pom"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "23",
+      "artifact": "apache-23.pom",
+      "sha256": "bc10624e0623f36577fac5639ca2936d3240ed152fb6d8d533ab4d270543491c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/23/404949e96725e63a10a6d8f9d9b521948d170d5/apache-23.pom"
+    },
+    {
+      "group": "org.apache",
+      "module": "apache",
+      "version": "4",
+      "artifact": "apache-4.pom",
+      "sha256": "9e9323a26ba8eb2394efef0c96d31b70df570808630dc147cab1e73541cc5194",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache/apache/4/602b647986c1d24301bc3d70e5923696bc7f1401/apache-4.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-lang3",
+      "version": "3.12.0",
+      "artifact": "commons-lang3-3.12.0.pom",
+      "sha256": "82d31f1dcc4583effd744e979165b16da64bf86bca623fc5d1b03ed94f45c85a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/302d01a9279f7a400b1e767be60f12c02a5cf513/commons-lang3-3.12.0.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-lang3",
+      "version": "3.12.0",
+      "artifact": "commons-lang3-3.12.0.jar",
+      "sha256": "d919d904486c037f8d193412da0c92e22a9fa24230b9d67a57855c5c31c7e94e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-math3",
+      "version": "3.6.1",
+      "artifact": "commons-math3-3.6.1.pom",
+      "sha256": "fad72336ea7d7dd06da103144e3740db508fa4b17d9c54d7847737edc24a7e60",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/d0ee0ddf185d57393ae8fb5cc28bba6efff7389c/commons-math3-3.6.1.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-math3",
+      "version": "3.6.1",
+      "artifact": "commons-math3-3.6.1.jar",
+      "sha256": "1e56d7b058d28b65abd256b8458e3885b674c1d588fa43cd7d1cbb9c7ef2b308",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-parent",
+      "version": "33",
+      "artifact": "commons-parent-33.pom",
+      "sha256": "53d0011352e2e5106f379dafccdac7754ec6f0f78243c0305e4969f5acddf8fb",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-parent/33/a9bd6ae1e11cb313ec4a4c9bcd58c7a9ea60a5cd/commons-parent-33.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-parent",
+      "version": "39",
+      "artifact": "commons-parent-39.pom",
+      "sha256": "87cd27e1a02a5c3eb6d85059ce98696bb1b44c2b8b650f0567c86df60fa61da7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-parent/39/4bc32d3cda9f07814c548492af7bf19b21798d46/commons-parent-39.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-parent",
+      "version": "5",
+      "artifact": "commons-parent-5.pom",
+      "sha256": "8bd632c00bdf80a7de36c22b60f12452c147d8eca2f00d79d66699ebe7daa02a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-parent/5/a0a168281558e7ae972f113fa128bc46b4973edd/commons-parent-5.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-parent",
+      "version": "52",
+      "artifact": "commons-parent-52.pom",
+      "sha256": "75dbe8f34e98e4c3ff42daae4a2f9eb4cbcd3b5f1047d54460ace906dbb4502e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-parent/52/4ee86dedc66d0010ccdc29e5a4ce014c057854/commons-parent-52.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-pool2",
+      "version": "2.2",
+      "artifact": "commons-pool2-2.2.pom",
+      "sha256": "48f965e8242dbf01786d0a92d0ad63e20a201d4a536e0321d03b10d2e0c98153",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.2/719aa1664db856d594939c30a67915e46e80fe5d/commons-pool2-2.2.pom"
+    },
+    {
+      "group": "org.apache.commons",
+      "module": "commons-pool2",
+      "version": "2.2",
+      "artifact": "commons-pool2-2.2.jar",
+      "sha256": "8780b3bbb31a8797e74e9f3022f043ddadc2aee8be63d94f8082a6a16546c41b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.2/bd1a6e384f3cf0f9b9a60e1e6c1c1ecbbee7e0b7/commons-pool2-2.2.jar"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven",
+      "version": "3.0.4",
+      "artifact": "maven-3.0.4.pom",
+      "sha256": "4d223e01a6569d6655c1f4fce84969d45142cdbabdb118ea08c5c8c33ec632f6",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven/3.0.4/84e07094d0da2867c8463ee5206cafecb308036d/maven-3.0.4.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven",
+      "version": "3.6.2",
+      "artifact": "maven-3.6.2.pom",
+      "sha256": "60850dafebc746b5ce04ae1cc0073d81d346c0d54c32917d1357e8fd6960e0d1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven/3.6.2/f27c9bef3a783acfdae97b5d6c927efa5a8609d6/maven-3.6.2.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-model",
+      "version": "3.6.2",
+      "artifact": "maven-model-3.6.2.pom",
+      "sha256": "23049400bad289caa081bc5d28617ae0c2c14c67d35158903112063a9a44ab7b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.6.2/ca84b28cecd6dab5a22f7ef2398cff79da6a149e/maven-model-3.6.2.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-model",
+      "version": "3.6.2",
+      "artifact": "maven-model-3.6.2.jar",
+      "sha256": "f4ada31d7217efc11d2264dec3716623cefa3440cfb2b6b1dcc640a825159a7d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.6.2/ed527aff758e46c23a19b49a51f9ded64f3e1695/maven-model-3.6.2.jar"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-parent",
+      "version": "21",
+      "artifact": "maven-parent-21.pom",
+      "sha256": "fc45af8911ea307d1b57564eef1f78b69801e9c11a5619e7eb58d5d00ae9db8e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-parent/21/ecebf1043d9c7bdd3d32a4184ad4ef9ad3ea744/maven-parent-21.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-parent",
+      "version": "33",
+      "artifact": "maven-parent-33.pom",
+      "sha256": "3856e3fcd169502d5f12fe2452604ebf6c7c025f15656bfa558ea99ed29d73ea",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-parent/33/9dd736089b07fa56da1259c87a825a097ba0278c/maven-parent-33.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-settings",
+      "version": "3.0.4",
+      "artifact": "maven-settings-3.0.4.jar",
+      "sha256": "3e3df17f5df5e4ce1e7b7f2011c57d61d328e65678542ade2048f0d0fa295f09",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-settings/3.0.4/9897b492f19f4a9a37c008c025691cd4a858cdc/maven-settings-3.0.4.jar"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-settings",
+      "version": "3.0.4",
+      "artifact": "maven-settings-3.0.4.pom",
+      "sha256": "beedffd7c7e49ad35ef945c3413f1819f04e43ea294a31804714c8cbb0f372b3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-settings/3.0.4/9d97173b0e43457d85484eb3e77693908fa2bdc1/maven-settings-3.0.4.pom"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-settings-builder",
+      "version": "3.0.4",
+      "artifact": "maven-settings-builder-3.0.4.jar",
+      "sha256": "a38a54ec1e69a30ddfc14434e0aec2764fc268668abcc0e132d86692a5dce3e4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-settings-builder/3.0.4/1c47e99b3cef4aed391f6c76aa073f3f7f25044b/maven-settings-builder-3.0.4.jar"
+    },
+    {
+      "group": "org.apache.maven",
+      "module": "maven-settings-builder",
+      "version": "3.0.4",
+      "artifact": "maven-settings-builder-3.0.4.pom",
+      "sha256": "3e0b3f60267b6070a741b15db5b40fbd824c61db12a1f4f166ed658b9f62ece0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.apache.maven/maven-settings-builder/3.0.4/bee51dee9194f8ff1eddd42de21385c5f455768e/maven-settings-builder-3.0.4.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus",
+      "version": "2.0.6",
+      "artifact": "plexus-2.0.6.pom",
+      "sha256": "bea12e747708d25e73410ca1c731ebdfa102e8bdb6ec7d81bd4522583b234bcc",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus/2.0.6/da193f47e5ce5a2cb85931851b3698e61cde8227/plexus-2.0.6.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus",
+      "version": "2.0.7",
+      "artifact": "plexus-2.0.7.pom",
+      "sha256": "2b59062030ab0a15c5d0977ba22421706368926488739a65f25793e715cc8a74",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus/2.0.7/f6ee62f8157f273757b8ffda59714a6a279a174d/plexus-2.0.7.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus",
+      "version": "5.1",
+      "artifact": "plexus-5.1.pom",
+      "sha256": "a343e44ff5796aed0ea60be11454c935ce20ab1c5f164acc8da574482dcbc7e9",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus/5.1/2fca82e2eb5172f6a2909bea7accc733581a8c71/plexus-5.1.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-component-annotations",
+      "version": "1.5.5",
+      "artifact": "plexus-component-annotations-1.5.5.jar",
+      "sha256": "4df7a6a7be64b35bbccf60b5c115697f9ea3421d22674ae67135dde375fcca1f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/c72f2660d0cbed24246ddb55d7fdc4f7374d2078/plexus-component-annotations-1.5.5.jar"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-component-annotations",
+      "version": "1.5.5",
+      "artifact": "plexus-component-annotations-1.5.5.pom",
+      "sha256": "815f3ec316b8c5fa701385fdf4009bfb51e07d780e8f6a6e2afe720c52d7e292",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/fd506865d5d083d8cef9fdbf525ad99fcc3416c1/plexus-component-annotations-1.5.5.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-components",
+      "version": "1.1.18",
+      "artifact": "plexus-components-1.1.18.pom",
+      "sha256": "ef5dbc7fa918b6dbba71d27e5b3d7a00df624bcfa2549a7297f36fe275f634d7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-components/1.1.18/41abf89f075e6b912a2ff728aa002e98591de425/plexus-components-1.1.18.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-containers",
+      "version": "1.5.5",
+      "artifact": "plexus-containers-1.5.5.pom",
+      "sha256": "1bc264824ec876b0ca6f4f5838175c541c638cbc43326a268b9aee7d4778b5ef",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-containers/1.5.5/cd786b660f8a4c1c520403a5fa04c7be45212b84/plexus-containers-1.5.5.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-interpolation",
+      "version": "1.14",
+      "artifact": "plexus-interpolation-1.14.jar",
+      "sha256": "7fc63378d3e84663619b9bedace9f9fe78b276c2be3c62ca2245449294c84176",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.14/c88dd864fe8b8256c25558ce7cd63be66ba07693/plexus-interpolation-1.14.jar"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-interpolation",
+      "version": "1.14",
+      "artifact": "plexus-interpolation-1.14.pom",
+      "sha256": "d08155c497df37b2c3d9b5b0dfdb02ec0525b2070b5be3739fffde942fcac9af",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.14/e296d45aff17c16ed268c5b9480214a0d92937ab/plexus-interpolation-1.14.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-utils",
+      "version": "2.0.5",
+      "artifact": "plexus-utils-2.0.5.pom",
+      "sha256": "35bc7d1213616236571072b2c56da18f7a57658de8b4a4100645b7054a2b273b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/2.0.5/51785edd83de609389ba142c9516752a4246aefc/plexus-utils-2.0.5.pom"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-utils",
+      "version": "3.2.1",
+      "artifact": "plexus-utils-3.2.1.jar",
+      "sha256": "8d07b497bb8deb167ee5329cae87ef2043833bf52e4f15a5a9379cec447a5b2b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.1/13b015768e0d04849d2794e4c47eb02d01a0de32/plexus-utils-3.2.1.jar"
+    },
+    {
+      "group": "org.codehaus.plexus",
+      "module": "plexus-utils",
+      "version": "3.2.1",
+      "artifact": "plexus-utils-3.2.1.pom",
+      "sha256": "7a5001ab88105b4f37c4fab3b62d977316290a13f8b14c6684f25f2a32efdef1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.1/7caaedbb1cfaa1605581d2b0c9b8ced8dea5ebb0/plexus-utils-3.2.1.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-http",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-http-9.4.54.v20240208.pom",
+      "sha256": "95dc071b844f96c76d96588ceaae76ed5f4a7f867d019b62061a7643695a314c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.54.v20240208/7d83c6a0908d5bc70064e596d1410b14d25e02e2/jetty-http-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-http",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-http-9.4.54.v20240208.jar",
+      "sha256": "90e44ea0dba911fe23b7cc4554ea8761e92dfd803401e3888fe6eb10a07944e7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.54.v20240208/a641b8a694eeefdde64404011471710e51352276/jetty-http-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-io",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-io-9.4.54.v20240208.jar",
+      "sha256": "fd2b9b44fc4da25b6b15017f686d4c50e2cb4d68beca9602194ad9cefb97f777",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.54.v20240208/389cb96fc6963b0aa13954164ed0b1c54bf87462/jetty-io-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-io",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-io-9.4.54.v20240208.pom",
+      "sha256": "78bd6d23627c1260adc87857a18fd4c196708a873389fbfbf4b5d9bbf6421591",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.54.v20240208/4fa817d912498f0764f843efd1240abcd53c742b/jetty-io-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-project",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-project-9.4.54.v20240208.pom",
+      "sha256": "54e4c468d4062fda4e7397d6a00504adb0a3ef0bbf348affc9e08a4f6067800f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/9.4.54.v20240208/6a817095bc69f0af3bc75d22494fa2061280177e/jetty-project-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-security",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-security-9.4.54.v20240208.pom",
+      "sha256": "a02e2785dfc8859b7b85dc9c6b8c0e270749d13b93e74a094e79110c480f75ae",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.54.v20240208/6920d111cc90f812a935717d79e53c8d9a188ea7/jetty-security-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-security",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-security-9.4.54.v20240208.jar",
+      "sha256": "7d17ec768603c33746f9f6f98849d7c9f8bc439a53d9e247702e19cea6c75ec8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.54.v20240208/7bf0247b413feefce4a18f50c68d7b9e41beaf30/jetty-security-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-server",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-server-9.4.54.v20240208.jar",
+      "sha256": "96a3e929207cab7612aef2ed9e80a2d1514bd5cfba118f6d040677ae483398f3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.54.v20240208/13d439d8a5d8b1ec936f9d6f90dbdd46fcb01820/jetty-server-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-server",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-server-9.4.54.v20240208.pom",
+      "sha256": "b62078b1ee8f4a1f24464f092f830796f541937a01343ed3f3ba5562afc77dd8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.54.v20240208/c3c9a599ff2b8fe655c10a9ba7ad46078d4d1944/jetty-server-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-servlet",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-servlet-9.4.54.v20240208.jar",
+      "sha256": "8c2ffd1cc57f618faf8b212eb78405bb2d7f0b814ba3a3acaf784be702be7766",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.54.v20240208/265cdb2c48345ff3c661a15873abbf4c7e4c8300/jetty-servlet-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-servlet",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-servlet-9.4.54.v20240208.pom",
+      "sha256": "223cd0b7577763f358c025c0cf1532faf378e896d479fbb1e9f284f1b8ceca5f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.54.v20240208/97d1326af9abe20184fd5203fc0711ac59226444/jetty-servlet-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-util",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-util-9.4.54.v20240208.pom",
+      "sha256": "b32ba6651d0ffa4df9b92737712d2c7991dd85e61e2789818ebc1553a67543d6",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.54.v20240208/6f80ec2499c1a6f882e26cfa6d7fcf11450d4f88/jetty-util-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-util",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-util-9.4.54.v20240208.jar",
+      "sha256": "0025f8470828d60dc93e6b5c33c015630b6b05a23afa8173ee7e60b928a4521e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.54.v20240208/8da375769a8fe4a32ec52cc2c9ac68f1eb843588/jetty-util-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-util-ajax",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-util-ajax-9.4.54.v20240208.pom",
+      "sha256": "3d1bb80a786f8557b8c94808615a38187729d71fe932f44754c5595522b19fab",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util-ajax/9.4.54.v20240208/35d48a6fecb9f3ea15d9263cf5a8e20de7577c76/jetty-util-ajax-9.4.54.v20240208.pom"
+    },
+    {
+      "group": "org.eclipse.jetty",
+      "module": "jetty-util-ajax",
+      "version": "9.4.54.v20240208",
+      "artifact": "jetty-util-ajax-9.4.54.v20240208.jar",
+      "sha256": "50779cfe87f5487e437c98bb67eae87051b4f801013fc9115d5c11a89016440d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util-ajax/9.4.54.v20240208/973ad9c3e01c2ffae3571a85a3c82c3fb5cab18d/jetty-util-ajax-9.4.54.v20240208.jar"
+    },
+    {
+      "group": "org.hamcrest",
+      "module": "hamcrest-core",
+      "version": "1.3",
+      "artifact": "hamcrest-core-1.3.jar",
+      "sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+    },
+    {
+      "group": "org.hamcrest",
+      "module": "hamcrest-core",
+      "version": "1.3",
+      "artifact": "hamcrest-core-1.3.pom",
+      "sha256": "fde386a7905173a1b103de6ab820727584b50d0e32282e2797787c20a64ffa93",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/872e413497b906e7c9fa85ccc96046c5d1ef7ece/hamcrest-core-1.3.pom"
+    },
+    {
+      "group": "org.hamcrest",
+      "module": "hamcrest-parent",
+      "version": "1.3",
+      "artifact": "hamcrest-parent-1.3.pom",
+      "sha256": "6d535f94efb663bdb682c9f27a50335394688009642ba7a9677504bc1be4129b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.hamcrest/hamcrest-parent/1.3/80391bd32bfa4837a15215d5e9f07c60555c379a/hamcrest-parent-1.3.pom"
+    },
+    {
+      "group": "org.infinispan",
+      "module": "infinispan-bom",
+      "version": "11.0.18.Final",
+      "artifact": "infinispan-bom-11.0.18.Final.pom",
+      "sha256": "9ac339a8937c3f45b04973c3b9488925d9ca19efc06495462749a5e0b9cf2920",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.infinispan/infinispan-bom/11.0.18.Final/bd12897e4024736eff473f1e40dd6b5db5199108/infinispan-bom-11.0.18.Final.pom"
+    },
+    {
+      "group": "org.infinispan",
+      "module": "infinispan-build-configuration-parent",
+      "version": "11.0.18.Final",
+      "artifact": "infinispan-build-configuration-parent-11.0.18.Final.pom",
+      "sha256": "f1c00e59fb8e446f0710bdc1719e61952f27c1614ae478452c2f0011035322ae",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.infinispan/infinispan-build-configuration-parent/11.0.18.Final/f1e99afced60a131502a1669d34df9aec78bf81/infinispan-build-configuration-parent-11.0.18.Final.pom"
+    },
+    {
+      "group": "org.jboss",
+      "module": "jboss-parent",
+      "version": "36",
+      "artifact": "jboss-parent-36.pom",
+      "sha256": "000dd616298aebd21a9d5731874df083d7298424b91e037b73cbdd07ebc83e0e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jboss/jboss-parent/36/b80e66dcc3abe7b9bdfd897bbd07ba7131d5ee73/jboss-parent-36.pom"
+    },
+    {
+      "group": "org.jetbrains",
+      "module": "annotations",
+      "version": "13.0",
+      "artifact": "annotations-13.0.jar",
+      "sha256": "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+    },
+    {
+      "group": "org.jetbrains",
+      "module": "annotations",
+      "version": "13.0",
+      "artifact": "annotations-13.0.pom",
+      "sha256": "965aeb2bedff369819bdde1bf7a0b3b89b8247dd69c88b86375d76163bb8c397",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/fa7d3d07cc80547e2d15bf4839d3267c637c642f/annotations-13.0.pom"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib",
+      "version": "2.1.0",
+      "artifact": "kotlin-stdlib-2.1.0.module",
+      "sha256": "dcfbc8e8bf32cd67a7efadd91d31152bce9870911d6ec50878f4fdb6e03e70e2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.1.0/10243b69a055e7a0aac5eff98c9509f34b4b5d1e/kotlin-stdlib-2.1.0.module"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib",
+      "version": "2.1.0",
+      "artifact": "kotlin-stdlib-2.1.0.jar",
+      "sha256": "d6f91b7b0f306cca299fec74fb7c34e4874d6f5ec5b925a0b4de21901e119c3f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.1.0/85f8b81009cda5890e54ba67d64b5e599c645020/kotlin-stdlib-2.1.0.jar"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib",
+      "version": "2.1.0",
+      "artifact": "kotlin-stdlib-2.1.0.pom",
+      "sha256": "134e48c17796c1c1027ecbe6c9f1c75c792f535987ab89e1e1dda43f8c366f5e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.1.0/b7c581edbfc43221bf7a18ea76cc482111bba949/kotlin-stdlib-2.1.0.pom"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-common",
+      "version": "2.1.0",
+      "artifact": "kotlin-stdlib-common-2.1.0.pom",
+      "sha256": "4a9da7a9e5295bd542d5863cae035f7af9ca101f225c4a0891c3d2df8dc2a80d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/2.1.0/236af7d585102aab232db887fa0d103c62d8044d/kotlin-stdlib-common-2.1.0.pom"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-common",
+      "version": "2.1.0",
+      "artifact": "kotlin-stdlib-common-2.1.0.module",
+      "sha256": "2b9a5ae785f8513a93f8cec3f6e5e07f8b1766f8497b3a487f3441a251d67563",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/2.1.0/b3ca3b6e214a6310b985ac4db308004a02e1bed3/kotlin-stdlib-common-2.1.0.module"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-jdk7",
+      "version": "1.8.0",
+      "artifact": "kotlin-stdlib-jdk7-1.8.0.jar",
+      "sha256": "4c889d1d9803f5f2eb6c1592a6b7e62369ac7660c9eee15aba16fec059163666",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-jdk7",
+      "version": "1.8.0",
+      "artifact": "kotlin-stdlib-jdk7-1.8.0.pom",
+      "sha256": "dfa9644a6ae5b898ee475bb1f57e830ba1f770aee6c9c15f8112aa381180184a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/b8a4b9c31ec89be4e5806db4aa92192a9d592bf0/kotlin-stdlib-jdk7-1.8.0.pom"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-jdk8",
+      "version": "1.8.0",
+      "artifact": "kotlin-stdlib-jdk8-1.8.0.jar",
+      "sha256": "05b62804441b0c9a1920b6b7d5cf7329a4e24b6258478e32b1f046ca01900946",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar"
+    },
+    {
+      "group": "org.jetbrains.kotlin",
+      "module": "kotlin-stdlib-jdk8",
+      "version": "1.8.0",
+      "artifact": "kotlin-stdlib-jdk8-1.8.0.pom",
+      "sha256": "2bb6c7551b97c7ba029f9866582e7aa19d63abfd4cd53da3fc0c462f3ab5fc26",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/fb9dbe3343144298825b8d9f23a51f4af4be6cb0/kotlin-stdlib-jdk8-1.8.0.pom"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.10.1",
+      "artifact": "junit-bom-5.10.1.module",
+      "sha256": "21b0afcfffe2ecb3770f5eb00ae7a19feaee94e771fa3918173850dae78067b7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.10.1/1b577334c47deb59a29dc31e5211499d0eb3c17b/junit-bom-5.10.1.module"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.10.1",
+      "artifact": "junit-bom-5.10.1.pom",
+      "sha256": "21c4b0286f4b20069577ff4b20978a85c100ac8a46b6f1c8672fbaab337bc3f2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.10.1/41a86ea51227739a5b7ca3430ae88ce44a64a42a/junit-bom-5.10.1.pom"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.10.2",
+      "artifact": "junit-bom-5.10.2.pom",
+      "sha256": "169dd904a4b0f6520cffe658cc62292bfe9f3c14a989fa92120724cde43a9968",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.10.2/b25ed98a5bd08cdda60e569cf22822a760e76019/junit-bom-5.10.2.pom"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.10.2",
+      "artifact": "junit-bom-5.10.2.module",
+      "sha256": "de23b114b3e4119a8fe6eb17bed5a3852816698bace67071579d6d927ebb080a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.10.2/ce536748a853ae6ac09e7815fce0678a96cff778/junit-bom-5.10.2.module"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.7.1",
+      "artifact": "junit-bom-5.7.1.module",
+      "sha256": "9854e3894d64b2485207e0046bca07b3d42d169e782f4fa8c9ce229a78faee04",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.7.1/94767e8fb0c5c41a3502cd5cdd77dd35ed67bbfa/junit-bom-5.7.1.module"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.7.1",
+      "artifact": "junit-bom-5.7.1.pom",
+      "sha256": "0b9b14a3d62106fafe8c68a717b87b87ad18685899451b753c04fa41b6857784",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.7.1/ea517dcd1a0692cf193264d3e3ef0cc1a4a7b410/junit-bom-5.7.1.pom"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.9.1",
+      "artifact": "junit-bom-5.9.1.module",
+      "sha256": "9026c1656690fa145ad75ece83674211aa12ad8930a91b107c2f5cdece2f1b1c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.9.1/aa05de0691bfa54aa1ef72b25bbb0fcfd6ec480b/junit-bom-5.9.1.module"
+    },
+    {
+      "group": "org.junit",
+      "module": "junit-bom",
+      "version": "5.9.1",
+      "artifact": "junit-bom-5.9.1.pom",
+      "sha256": "b163c1cfc8fc1fd58b457a00d586c04c46e986d75904e9ca54c03a97d65b496c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit/junit-bom/5.9.1/ce71051be5ac4cea4e06a25fc100a0e64bcf6a1c/junit-bom-5.9.1.pom"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-api",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-api-5.10.2.pom",
+      "sha256": "bb5da3060226b1b3ceb5408495dc69b59465bf50d7ebe63eef94f25909cf1900",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/93a08d741cad9179423cc229ecbfc016164977d7/junit-jupiter-api-5.10.2.pom"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-api",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-api-5.10.2.module",
+      "sha256": "411b4a96c2a6db0998d6e58e899367f0d1254163f3041c9d98e7aedfca374419",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/f2cf03469ab524d0c6085a69795dabca3def7083/junit-jupiter-api-5.10.2.module"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-api",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-api-5.10.2.jar",
+      "sha256": "afff77c186cd317275803872fa5133aa801fd6ac40bd91c78a6cf8009b4b17cc",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/fb55d6e2bce173f35fd28422e7975539621055ef/junit-jupiter-api-5.10.2.jar"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-api",
+      "version": "5.9.1",
+      "artifact": "junit-jupiter-api-5.9.1.module",
+      "sha256": "2478b22df043fe575c495fa0378559e4c337912e5bc78da2a34b6656f2e65444",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.1/745bf8313d8c5d00ea4c12c73571fcca302123e/junit-jupiter-api-5.9.1.module"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-api",
+      "version": "5.9.1",
+      "artifact": "junit-jupiter-api-5.9.1.pom",
+      "sha256": "3cf6a81a5a8f71b69435a27817d63048867df77a589cce83ab0cdfbc77b6f89f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.1/faf8a5b5d1b63ca0c7e8eb9522524c9e40729369/junit-jupiter-api-5.9.1.pom"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-engine",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-engine-5.10.2.pom",
+      "sha256": "abe72c8fbf9a9c8f9ee79bac29ba6479d32b0dffaab88080a502911d24d39463",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/1dfac67b8120dd7ac630a658929fbaf9eb673364/junit-jupiter-engine-5.10.2.pom"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-engine",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-engine-5.10.2.module",
+      "sha256": "143ef275ae6695119d78212a93245acebbf9235b5375b9f4c1d4af732f3b530a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/77334576d102c48882964e9a56602c702e841e6c/junit-jupiter-engine-5.10.2.module"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "module": "junit-jupiter-engine",
+      "version": "5.10.2",
+      "artifact": "junit-jupiter-engine-5.10.2.jar",
+      "sha256": "b6df35da750a546ae932376f11b3c0df841f0c90c7cb2944cd39adb432886e4b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/f1f8fe97bd58e85569205f071274d459c2c4f8cd/junit-jupiter-engine-5.10.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-commons",
+      "version": "1.0.2",
+      "artifact": "junit-platform-commons-1.0.2.pom",
+      "sha256": "3e04b35c9300754c8d32edbca6537037a77f4d1dfd87baeb20e4aab844c6383e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.0.2/db9287a25b5435e1ac8f477fe532d2b28c53d8e4/junit-platform-commons-1.0.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-commons",
+      "version": "1.0.2",
+      "artifact": "junit-platform-commons-1.0.2.jar",
+      "sha256": "d444e2b48f81e6bb3a7a68242d63a845bef67c5de411ceb63fba9647292d3c8d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.0.2/e348a3a67940694f0718d04f9b0784b3dfb7819b/junit-platform-commons-1.0.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-commons",
+      "version": "1.10.2",
+      "artifact": "junit-platform-commons-1.10.2.jar",
+      "sha256": "b56a5ec000a479df4973b18bba24c98fe0db8faa14c8907d3ef451d8c71fd8ae",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/3197154a1f0c88da46c47a9ca27611ac7ec5d797/junit-platform-commons-1.10.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-commons",
+      "version": "1.10.2",
+      "artifact": "junit-platform-commons-1.10.2.pom",
+      "sha256": "f3f825c7ca3bd89714d489447c77c76e27ea38f0285f5f796a1000a17fca4be7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/428e90870a1cd83eec09c4d3ae181a71e7e6a467/junit-platform-commons-1.10.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-commons",
+      "version": "1.10.2",
+      "artifact": "junit-platform-commons-1.10.2.module",
+      "sha256": "1e81421a62f872bca4d20220b39ea19e27b135f36b7b781704f92fad54319618",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/ed3658ca7228c31fa23bf7004bbe64421d702a6b/junit-platform-commons-1.10.2.module"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-console",
+      "version": "1.0.2",
+      "artifact": "junit-platform-console-1.0.2.jar",
+      "sha256": "ab2396fbece73de0ca75eb5cd7d2d44f02ddbd3e66c668ed471498e7bc419a8d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-console/1.0.2/2bf2cd18040bfe229bad813c7ab150a0f7ea8153/junit-platform-console-1.0.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-console",
+      "version": "1.0.2",
+      "artifact": "junit-platform-console-1.0.2.pom",
+      "sha256": "73d3ac53b9f90372242b6ff8123774fba171e7d72874a6783870268f4c97061e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-console/1.0.2/4c625001aa3550a9e6fb5cabc07bc7c7b9bccfaa/junit-platform-console-1.0.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-engine",
+      "version": "1.0.2",
+      "artifact": "junit-platform-engine-1.0.2.jar",
+      "sha256": "0d075b938f57c2c1086800e527b91304782aeed7075abf1ac77a8843c27c404b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.0.2/ae5d9b8c44d78da636e4e1e00a907fe0fb7bcb8f/junit-platform-engine-1.0.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-engine",
+      "version": "1.0.2",
+      "artifact": "junit-platform-engine-1.0.2.pom",
+      "sha256": "eb646068d841adec9a80b2f5b5ab99c8686c2a3e8d1c60f0e4eadf2a797de32b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.0.2/ef91fe27b6191d75cff54b5911dbabd0acccfd71/junit-platform-engine-1.0.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-engine",
+      "version": "1.10.2",
+      "artifact": "junit-platform-engine-1.10.2.jar",
+      "sha256": "905cba9b4998ccc29d1239085a7fb1fe0e28024d7526152356d810edec0a49a3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/d53bb4e0ce7f211a498705783440614bfaf0df2e/junit-platform-engine-1.10.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-engine",
+      "version": "1.10.2",
+      "artifact": "junit-platform-engine-1.10.2.pom",
+      "sha256": "12aa86ca1c0d648a225d4e7c696054c1fc76e88782c5c39fb7df379ae23bef6f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/d67d36be92a9dc24fc75cece1a8a9a211ab3641c/junit-platform-engine-1.10.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-engine",
+      "version": "1.10.2",
+      "artifact": "junit-platform-engine-1.10.2.module",
+      "sha256": "e1d1badcfedc27244541e0be5d5e84b72a2270d7af61686b26f11cfc4770da42",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/d74f15e25cb1041c5e6fccccec7f189022b1e767/junit-platform-engine-1.10.2.module"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-gradle-plugin",
+      "version": "1.0.2",
+      "artifact": "junit-platform-gradle-plugin-1.0.2.pom",
+      "sha256": "22e56abaa7d1920bcec4d72d562dc57ca3712be92473a346c6ba45876fa7f5a8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-gradle-plugin/1.0.2/2e1386e5d6e3fe3eb48d0833e8db8559db8165d3/junit-platform-gradle-plugin-1.0.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-gradle-plugin",
+      "version": "1.0.2",
+      "artifact": "junit-platform-gradle-plugin-1.0.2.jar",
+      "sha256": "e429cab7c751977569be698194d17c5608547b2bfd064f7a374a2ad83918069a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-gradle-plugin/1.0.2/838c3b761ef585045211d4d4ad821c32d6797689/junit-platform-gradle-plugin-1.0.2.jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-launcher",
+      "version": "1.0.2",
+      "artifact": "junit-platform-launcher-1.0.2.pom",
+      "sha256": "ecd98ca167cd44fa5be4548d16c02c810a1066996cb51bb8954b42741bfe2b58",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.0.2/41eaa2d77bdb8e1670de17acd5b1b6f0a0eb82eb/junit-platform-launcher-1.0.2.pom"
+    },
+    {
+      "group": "org.junit.platform",
+      "module": "junit-platform-launcher",
+      "version": "1.0.2",
+      "artifact": "junit-platform-launcher-1.0.2.jar",
+      "sha256": "9bb6f934bd036d78a62dd3cb9717078e982daf1db513b728e64e73e4d26177bb",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.0.2/7cd136827fbfe3e6301b95f0340d654ad54feaa4/junit-platform-launcher-1.0.2.jar"
+    },
+    {
+      "group": "org.junit.vintage",
+      "module": "junit-vintage-engine",
+      "version": "5.10.2",
+      "artifact": "junit-vintage-engine-5.10.2.jar",
+      "sha256": "f1f8d1d33572c750cbe9bc6ab81019af28e8de555d58c42d1d0b7248b3315769",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.vintage/junit-vintage-engine/5.10.2/2905387f99f86a6618d1f7c005e7a5946224f317/junit-vintage-engine-5.10.2.jar"
+    },
+    {
+      "group": "org.junit.vintage",
+      "module": "junit-vintage-engine",
+      "version": "5.10.2",
+      "artifact": "junit-vintage-engine-5.10.2.module",
+      "sha256": "90c6fd42731cd10a0fe9ceaaa255f3fc1f483e714ee9bd83b4f93c96c81f5956",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.vintage/junit-vintage-engine/5.10.2/90bece80f43b100dd609c5b614eb9c7830598904/junit-vintage-engine-5.10.2.module"
+    },
+    {
+      "group": "org.junit.vintage",
+      "module": "junit-vintage-engine",
+      "version": "5.10.2",
+      "artifact": "junit-vintage-engine-5.10.2.pom",
+      "sha256": "930d9c8464260536583f6f28ce31e464be892485aefed5a7608ab366a51810ae",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.junit.vintage/junit-vintage-engine/5.10.2/aa63ea8de3b548a3bb39f1b0599aee50ce5d284c/junit-vintage-engine-5.10.2.pom"
+    },
+    {
+      "group": "org.mockito",
+      "module": "mockito-core",
+      "version": "4.11.0",
+      "artifact": "mockito-core-4.11.0.pom",
+      "sha256": "2bc2e3c8c8b313fdac231f23822225b07831dc899d067072f49d5f8ae37e739a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.mockito/mockito-core/4.11.0/9f4ccd6bbc38bf022156e235530f1a6cd1098a02/mockito-core-4.11.0.pom"
+    },
+    {
+      "group": "org.mockito",
+      "module": "mockito-core",
+      "version": "4.11.0",
+      "artifact": "mockito-core-4.11.0.jar",
+      "sha256": "4b909690cab288c761eb94c0bf0e814496cf3921d8affac84cd87774530351e5",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.mockito/mockito-core/4.11.0/ce5226440c2ee78915716d4ce3d10aed2dbf26fb/mockito-core-4.11.0.jar"
+    },
+    {
+      "group": "org.mockito",
+      "module": "mockito-junit-jupiter",
+      "version": "4.11.0",
+      "artifact": "mockito-junit-jupiter-4.11.0.pom",
+      "sha256": "b724ad13e3e450cb022672fe5ca6f1d38d5d7485246a3ff3d278edf9321e3417",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.11.0/65e9470e5bce002a51c062900aebb7a1b773d14c/mockito-junit-jupiter-4.11.0.pom"
+    },
+    {
+      "group": "org.mockito",
+      "module": "mockito-junit-jupiter",
+      "version": "4.11.0",
+      "artifact": "mockito-junit-jupiter-4.11.0.jar",
+      "sha256": "f4b3694f60fccc7b520d8aea9b6c827d8e9949b652cad09fce10b546bf3ac537",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.11.0/6a2a2d138141e9c003451292348173c899450872/mockito-junit-jupiter-4.11.0.jar"
+    },
+    {
+      "group": "org.objenesis",
+      "module": "objenesis",
+      "version": "3.3",
+      "artifact": "objenesis-3.3.jar",
+      "sha256": "02dfd0b0439a5591e35b708ed2f5474eb0948f53abf74637e959b8e4ef69bfeb",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/1049c09f1de4331e8193e579448d0916d75b7631/objenesis-3.3.jar"
+    },
+    {
+      "group": "org.objenesis",
+      "module": "objenesis",
+      "version": "3.3",
+      "artifact": "objenesis-3.3.pom",
+      "sha256": "ba0c40da2669a048b6e24ef7066a471f0fbcbfcc509e6a3e856ca4ddfa614ad3",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/8da1208285232e541d0bbb869bbe66af6ec6abb4/objenesis-3.3.pom"
+    },
+    {
+      "group": "org.objenesis",
+      "module": "objenesis-parent",
+      "version": "3.3",
+      "artifact": "objenesis-parent-3.3.pom",
+      "sha256": "305c384aa2f1e1c7fe53a96da41c3ec35243b97d428d24a8f779818cc10be4ff",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.objenesis/objenesis-parent/3.3/60b46fea1dc4cb9c3123f8c366f8b33d0c774fa3/objenesis-parent-3.3.pom"
+    },
+    {
+      "group": "org.opentest4j",
+      "module": "opentest4j",
+      "version": "1.0.0",
+      "artifact": "opentest4j-1.0.0.jar",
+      "sha256": "6a05b14e8764a1fa51551ccef29e7271681d65fa907a8136136b94de92a0b862",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.0.0/6f09c598e9ff64bf0ce2fa7e7de49a99ba83c0b4/opentest4j-1.0.0.jar"
+    },
+    {
+      "group": "org.opentest4j",
+      "module": "opentest4j",
+      "version": "1.0.0",
+      "artifact": "opentest4j-1.0.0.pom",
+      "sha256": "60a9f080030e8ee4749796cbfad424488c01e5d2337c5ae15277bded0d87eb93",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.0.0/7fff2d6a0d49724f3a5d07ae5938d95a3ac27474/opentest4j-1.0.0.pom"
+    },
+    {
+      "group": "org.opentest4j",
+      "module": "opentest4j",
+      "version": "1.3.0",
+      "artifact": "opentest4j-1.3.0.jar",
+      "sha256": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar"
+    },
+    {
+      "group": "org.opentest4j",
+      "module": "opentest4j",
+      "version": "1.3.0",
+      "artifact": "opentest4j-1.3.0.module",
+      "sha256": "48bf1d6c8b5dc94f74652bd17900f654deb714350248cf5e8fca27b9090c8e0d",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/58a4564bc6cdb80b8e1d907a61f6e5bd80f6e67/opentest4j-1.3.0.module"
+    },
+    {
+      "group": "org.opentest4j",
+      "module": "opentest4j",
+      "version": "1.3.0",
+      "artifact": "opentest4j-1.3.0.pom",
+      "sha256": "9bf7cffc410f3e8372c2522578df9ca56d9d43bd937e30948706c232a943b355",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/73f3c942f86fd30bcf1759e2f9db6e9cc0e59c32/opentest4j-1.3.0.pom"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-api",
+      "version": "1.7.36",
+      "artifact": "slf4j-api-1.7.36.jar",
+      "sha256": "d3ef575e3e4979678dc01bf1dcce51021493b4d11fb7f1be8ad982877c16a1c0",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-api",
+      "version": "1.7.36",
+      "artifact": "slf4j-api-1.7.36.pom",
+      "sha256": "fb046a9c229437928bb11c2d27c8b5d773eb8a25e60cbd253d985210dedc2684",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/749f6995b1d6591a417ca4fd19cdbddabae16fd1/slf4j-api-1.7.36.pom"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-log4j12",
+      "version": "1.7.36",
+      "artifact": "slf4j-log4j12-1.7.36.pom",
+      "sha256": "6b36cc54c03f0563037e200c5df68d414fc35982c8043e9c3789d2051a9efbf8",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.36/d92c0641793f2c8e3b5f92bac46f97693971dc92/slf4j-log4j12-1.7.36.pom"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-parent",
+      "version": "1.7.36",
+      "artifact": "slf4j-parent-1.7.36.pom",
+      "sha256": "bb388d37fbcdd3cde64c3cede21838693218dc451f04040c5df360a78ed7e812",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-parent/1.7.36/5ee2b2ff107aa21d6e6c8b1d38ab28d02b5bf62e/slf4j-parent-1.7.36.pom"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-reload4j",
+      "version": "1.7.36",
+      "artifact": "slf4j-reload4j-1.7.36.jar",
+      "sha256": "ae6fdd5c9547896114d5ec7fa7503733b7d2890573d3886fb548b3119c4d3f67",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-reload4j/1.7.36/db708f7d959dee1857ac524636e85ecf2e1781c1/slf4j-reload4j-1.7.36.jar"
+    },
+    {
+      "group": "org.slf4j",
+      "module": "slf4j-reload4j",
+      "version": "1.7.36",
+      "artifact": "slf4j-reload4j-1.7.36.pom",
+      "sha256": "8c16bd0f69407087d848d209dfbc930b1c8f728d9d1b77cfdec860ba2a46fb26",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.slf4j/slf4j-reload4j/1.7.36/e675ffbfb98d02fa5b50c54673ca2c95cfd3691c/slf4j-reload4j-1.7.36.pom"
+    },
+    {
+      "group": "org.sonatype.forge",
+      "module": "forge-parent",
+      "version": "4",
+      "artifact": "forge-parent-4.pom",
+      "sha256": "1838d132479005b4b7459b798e9d9915515090c288082fdcd86db0b10983a24c",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.forge/forge-parent/4/564f266ea9323e57e246f0fca8f04f596663fb86/forge-parent-4.pom"
+    },
+    {
+      "group": "org.sonatype.oss",
+      "module": "oss-parent",
+      "version": "6",
+      "artifact": "oss-parent-6.pom",
+      "sha256": "b4306d13e8f5392458a1b30866f1cff161b3d2e6999a88d059eea3932c8a8499",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.oss/oss-parent/6/765c355ec09ad070065d9d12a9245bba5c689d96/oss-parent-6.pom"
+    },
+    {
+      "group": "org.sonatype.oss",
+      "module": "oss-parent",
+      "version": "7",
+      "artifact": "oss-parent-7.pom",
+      "sha256": "b51f8867c92b6a722499557fc3a1fdea77bdf9ef574722fe90ce436a29559454",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.oss/oss-parent/7/46b8a785b60a2767095b8611613b58577e96d4c9/oss-parent-7.pom"
+    },
+    {
+      "group": "org.sonatype.oss",
+      "module": "oss-parent",
+      "version": "9",
+      "artifact": "oss-parent-9.pom",
+      "sha256": "fb40265f982548212ff82e362e59732b2187ec6f0d80182885c14ef1f982827a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.oss/oss-parent/9/e5cdc4d23b86d79c436f16fed20853284e868f65/oss-parent-9.pom"
+    },
+    {
+      "group": "org.sonatype.plexus",
+      "module": "plexus-cipher",
+      "version": "1.4",
+      "artifact": "plexus-cipher-1.4.jar",
+      "sha256": "5a15fdba22669e0fdd06e10dcce6320879e1f7398fbc910cd0677b50672a78c4",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/50ade46f23bb38cd984b4ec560c46223432aac38/plexus-cipher-1.4.jar"
+    },
+    {
+      "group": "org.sonatype.plexus",
+      "module": "plexus-cipher",
+      "version": "1.4",
+      "artifact": "plexus-cipher-1.4.pom",
+      "sha256": "a63a2e23988cca7fac6c93886d6f0506fd26d88d7e8cc0cb89b9c6e0d6c994ad",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/8c0bee97c1badb926611bf82358e392fedc07764/plexus-cipher-1.4.pom"
+    },
+    {
+      "group": "org.sonatype.plexus",
+      "module": "plexus-sec-dispatcher",
+      "version": "1.3",
+      "artifact": "plexus-sec-dispatcher-1.3.pom",
+      "sha256": "d5e650c50ef6958c028ed024b59af04cf3d38e1453a77d542b6b484bc0f4ca0b",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.3/b953c3a84a7d3f2a7f606e18c07ee38fb6766e3d/plexus-sec-dispatcher-1.3.pom"
+    },
+    {
+      "group": "org.sonatype.plexus",
+      "module": "plexus-sec-dispatcher",
+      "version": "1.3",
+      "artifact": "plexus-sec-dispatcher-1.3.jar",
+      "sha256": "3b0559bb8432f28937efe6ca193ef54a8506d0075d73fd7406b9b116c6a11063",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.3/dedc02034fb8fcd7615d66593228cb71709134b4/plexus-sec-dispatcher-1.3.jar"
+    },
+    {
+      "group": "org.sonatype.spice",
+      "module": "spice-parent",
+      "version": "12",
+      "artifact": "spice-parent-12.pom",
+      "sha256": "21a19b26dbe5c38ddb5114cf4eadbf5ccb411bc6b128fdd5949b1ccb12f3683e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.sonatype.spice/spice-parent/12/e86b2d826f53093e27dc579bea3becbf1425d9ba/spice-parent-12.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-asm",
+      "version": "3.1.3.RELEASE",
+      "artifact": "spring-asm-3.1.3.RELEASE.jar",
+      "sha256": "cdaf1d07040e751133a24f997aca7d98eacbfe67e1b2875dce8ca73825278130",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-asm/3.1.3.RELEASE/312ed3e9e962f66557b2276a0a1f8482d19cbfeb/spring-asm-3.1.3.RELEASE.jar"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-asm",
+      "version": "3.1.3.RELEASE",
+      "artifact": "spring-asm-3.1.3.RELEASE.pom",
+      "sha256": "7fb6fbb987440c48c673db15b08770a9c2d6c92052044219979cf48f466f7123",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-asm/3.1.3.RELEASE/c703afa3f3ade85c675942a06690cbe520e28d4a/spring-asm-3.1.3.RELEASE.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-core",
+      "version": "3.1.3.RELEASE",
+      "artifact": "spring-core-3.1.3.RELEASE.pom",
+      "sha256": "f31a8b6f59b6a0180e38c9c129ba0607bae7a0d4a10b95375770c814ab4cc753",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-core/3.1.3.RELEASE/119cce410b3f2a3b6142f0c152745e9ed466cba/spring-core-3.1.3.RELEASE.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-core",
+      "version": "3.1.3.RELEASE",
+      "artifact": "spring-core-3.1.3.RELEASE.jar",
+      "sha256": "014a7b21db680fd8867e026b18c3bf89d304dec5b21090a8b6a7b3cb5cfc77d2",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-core/3.1.3.RELEASE/abaf69158b1f9639adfbb24b94bba190a1892f2f/spring-core-3.1.3.RELEASE.jar"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-core",
+      "version": "5.3.33",
+      "artifact": "spring-core-5.3.33.module",
+      "sha256": "ec4b8379a7ba2a65f1d9ffcd8a8a14137a264b4ac839cb36f8a5073188c461ed",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.33/8cce01fe7341784365ec5c649253eb44faf87df4/spring-core-5.3.33.module"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-core",
+      "version": "5.3.33",
+      "artifact": "spring-core-5.3.33.pom",
+      "sha256": "f9907cd0b7a6737f885b7c7129f86c668ca17fdaa073b81978d18b05604c834e",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.33/996fd455bc9cad670634dc469e102ed33967421d/spring-core-5.3.33.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-core",
+      "version": "5.3.33",
+      "artifact": "spring-core-5.3.33.jar",
+      "sha256": "cafc9d875acbbbf07331b5e9525a54a7b4bab9b58cdca47b9fcf4c02a5dc6b4a",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.33/9aadb3ad15b7144134cfbc809236286796637a49/spring-core-5.3.33.jar"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-jcl",
+      "version": "5.3.33",
+      "artifact": "spring-jcl-5.3.33.pom",
+      "sha256": "4f7f2739e72849c43dc40d5d689252ed1f8bcf00dbf8df7eef30072b5b510901",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.33/3cbc7a28e170815339aaa9f66f99ce6b5b3063e5/spring-jcl-5.3.33.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-jcl",
+      "version": "5.3.33",
+      "artifact": "spring-jcl-5.3.33.module",
+      "sha256": "4d7a9de892f6026b7110f5f621a2689f29dc1c7b17d58889cd7d4d7934ca26f7",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.33/58c2d32fb6134f4b77b925819232edb249d6d945/spring-jcl-5.3.33.module"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-jcl",
+      "version": "5.3.33",
+      "artifact": "spring-jcl-5.3.33.jar",
+      "sha256": "8066e173af6c8cc64c4f813d219f66fa8568886717d86ba3b09ff23a746f0d23",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.33/94f4f4e2e43cd29e370a04229b504b43c67d290e/spring-jcl-5.3.33.jar"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-parent",
+      "version": "3.1.3.RELEASE",
+      "artifact": "spring-parent-3.1.3.RELEASE.pom",
+      "sha256": "64e9110118f82a142759a316d09d3d8d8d717d5d95079d7f6b388ee479fa782f",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-parent/3.1.3.RELEASE/114f52801e7125c495675285210da6980b1b60cf/spring-parent-3.1.3.RELEASE.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-test",
+      "version": "5.3.33",
+      "artifact": "spring-test-5.3.33.pom",
+      "sha256": "ec976b6e608f2f09f6d424e716699760edab91eebb7a3d35fafc0001b1ef3acf",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.33/125974b940a990f34de003eb6b10cc8f957f2bce/spring-test-5.3.33.pom"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-test",
+      "version": "5.3.33",
+      "artifact": "spring-test-5.3.33.module",
+      "sha256": "7faaab529d903bab0dd3c5980d5780f318bbc6c5960072702d30f335350c0fd1",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.33/556aa8d83cb673e054cf12f0e2a32b6c9efcb093/spring-test-5.3.33.module"
+    },
+    {
+      "group": "org.springframework",
+      "module": "spring-test",
+      "version": "5.3.33",
+      "artifact": "spring-test-5.3.33.jar",
+      "sha256": "47505d027b04d8138aa96aac614ab4e7769433317255ceda90f24d50a36dc832",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.33/c825f79c22a4f60ecd970a7c0a586a8ddee96061/spring-test-5.3.33.jar"
+    },
+    {
+      "group": "org.testcontainers",
+      "module": "testcontainers-bom",
+      "version": "1.16.1",
+      "artifact": "testcontainers-bom-1.16.1.pom",
+      "sha256": "5061ba84c98536e5a6b4ce280fbcecb00e335f3b04c5d484629162fcb4624778",
+      "cache_path": "gradle-cache/caches/modules-2/files-2.1/org.testcontainers/testcontainers-bom/1.16.1/92060be6862738f20a8811601e455235187212c1/testcontainers-bom-1.16.1.pom"
+    }
+  ]
+}

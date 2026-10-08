@@ -1,0 +1,2 @@
+FROM eclipse-temurin@sha256:bc46d736fd7dfe699fa4cd96b14faa2a12a6ced042938dab8b2d7a249e3d2cb6
+RUN apt-get update && apt-get --download-only install -y --no-install-recommends git openjdk-11-jdk-headless && mkdir /tooling-evidence && sha256sum /var/cache/apt/archives/*.deb > /tooling-evidence/deb-SHA256SUMS && apt-get install -y --no-install-recommends git openjdk-11-jdk-headless && dpkg-query -W > /tooling-evidence/dpkg-versions.tsv

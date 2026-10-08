@@ -1,0 +1,4 @@
+allprojects {
+    dependencyLocking { lockAllConfigurations() }
+    buildscript { configurations.all { resolutionStrategy.activateDependencyLocking() } }
+}
