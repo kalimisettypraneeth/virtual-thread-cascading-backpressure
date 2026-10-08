@@ -12,6 +12,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import tarfile
 import time
 import urllib.request
 import uuid
@@ -22,6 +23,15 @@ BUNDLE = ROOT / 'artifact/runtime-validation'
 def now(): return dt.datetime.now(dt.timezone.utc).isoformat()
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def write(path, obj): path.write_text(json.dumps(obj, indent=2) + '\n')
+
+def saved_image_config(archive):
+    """Hash the actual config bytes referenced by a single saved image."""
+    with tarfile.open(archive, 'r') as saved:
+        manifests = json.load(saved.extractfile('manifest.json'))
+        if len(manifests) != 1:
+            raise Failure('saved image must contain exactly one manifest')
+        config = saved.extractfile(manifests[0]['Config']).read()
+    return 'sha256:' + hashlib.sha256(config).hexdigest(), json.loads(config)
 
 class Failure(Exception): pass
 
@@ -132,7 +142,19 @@ def main():
             run.command(['docker','pull','--platform','linux/amd64',entry['reference']],'pull-'+key,timeout=600)
             _,inspection=run.command(['docker','image','inspect',entry['reference']],'inspect-'+key)
             facts=json.loads(inspection)[0]
-            run.assertion(facts['Id']==entry['config_digest'],'image config digest '+key)
+            observed_config = facts['Id']
+            if observed_config != entry['config_digest']:
+                # Containerd image stores can expose the manifest digest as Id.
+                # Verify config bytes from the local image instead of trusting Id.
+                archive = run.out / ('image-'+key+'.tar')
+                run.command(['docker','image','save','--platform','linux/amd64',
+                             '--output',str(archive),entry['reference']],
+                            'save-'+key,timeout=600)
+                observed_config, config = saved_image_config(archive)
+                run.assertion(config.get('os')=='linux' and config.get('architecture')=='amd64',
+                              'saved image platform '+key)
+            run.assertion(observed_config==entry['config_digest'],'image config digest '+key,
+                          'expected '+entry['config_digest']+'; observed '+observed_config)
         sources=['/src/artifact/runtime-validation/RuntimeSmoke.java']+['/src/artifact/baselines/'+name for name in ['NativeControls.java','BreakwaterInspired.java','AdaptiveControllerComparators.java']]
         (run.out/'classes').mkdir()
         run.container(locks['images']['jdk21']['reference'],['javac','--release','17','-cp','/out/dependencies/*','-d','/out/classes']+sources,'compile')
