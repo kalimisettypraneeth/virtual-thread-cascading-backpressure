@@ -1,0 +1,42 @@
+{
+  "repository": "envoyproxy/envoy",
+  "revision": "0ac73c8f38e5c1c875103980b0979ef536cd7573",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "source/extensions/filters/http/adaptive_concurrency/controller/gradient_controller.cc",
+      "file": "upstream/gradient_controller.cc",
+      "git_blob_sha1": "610b2dec7757364553859c26d8eafff322d73127",
+      "url": "https://github.com/envoyproxy/envoy/blob/0ac73c8f38e5c1c875103980b0979ef536cd7573/source/extensions/filters/http/adaptive_concurrency/controller/gradient_controller.cc",
+      "sha256": "f48eaa200bda060fa5ad528662a01ef8c6e7dd7a93573abb45e345917492a790"
+    },
+    {
+      "path": "source/extensions/filters/http/adaptive_concurrency/controller/gradient_controller.h",
+      "file": "upstream/gradient_controller.h",
+      "git_blob_sha1": "23b45051039a5afe3872c6747a157ba65182dcb4",
+      "url": "https://github.com/envoyproxy/envoy/blob/0ac73c8f38e5c1c875103980b0979ef536cd7573/source/extensions/filters/http/adaptive_concurrency/controller/gradient_controller.h",
+      "sha256": "31cb3b6e9de673774347d5724954af2b8a09396b3b66868f7a7e0a1c6e432c0b"
+    },
+    {
+      "path": "LICENSE",
+      "file": "upstream/LICENSE",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "url": "https://github.com/envoyproxy/envoy/blob/0ac73c8f38e5c1c875103980b0979ef536cd7573/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "source/extensions/filters/http/adaptive_concurrency/adaptive_concurrency_filter.cc",
+      "file": "upstream/adaptive_concurrency_filter.cc",
+      "git_blob_sha1": "83b7a32847f396dedf59792a4fc9e1782e2358fd",
+      "url": "https://github.com/envoyproxy/envoy/blob/0ac73c8f38e5c1c875103980b0979ef536cd7573/source/extensions/filters/http/adaptive_concurrency/adaptive_concurrency_filter.cc",
+      "sha256": "092ecb659d6dfd17d90fd1df6880200b67f6b75cfea9172559844c8daca9f3b2"
+    },
+    {
+      "path": "NOTICE",
+      "file": "upstream/NOTICE",
+      "git_blob_sha1": "8604a8bbd60d0536ecaa6b59b7e30bed31e7ae22",
+      "url": "https://github.com/envoyproxy/envoy/blob/0ac73c8f38e5c1c875103980b0979ef536cd7573/NOTICE",
+      "sha256": "329d90738f1ee3633da8e7439ea6f9624ec6274a9cbd72437aafa0e8df9de32e"
+    }
+  ]
+}

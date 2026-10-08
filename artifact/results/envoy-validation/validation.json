@@ -1,0 +1,1297 @@
+{
+  "status": "PASS",
+  "scope": "Reduced aggregate-boundary comparator only; no official binary execution or universal trace equivalence",
+  "started_at_utc": "2026-10-08T16:17:29.211315+00:00",
+  "oracle_freeze": {
+    "oracle_sha256": "3ce17599e36f46f26fb0260c861e0a0e5a75c597c90efcbe1c91326a809fa7ad",
+    "frozen_at_utc": "2026-10-08T16:16:28.642535+00:00",
+    "method": "Literal expected states authored from pinned upstream source before comparator execution; no model import or output dependency."
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "tool_availability": {
+    "envoy": null,
+    "bazel": null,
+    "bazelisk": null,
+    "docker": null
+  },
+  "upstream_revision": "0ac73c8f38e5c1c875103980b0979ef536cd7573",
+  "inputs_sha256": {
+    "oracle.json": "3ce17599e36f46f26fb0260c861e0a0e5a75c597c90efcbe1c91326a809fa7ad",
+    "comparator.py": "8ac076f0b859b4c839b711b27049f4d42854719aabf75bf498db5615b230e182",
+    "run.py": "41f63fbcbf8f98f89be7cf74149893e3812f7dcd7ff32a14975c395a0290c16d",
+    "provenance.json": "67b422f08b16deac0ca95f2797c050677570b08dd7cfa06c9e2e5582983ef228"
+  },
+  "snapshots": 45,
+  "field_assertions": 112,
+  "traces": [
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 0,
+      "event": {
+        "event": "initial"
+      },
+      "expected": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "initialized"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 1,
+      "event": {
+        "event": "admit",
+        "id": "a",
+        "now": 0
+      },
+      "expected": {
+        "result": "forward",
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 2,
+      "event": {
+        "event": "admit",
+        "id": "b",
+        "now": 0
+      },
+      "expected": {
+        "outstanding": 2
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 2,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 3,
+      "event": {
+        "event": "admit",
+        "id": "c",
+        "now": 0
+      },
+      "expected": {
+        "outstanding": 3
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 3,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 4,
+      "event": {
+        "event": "admit",
+        "id": "blocked",
+        "now": 0
+      },
+      "expected": {
+        "result": "block",
+        "outstanding": 3,
+        "blocked": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 3,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "block"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 5,
+      "event": {
+        "event": "window",
+        "aggregate": 999
+      },
+      "expected": {
+        "result": "sampling-noop",
+        "active": true
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 3,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "sampling-noop"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 6,
+      "event": {
+        "event": "complete",
+        "id": "a",
+        "now": 100
+      },
+      "expected": {
+        "outstanding": 2,
+        "samples": 1,
+        "active": true
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 2,
+        "samples": 1,
+        "blocked": 1,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 7,
+      "event": {
+        "event": "complete",
+        "id": "b",
+        "now": 100,
+        "aggregate": 100
+      },
+      "expected": {
+        "outstanding": 1,
+        "samples": 0,
+        "active": false,
+        "minimum_rtt": 100,
+        "limit": 3,
+        "deferred": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 8,
+      "event": {
+        "event": "complete",
+        "id": "b",
+        "now": 101
+      },
+      "expected": {
+        "result": "already-finished",
+        "outstanding": 1,
+        "samples": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "already-finished"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 9,
+      "event": {
+        "event": "destroy",
+        "id": "c"
+      },
+      "expected": {
+        "outstanding": 0,
+        "samples": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 10,
+      "event": {
+        "event": "destroy",
+        "id": "c"
+      },
+      "expected": {
+        "result": "already-finished",
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "already-finished"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 11,
+      "event": {
+        "event": "window"
+      },
+      "expected": {
+        "result": "empty-noop",
+        "limit": 3
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "empty-noop"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 12,
+      "event": {
+        "event": "admit",
+        "id": "d",
+        "now": 101
+      },
+      "expected": {
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 13,
+      "event": {
+        "event": "complete",
+        "id": "d",
+        "now": 201
+      },
+      "expected": {
+        "samples": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 1,
+        "blocked": 1,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 14,
+      "event": {
+        "event": "window",
+        "aggregate": 100
+      },
+      "expected": {
+        "gradient": 1.25,
+        "limit": 5,
+        "samples": 0
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 15,
+      "event": {
+        "event": "admit",
+        "id": "old",
+        "now": 201
+      },
+      "expected": {
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 16,
+      "event": {
+        "event": "enter",
+        "now": 202
+      },
+      "expected": {
+        "limit": 3,
+        "deferred": 5,
+        "active": true,
+        "epoch": 202
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 17,
+      "event": {
+        "event": "enter",
+        "now": 203
+      },
+      "expected": {
+        "result": "already-sampling",
+        "epoch": 202,
+        "deferred": 5
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "already-sampling"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 18,
+      "event": {
+        "event": "complete",
+        "id": "old",
+        "now": 301
+      },
+      "expected": {
+        "result": "stale-excluded",
+        "outstanding": 0,
+        "samples": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "stale-excluded"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 19,
+      "event": {
+        "event": "admit",
+        "id": "new1",
+        "now": 302
+      },
+      "expected": {
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 20,
+      "event": {
+        "event": "complete",
+        "id": "new1",
+        "now": 382
+      },
+      "expected": {
+        "samples": 1,
+        "active": true
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 1,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 21,
+      "event": {
+        "event": "admit",
+        "id": "new2",
+        "now": 382
+      },
+      "expected": {
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 5,
+        "minimum_rtt": 100,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 1,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 22,
+      "event": {
+        "event": "complete",
+        "id": "new2",
+        "now": 462,
+        "aggregate": 80
+      },
+      "expected": {
+        "minimum_rtt": 80,
+        "limit": 5,
+        "deferred": 0,
+        "active": false
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 80,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 23,
+      "event": {
+        "event": "admit",
+        "id": "health",
+        "now": 463,
+        "health": true
+      },
+      "expected": {
+        "result": "bypass",
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 80,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "bypass"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 24,
+      "event": {
+        "event": "admit",
+        "id": "disabled",
+        "now": 463,
+        "enabled": false
+      },
+      "expected": {
+        "result": "bypass",
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 80,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "bypass"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "sampling-window-and-lifecycle",
+      "step": 25,
+      "event": {
+        "event": "destroy",
+        "id": "health"
+      },
+      "expected": {
+        "result": "already-finished",
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 5,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 80,
+        "epoch": 202,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 1,
+        "gradient": 1.25,
+        "result": "already-finished"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 0,
+      "event": {
+        "event": "initial"
+      },
+      "expected": {
+        "limit": 4,
+        "active": false,
+        "minimum_rtt": 100,
+        "streak": 1
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 1,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "initialized"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 1,
+      "event": {
+        "event": "admit",
+        "id": "high",
+        "now": 0
+      },
+      "expected": {
+        "result": "forward"
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 1,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 2,
+      "event": {
+        "event": "complete",
+        "id": "high",
+        "now": 1
+      },
+      "expected": {
+        "samples": 1
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 1,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 1,
+        "blocked": 0,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 3,
+      "event": {
+        "event": "window",
+        "aggregate": 1
+      },
+      "expected": {
+        "gradient": 2.0,
+        "limit": 6,
+        "streak": 0
+      },
+      "actual": {
+        "limit": 6,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 2.0,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 4,
+      "event": {
+        "event": "admit",
+        "id": "low",
+        "now": 1
+      },
+      "expected": {
+        "result": "forward"
+      },
+      "actual": {
+        "limit": 6,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 2.0,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 5,
+      "event": {
+        "event": "complete",
+        "id": "low",
+        "now": 1001
+      },
+      "expected": {
+        "samples": 1
+      },
+      "actual": {
+        "limit": 6,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 1,
+        "blocked": 0,
+        "gradient": 2.0,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 6,
+      "event": {
+        "event": "window",
+        "aggregate": 1000
+      },
+      "expected": {
+        "gradient": 0.5,
+        "limit": 4,
+        "streak": 0
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "fixed-clamps-and-recovery-disabled",
+      "step": 7,
+      "event": {
+        "event": "repeat_window",
+        "count": 5,
+        "aggregate": 1000
+      },
+      "expected": {
+        "limit": 4,
+        "streak": 5,
+        "recovery_due": false,
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 5,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 0,
+      "event": {
+        "event": "initial"
+      },
+      "expected": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "streak": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "initialized"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 1,
+      "event": {
+        "event": "admit",
+        "id": "base",
+        "now": 0
+      },
+      "expected": {
+        "result": "forward"
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 3,
+        "minimum_rtt": 0,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 2,
+      "event": {
+        "event": "complete",
+        "id": "base",
+        "now": 100,
+        "aggregate": 100
+      },
+      "expected": {
+        "limit": 3,
+        "active": false,
+        "minimum_rtt": 100
+      },
+      "actual": {
+        "limit": 3,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": null,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 3,
+      "event": {
+        "event": "repeat_window",
+        "count": 1,
+        "aggregate": 1000
+      },
+      "expected": {
+        "limit": 4,
+        "streak": 0,
+        "recovery_due": false
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 4,
+      "event": {
+        "event": "repeat_window",
+        "count": 4,
+        "aggregate": 1000
+      },
+      "expected": {
+        "limit": 4,
+        "streak": 4,
+        "recovery_due": false
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 4,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 5,
+      "event": {
+        "event": "repeat_window",
+        "count": 1,
+        "aggregate": 1000
+      },
+      "expected": {
+        "limit": 4,
+        "streak": 5,
+        "recovery_due": true
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 100,
+        "epoch": 0,
+        "streak": 5,
+        "recovery_due": true,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 6,
+      "event": {
+        "event": "fire_recovery",
+        "now": 20000
+      },
+      "expected": {
+        "limit": 3,
+        "deferred": 4,
+        "active": true,
+        "recovery_due": false,
+        "streak": 0
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 4,
+        "minimum_rtt": 100,
+        "epoch": 20000,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 7,
+      "event": {
+        "event": "window"
+      },
+      "expected": {
+        "result": "sampling-noop",
+        "active": true
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 4,
+        "minimum_rtt": 100,
+        "epoch": 20000,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "sampling-noop"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 8,
+      "event": {
+        "event": "admit",
+        "id": "newbase",
+        "now": 20000
+      },
+      "expected": {
+        "outstanding": 1
+      },
+      "actual": {
+        "limit": 3,
+        "active": true,
+        "deferred": 4,
+        "minimum_rtt": 100,
+        "epoch": 20000,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 1,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "forward"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 9,
+      "event": {
+        "event": "complete",
+        "id": "newbase",
+        "now": 20200,
+        "aggregate": 200
+      },
+      "expected": {
+        "minimum_rtt": 200,
+        "active": false,
+        "limit": 4,
+        "outstanding": 0
+      },
+      "actual": {
+        "limit": 4,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 200,
+        "epoch": 20000,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 0.5,
+        "result": "ok"
+      },
+      "mismatches": {}
+    },
+    {
+      "case": "five-minimum-updates-trigger-remeasurement",
+      "step": 10,
+      "event": {
+        "event": "repeat_window",
+        "count": 1,
+        "aggregate": 200
+      },
+      "expected": {
+        "gradient": 1.25,
+        "limit": 7,
+        "streak": 0,
+        "recovery_due": false
+      },
+      "actual": {
+        "limit": 7,
+        "active": false,
+        "deferred": 0,
+        "minimum_rtt": 200,
+        "epoch": 20000,
+        "streak": 0,
+        "recovery_due": false,
+        "outstanding": 0,
+        "samples": 0,
+        "blocked": 0,
+        "gradient": 1.25,
+        "result": "ok"
+      },
+      "mismatches": {}
+    }
+  ]
+}

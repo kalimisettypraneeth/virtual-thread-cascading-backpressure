@@ -1,0 +1,5 @@
+{
+  "oracle_sha256": "3ce17599e36f46f26fb0260c861e0a0e5a75c597c90efcbe1c91326a809fa7ad",
+  "frozen_at_utc": "2026-10-08T16:16:28.642535+00:00",
+  "method": "Literal expected states authored from pinned upstream source before comparator execution; no model import or output dependency."
+}

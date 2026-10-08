@@ -1,0 +1,9 @@
+test_clean_copy (__main__.ValidationTests.test_clean_copy) ... ok
+test_oracle_mutation_rejected_before_run (__main__.ValidationTests.test_oracle_mutation_rejected_before_run) ... ok
+test_upstream_mutation_rejected (__main__.ValidationTests.test_upstream_mutation_rejected) ... ok
+test_wrong_gradient_is_falsified (__main__.ValidationTests.test_wrong_gradient_is_falsified) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.149s
+
+OK

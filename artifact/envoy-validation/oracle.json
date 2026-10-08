@@ -1,0 +1,68 @@
+{
+  "scope": "Hand-derived deterministic aggregate-boundary traces; no Envoy binary or histogram equivalence claim",
+  "cases": [
+    {
+      "name": "sampling-window-and-lifecycle",
+      "config": {"minimum": 3, "maximum": 20, "sampling_concurrency": 3, "request_count": 2, "buffer": 0.25},
+      "initial": {"limit": 3, "active": true, "deferred": 3, "outstanding": 0},
+      "steps": [
+        {"event": "admit", "id": "a", "now": 0, "expected": {"result": "forward", "outstanding": 1}},
+        {"event": "admit", "id": "b", "now": 0, "expected": {"outstanding": 2}},
+        {"event": "admit", "id": "c", "now": 0, "expected": {"outstanding": 3}},
+        {"event": "admit", "id": "blocked", "now": 0, "expected": {"result": "block", "outstanding": 3, "blocked": 1}},
+        {"event": "window", "aggregate": 999, "expected": {"result": "sampling-noop", "active": true}},
+        {"event": "complete", "id": "a", "now": 100, "expected": {"outstanding": 2, "samples": 1, "active": true}},
+        {"event": "complete", "id": "b", "now": 100, "aggregate": 100, "expected": {"outstanding": 1, "samples": 0, "active": false, "minimum_rtt": 100, "limit": 3, "deferred": 0}},
+        {"event": "complete", "id": "b", "now": 101, "expected": {"result": "already-finished", "outstanding": 1, "samples": 0}},
+        {"event": "destroy", "id": "c", "expected": {"outstanding": 0, "samples": 0}},
+        {"event": "destroy", "id": "c", "expected": {"result": "already-finished", "outstanding": 0}},
+        {"event": "window", "expected": {"result": "empty-noop", "limit": 3}},
+        {"event": "admit", "id": "d", "now": 101, "expected": {"outstanding": 1}},
+        {"event": "complete", "id": "d", "now": 201, "expected": {"samples": 1}},
+        {"event": "window", "aggregate": 100, "expected": {"gradient": 1.25, "limit": 5, "samples": 0}},
+        {"event": "admit", "id": "old", "now": 201, "expected": {"outstanding": 1}},
+        {"event": "enter", "now": 202, "expected": {"limit": 3, "deferred": 5, "active": true, "epoch": 202}},
+        {"event": "enter", "now": 203, "expected": {"result": "already-sampling", "epoch": 202, "deferred": 5}},
+        {"event": "complete", "id": "old", "now": 301, "expected": {"result": "stale-excluded", "outstanding": 0, "samples": 0}},
+        {"event": "admit", "id": "new1", "now": 302, "expected": {"outstanding": 1}},
+        {"event": "complete", "id": "new1", "now": 382, "expected": {"samples": 1, "active": true}},
+        {"event": "admit", "id": "new2", "now": 382, "expected": {"outstanding": 1}},
+        {"event": "complete", "id": "new2", "now": 462, "aggregate": 80, "expected": {"minimum_rtt": 80, "limit": 5, "deferred": 0, "active": false}},
+        {"event": "admit", "id": "health", "now": 463, "health": true, "expected": {"result": "bypass", "outstanding": 0}},
+        {"event": "admit", "id": "disabled", "now": 463, "enabled": false, "expected": {"result": "bypass", "outstanding": 0}},
+        {"event": "destroy", "id": "health", "expected": {"result": "already-finished", "outstanding": 0}}
+      ]
+    },
+    {
+      "name": "fixed-clamps-and-recovery-disabled",
+      "config": {"minimum": 4, "maximum": 6, "sampling_concurrency": 3, "request_count": 1, "buffer": 0.25, "fixed_rtt": 100},
+      "initial": {"limit": 4, "active": false, "minimum_rtt": 100, "streak": 1},
+      "steps": [
+        {"event": "admit", "id": "high", "now": 0, "expected": {"result": "forward"}},
+        {"event": "complete", "id": "high", "now": 1, "expected": {"samples": 1}},
+        {"event": "window", "aggregate": 1, "expected": {"gradient": 2.0, "limit": 6, "streak": 0}},
+        {"event": "admit", "id": "low", "now": 1, "expected": {"result": "forward"}},
+        {"event": "complete", "id": "low", "now": 1001, "expected": {"samples": 1}},
+        {"event": "window", "aggregate": 1000, "expected": {"gradient": 0.5, "limit": 4, "streak": 0}},
+        {"event": "repeat_window", "count": 5, "aggregate": 1000, "expected": {"limit": 4, "streak": 5, "recovery_due": false, "outstanding": 0}}
+      ]
+    },
+    {
+      "name": "five-minimum-updates-trigger-remeasurement",
+      "config": {"minimum": 4, "maximum": 20, "sampling_concurrency": 3, "request_count": 1, "buffer": 0.25},
+      "initial": {"limit": 3, "active": true, "deferred": 3, "streak": 0},
+      "steps": [
+        {"event": "admit", "id": "base", "now": 0, "expected": {"result": "forward"}},
+        {"event": "complete", "id": "base", "now": 100, "aggregate": 100, "expected": {"limit": 3, "active": false, "minimum_rtt": 100}},
+        {"event": "repeat_window", "count": 1, "aggregate": 1000, "expected": {"limit": 4, "streak": 0, "recovery_due": false}},
+        {"event": "repeat_window", "count": 4, "aggregate": 1000, "expected": {"limit": 4, "streak": 4, "recovery_due": false}},
+        {"event": "repeat_window", "count": 1, "aggregate": 1000, "expected": {"limit": 4, "streak": 5, "recovery_due": true}},
+        {"event": "fire_recovery", "now": 20000, "expected": {"limit": 3, "deferred": 4, "active": true, "recovery_due": false, "streak": 0}},
+        {"event": "window", "expected": {"result": "sampling-noop", "active": true}},
+        {"event": "admit", "id": "newbase", "now": 20000, "expected": {"outstanding": 1}},
+        {"event": "complete", "id": "newbase", "now": 20200, "aggregate": 200, "expected": {"minimum_rtt": 200, "active": false, "limit": 4, "outstanding": 0}},
+        {"event": "repeat_window", "count": 1, "aggregate": 200, "expected": {"gradient": 1.25, "limit": 7, "streak": 0, "recovery_due": false}}
+      ]
+    }
+  ]
+}
