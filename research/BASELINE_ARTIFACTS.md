@@ -1,5 +1,7 @@
 # Mandatory baseline artifact inventory
 
+> **Current reconciliation — 2026-10-08:** The sections below preserve dated discovery/preparation history. Their “not run,” “unavailable,” and “uncommitted” statements describe those snapshots, not current evidence. Independently rechecked packaged runtime evidence supports 94/94 recorded assertions and 30/30 bounded cases; official Netflix core evidence supports 56 passed / 3 skipped / 0 failed tests, 108/108 frozen trace samples, and 6/6 bounded adapter cases. Aggregate readiness remains **NOT COMPLETE**. See [the current audit](../artifact/review/SPRINT_BASELINE_AUDIT.md) for evidence and exclusions.
+
 Review date: 2026-09-30
 
 ## Status
@@ -119,3 +121,17 @@ A prepared bundle is now available at `artifact/runtime-validation/README.md`. F
 **PREPARED / RUNTIME UNATTEMPTED.** Java17 compilation and five constant-signal adapter checks passed; the actual missing-Docker command emitted an UNATTEMPTED manifest, logs and hashes under `artifact/results/runtime-validation/preparation`. Docker, JDK21/25, database/interface equivalence and JFR cases have not run here. Registry version metadata is not an observed runtime. The constant-capacity adapters do not validate dynamic controller behavior. Existing 17/17 reduced Gradient2/Envoy conformance is not an official upstream build or performance result. No existing baseline evidence was replaced.
 
 The exact command, artifact layout, immutable pins, workload semantics and limitations are documented in the bundle README. Raw user-local results must be inspected before closing runtime/interface gates. **Aggregate scientific/selected-baseline gate remains NOT COMPLETE.**
+
+## Current scoped execution reconciliation (2026-10-08)
+
+The published review packages at source commit `b059710efe659e5b56f092a48a654b685326053b` supersede earlier execution-pending statements only within their tested scope. Historical fixed/pool contracts, Breakwater-inspired equations, and reduced Gradient2/Envoy traces remain separate evidence. No historical section is silently promoted to official equivalence.
+
+| Evidence | Independently rechecked status | Remaining boundary |
+|---|---|---|
+| Docker runtime bundle | Recorded 94/94 assertions and 30/30 outcome cases; four monitor JFR extracts | Held-batch correctness under AMD64 emulation on ARM64; no performance or dynamic-controller result |
+| Runtime versions | Logs observe Temurin 21.0.12.1+1-LTS and 25.0.4.1+1-LTS, PostgreSQL 16.15 | Registry/source declarations alone were insufficient; these are historical executed logs, not this audit host |
+| Official Netflix Gradient2 | Core XML: 59 discovered, 56 passed, 3 upstream skips, no failures/errors; 108 frozen decisions; 6 adapters | Non-core suites, active-query cancellation, dynamic database-driven feedback and performance remain unattempted |
+| Official Envoy | No new official executable evidence accepted by this audit | Pinned official provenance, smoke and independent behavior/workload evidence still required |
+| JDK-version mechanism | Monitor extracts: JDK21 virtual 4 pins; JDK25 virtual and platform controls 0; four scenario markers each | JEP 491 removes monitor pinning starting JDK24; native/JNI and foreign calls require isolated evidence and cannot be inferred from monitor results |
+
+The selected-baseline checklist stays unchecked. The audit does not certify omitted binary caches/images/JFR recordings, whole-library equivalence, native performance, or novelty. Draft/preregistration preparation may continue; candidate implementation and confirmatory experiments remain gated. A residual VT claim must exclude ordinary finite-capacity queueing, use matched platform/reactive controls and carrier/JFR evidence, and be narrowed or rejected if it disappears after JEP 491 or is matched by an established controller.
