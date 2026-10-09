@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "tests": 2,
+  "scope": "synthetic packaging and exception path only; no real compilation"
+}

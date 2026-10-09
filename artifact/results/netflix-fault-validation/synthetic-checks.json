@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "synthetic checker only; runtime and Java compile UNATTEMPTED",
+  "tests": 9
+}

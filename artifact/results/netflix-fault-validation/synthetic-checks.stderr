@@ -1,0 +1,14 @@
+test_reject_double_callback (__main__.Invariants.test_reject_double_callback) ... ok
+test_reject_duplicate_release (__main__.Invariants.test_reject_duplicate_release) ... ok
+test_reject_early_terminal (__main__.Invariants.test_reject_early_terminal) ... ok
+test_reject_false_cancel (__main__.Invariants.test_reject_false_cancel) ... ok
+test_reject_missing_active (__main__.Invariants.test_reject_missing_active) ... ok
+test_reject_missing_followup (__main__.Invariants.test_reject_missing_followup) ... ok
+test_reject_unresolved (__main__.Invariants.test_reject_unresolved) ... ok
+test_reject_wrong_backend (__main__.Invariants.test_reject_wrong_backend) ... ok
+test_valid_synthetic_contract (__main__.Invariants.test_valid_synthetic_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
